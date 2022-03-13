@@ -1,0 +1,201 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{HumanFault}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{hash=49817d321882eea7b3720975a9e5d313}{%
+           family={Bilal},
+           familyi={B\bibinitperiod},
+           given={Hazrat},
+           giveni={H\bibinitperiod}}}%
+        {{hash=ba72f33629bd0f1557ce3fe1ded729ca}{%
+           family={Yin},
+           familyi={Y\bibinitperiod},
+           given={Baoqun},
+           giveni={B\bibinitperiod}}}%
+        {{hash=64757665de7cf926dbe5a53e8ea95a40}{%
+           family={Khan},
+           familyi={K\bibinitperiod},
+           given={Jawad},
+           giveni={J\bibinitperiod}}}%
+        {{hash=33c987f3524f9676d915c7a5d7028298}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Luyang},
+           giveni={L\bibinitperiod}}}%
+        {{hash=948f26b38fba102b6f820808e554bc53}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Jing},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c7f12611e1c69c53fd205422190555ec}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={Aakash},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{ae9cad5f9dc8a5005dab608620c104bc}
+      \strng{fullhash}{57c05143fb40e65da55cff6a399238ec}
+      \strng{bibnamehash}{ae9cad5f9dc8a5005dab608620c104bc}
+      \strng{authorbibnamehash}{ae9cad5f9dc8a5005dab608620c104bc}
+      \strng{authornamehash}{ae9cad5f9dc8a5005dab608620c104bc}
+      \strng{authorfullhash}{57c05143fb40e65da55cff6a399238ec}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{07}
+      \field{title}{Real-Time Lane Detection and Tracking for Advanced Driver Assistance Systems}
+      \field{year}{2019}
+      \field{pages}{6772\bibrangedash 6777}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.23919/ChiCC.2019.8866334
+      \endverb
+    \endentry
+    \entry{NhtsaBook2006}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{5}{}{%
+        {{hash=33a2fd5d6180ae5f027d1e950383b557}{%
+           family={Klauer},
+           familyi={K\bibinitperiod},
+           given={Charlie},
+           giveni={C\bibinitperiod}}}%
+        {{hash=5efc23e302debbdd1249d6c056931cb4}{%
+           family={Dingus},
+           familyi={D\bibinitperiod},
+           given={Thomas\bibnamedelima A},
+           giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=51731292e6ad20d04547d5621ff43d8c}{%
+           family={Neale},
+           familyi={N\bibinitperiod},
+           given={Vicki\bibnamedelima L},
+           giveni={V\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=7d5317a26929d740f474eb8551c31243}{%
+           family={Sudweeks},
+           familyi={S\bibinitperiod},
+           given={Jeremy\bibnamedelima D},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=e60e314e0cafe51fb056db79524cdd08}{%
+           family={Ramsey},
+           familyi={R\bibinitperiod},
+           given={David\bibnamedelima J},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {United States. National Highway Traffic Safety Administration}%
+      }
+      \strng{namehash}{a7aa761bf8be15847eed9ddf516c975c}
+      \strng{fullhash}{74b9f36e30748bededeeb1c81c502188}
+      \strng{bibnamehash}{a7aa761bf8be15847eed9ddf516c975c}
+      \strng{authorbibnamehash}{a7aa761bf8be15847eed9ddf516c975c}
+      \strng{authornamehash}{a7aa761bf8be15847eed9ddf516c975c}
+      \strng{authorfullhash}{74b9f36e30748bededeeb1c81c502188}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The impact of driver inattention on near-crash/crash risk: An analysis using the 100-car naturalistic driving study data}
+      \field{year}{2006}
+    \endentry
+    \entry{WhoFactSheet}{report}{}
+      \name{author}{1}{}{%
+        {{hash=8179b1fdebe9235e54501d2878c47e1b}{%
+           family={Organization},
+           familyi={O\bibinitperiod},
+           given={World\bibnamedelima Health},
+           giveni={W\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{8179b1fdebe9235e54501d2878c47e1b}
+      \strng{fullhash}{8179b1fdebe9235e54501d2878c47e1b}
+      \strng{bibnamehash}{8179b1fdebe9235e54501d2878c47e1b}
+      \strng{authorbibnamehash}{8179b1fdebe9235e54501d2878c47e1b}
+      \strng{authornamehash}{8179b1fdebe9235e54501d2878c47e1b}
+      \strng{authorfullhash}{8179b1fdebe9235e54501d2878c47e1b}
+      \field{extraname}{1}
+      \field{sortinit}{O}
+      \field{sortinithash}{ff8d4eeb5101e3cf3809959b3592d942}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Road traffic injuries}
+      \field{type}{Fact sheet}
+      \field{year}{21 June 2021}
+    \endentry
+    \entry{WhoBook2015}{report}{}
+      \name{author}{1}{}{%
+        {{hash=8179b1fdebe9235e54501d2878c47e1b}{%
+           family={Organization},
+           familyi={O\bibinitperiod},
+           given={World\bibnamedelima Health},
+           giveni={W\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {World Health Organization}%
+      }
+      \strng{namehash}{8179b1fdebe9235e54501d2878c47e1b}
+      \strng{fullhash}{8179b1fdebe9235e54501d2878c47e1b}
+      \strng{bibnamehash}{8179b1fdebe9235e54501d2878c47e1b}
+      \strng{authorbibnamehash}{8179b1fdebe9235e54501d2878c47e1b}
+      \strng{authornamehash}{8179b1fdebe9235e54501d2878c47e1b}
+      \strng{authorfullhash}{8179b1fdebe9235e54501d2878c47e1b}
+      \field{extraname}{2}
+      \field{sortinit}{O}
+      \field{sortinithash}{ff8d4eeb5101e3cf3809959b3592d942}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{World report on ageing and health}
+      \field{type}{Publications}
+      \field{year}{2015}
+      \field{pages}{246 p.}
+      \range{pages}{-1}
+    \endentry
+    \entry{AdasComplexity}{online}{}
+      \name{author}{1}{}{%
+        {{hash=e4cf7d36101210924bba5692a7d69ebf}{%
+           family={Patil},
+           familyi={P\bibinitperiod},
+           given={Kunal},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{e4cf7d36101210924bba5692a7d69ebf}
+      \strng{fullhash}{e4cf7d36101210924bba5692a7d69ebf}
+      \strng{bibnamehash}{e4cf7d36101210924bba5692a7d69ebf}
+      \strng{authorbibnamehash}{e4cf7d36101210924bba5692a7d69ebf}
+      \strng{authornamehash}{e4cf7d36101210924bba5692a7d69ebf}
+      \strng{authorfullhash}{e4cf7d36101210924bba5692a7d69ebf}
+      \field{sortinit}{P}
+      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Speeding Up the Development of ADAS Systems with Model-Based Development}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://www.dspace.com/fr/fra/home/news/engineers-insights/blog_inc_adas_1607.cfm
+      \endverb
+      \verb{url}
+      \verb https://www.dspace.com/fr/fra/home/news/engineers-insights/blog_inc_adas_1607.cfm
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

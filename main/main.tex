@@ -1,0 +1,56 @@
+\documentclass[12pt]{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[a4paper , hmargin=2cm,vmargin=2cm ]{geometry}
+\renewcommand{\baselinestretch}{1.33}
+
+\usepackage{graphicx}
+\graphicspath{ {../images/} }
+
+\usepackage{fancyhdr}
+\fancypagestyle{plain}{}
+\pagestyle{fancy}
+
+\usepackage[backend=biber]{biblatex}
+\addbibresource{references.bib}
+
+
+
+\title{
+{Ai approach for road Safety}\\
+{\large University of batna 2}
+}
+
+\author{Allaoui Mohamed Khalil \\ Aouina Khansa}
+\date{mars 8}
+
+
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+	Abstract goes here
+\end{abstract}
+
+
+\chapter*{Dedication}
+To mum and dad
+
+\chapter*{Acknowledgements}
+I want to thank...
+
+\tableofcontents
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% CHAPTERS HERE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Introduction
+\input{../chapters/chapter01}
+
+
+
+\printbibliography
+\end{document}
