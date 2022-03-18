@@ -195,6 +195,31 @@
       \verb https://www.dspace.com/fr/fra/home/news/engineers-insights/blog_inc_adas_1607.cfm
       \endverb
     \endentry
+    \entry{ActivePassive}{online}{}
+      \name{author}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{%
+           family={Wikipedia},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
+      \strng{bibnamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authorbibnamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authornamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authorfullhash}{9c677286866aad38f8e9b660f5411814}
+      \field{sortinit}{W}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Automotive safety}
+      \field{year}{2013}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/wiki/Automotive_safety
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/Automotive_safety
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

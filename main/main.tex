@@ -1,4 +1,4 @@
-\documentclass[12pt]{report}
+\documentclass[a4paper,12pt]{report}
 
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
@@ -15,6 +15,8 @@
 \usepackage[backend=biber]{biblatex}
 \addbibresource{references.bib}
 
+\usepackage[english]{nomencl}
+\makenomenclature
 
 
 \title{
@@ -44,6 +46,12 @@ I want to thank...
 
 \tableofcontents
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Nomenclature %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\nomenclature{ADAS}{Advanced Driving assistance Systems}
+\nomenclature{NHTSA}{National Highway Traffic Safety Administration}
+
+\printnomenclature
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% CHAPTERS HERE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
