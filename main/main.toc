@@ -2,6 +2,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}Introduction}{5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}Motivation}{5}%
+\contentsline {section}{\numberline {1.1}Background and Motivation}{5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}Related Work}{7}%
+\contentsline {section}{\numberline {1.2}Related Work}{8}%

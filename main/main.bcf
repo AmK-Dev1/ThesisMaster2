@@ -2189,6 +2189,11 @@
     <bcf:citekey order="5">WhoFactSheet</bcf:citekey>
     <bcf:citekey order="6">WhoBook2015</bcf:citekey>
     <bcf:citekey order="7">NhtsaBook2006</bcf:citekey>
+    <bcf:citekey order="8">WhatIsAdas</bcf:citekey>
+    <bcf:citekey order="9">SafetyTechnology</bcf:citekey>
+    <bcf:citekey order="10">SensorTechnology</bcf:citekey>
+    <bcf:citekey order="11">SensorTechnology</bcf:citekey>
+    <bcf:citekey order="12">UltrasonicSensors</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

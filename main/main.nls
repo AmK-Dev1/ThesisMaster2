@@ -2,6 +2,12 @@
 \begin{thenomenclature} 
 \nomgroup{A}
   \item [{ADAS}]\begingroup Advanced Driving assistance Systems\nomeqref {0}\nompageref{3}
+  \item [{BSM}]\begingroup Blind-Spot Monitoring\nomeqref {0}\nompageref{3}
+  \item [{DAA}]\begingroup Driver Attention Alert\nomeqref {0}\nompageref{3}
+  \item [{DAS}]\begingroup Driving assistance Systems\nomeqref {0}\nompageref{3}
+  \item [{LAS}]\begingroup lane keep assist system\nomeqref {0}\nompageref{3}
+  \item [{LIDAR}]\begingroup Light Detection and Ranging\nomeqref {0}\nompageref{3}
   \item [{NHTSA}]\begingroup National Highway Traffic Safety Administration\nomeqref {0}\nompageref{3}
+  \item [{RADAR}]\begingroup Radio Detection and Ranging\nomeqref {0}\nompageref{3}
 
 \end{thenomenclature}

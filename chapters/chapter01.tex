@@ -7,7 +7,7 @@ improve reliability, performance, and decrease costs.
 } 
 
 
-\section{Motivation}
+\section{Background and Motivation}
 
 According to the World Health Organization (WHO) \parencite{WhoFactSheet} around 1.3 million people die each year as a result of road traffic accidents, in addition to 50 million serious injuries. This cost most countries 3\% of their gross domestic product.In 2016\\
 
@@ -36,11 +36,29 @@ autonomous driving in automotive engineering, see \ref{fig:SafetyTechnologiesEvo
 \label{fig:SafetyTechnologiesEvolution}
 \end{figure}
 
-According to the figure \ref{fig:SafetyTechnologiesEvolution}, in the first level, the driver needs to drive the vehicle and focus on the road to react as soon as possible. In levels 1 and 2, driving automation applies to vehicles with advanced driving assistance systems (ADAS) that can take over steering, acceleration, and braking in specific scenarios. But, even though level 1 driver support can control these primary driving tasks. In level 3, the system detects
+According to the figure \ref{fig:SafetyTechnologiesEvolution}, in the first level, the driver needs to drive the vehicle and focus on the road to react as soon as possible. In levels 1 and 2, driving automation applies to vehicles with (ADAS) that can take over steering, acceleration, and braking in specific scenarios. But, even though level 1 driver support can control these primary driving tasks. In level 3, the system detects
 the environment to decide whether the driver needs to drive the vehicle, which is called
 conditional automation. Level 4 and level 5 indicate high automation and full automation
-respectively, which means the system will fully control the vehicle, and the driver does not
-need to do any driving operations.
+respectively, which means the system will fully control the vehicle.
+
+Among these levels, an (ADAS) is considered to be the basic and important component. Generally,  An \emph{ADAS} is an electronic system in a vehicle that uses advanced technologies to assist the driver \parencite{WhatIsAdas}. It can include many active safety systems, such as \parencite{SafetyTechnology} lane keep assist system (LAS), blind-spot monitoring (BSM), driver attention alert (DAA), and many other systems that work together to increase the safety of drivers, passengers, pedestrians, and other road users.The objective is to recognize critical driving situations by perception of the vehicle and the divers as \emph{internal parameters}, road as \emph{external parameters}, and the weather and lighting condition as \emph{additional parameters}.\\%%%%%%% Need refrence (avoid thesis of Mahdi
+
+To collect these parameters. ADAS and autonomous driving functions feed off a continuous stream of information about the environment surrounding the vehicle, and it’s the sensors’ job to provide that \parencite{SensorTechnology} see the figure \ref{fig:AdasSensors}.\\
+ 
+\begin{figure}[h]
+\centering
+\includegraphics[width=1\textwidth]{AdasSensors}
+\caption{Typical types of sensors for ADAS}
+\label{fig:AdasSensors}
+\end{figure}
+
+The most common sensors used in DAS and autonomous driving are \parencite{SensorTechnology}:\\ Ultrasonic sensors \parencite{UltrasonicSensors}, RADAR, LIDAR, Cameras.\\
+
+Ultrasonic sensors operates by transmitting short bursts of sound waves and measuring the time taken for the sound to travel to a target object, be reflected, and return to the receiver, they are usually used for short-distance applications at low speeds, such as park assist, self-parking, and blind-spot detection.
+
+
+
+
 
 
 

@@ -195,6 +195,119 @@
       \verb https://www.dspace.com/fr/fra/home/news/engineers-insights/blog_inc_adas_1607.cfm
       \endverb
     \endentry
+    \entry{UltrasonicSensors}{article}{}
+      \name{author}{1}{}{%
+        {{hash=e4439ad93872312b0baa49442ef91a04}{%
+           family={Pickering},
+           familyi={P\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {electronicdesign website}%
+      }
+      \strng{namehash}{e4439ad93872312b0baa49442ef91a04}
+      \strng{fullhash}{e4439ad93872312b0baa49442ef91a04}
+      \strng{bibnamehash}{e4439ad93872312b0baa49442ef91a04}
+      \strng{authorbibnamehash}{e4439ad93872312b0baa49442ef91a04}
+      \strng{authornamehash}{e4439ad93872312b0baa49442ef91a04}
+      \strng{authorfullhash}{e4439ad93872312b0baa49442ef91a04}
+      \field{sortinit}{P}
+      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Radar and Ultrasonic Sensors Strengthen ADAS Object Detection}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://www.electronicdesign.com/markets/automotive/article/21805470/radar-and-ultrasonic-sensors-strengthen-adas-object-detection
+      \endverb
+      \verb{url}
+      \verb https://www.electronicdesign.com/markets/automotive/article/21805470/radar-and-ultrasonic-sensors-strengthen-adas-object-detection
+      \endverb
+    \endentry
+    \entry{WhatIsAdas}{online}{}
+      \name{author}{1}{}{%
+        {{hash=aa7d702a29406816e4931de886c960e4}{%
+           family={Website},
+           familyi={W\bibinitperiod},
+           given={Aptiv},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{aa7d702a29406816e4931de886c960e4}
+      \strng{fullhash}{aa7d702a29406816e4931de886c960e4}
+      \strng{bibnamehash}{aa7d702a29406816e4931de886c960e4}
+      \strng{authorbibnamehash}{aa7d702a29406816e4931de886c960e4}
+      \strng{authornamehash}{aa7d702a29406816e4931de886c960e4}
+      \strng{authorfullhash}{aa7d702a29406816e4931de886c960e4}
+      \field{extraname}{1}
+      \field{sortinit}{W}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Mobility inside}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://www.aptiv.com/en/insights/article/what-is-adas
+      \endverb
+      \verb{url}
+      \verb https://www.aptiv.com/en/insights/article/what-is-adas
+      \endverb
+    \endentry
+    \entry{SafetyTechnology}{online}{}
+      \name{author}{1}{}{%
+        {{hash=9fcc8f1f3cdbe86045a88967e86f2666}{%
+           family={Website},
+           familyi={W\bibinitperiod},
+           given={Mazda},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{9fcc8f1f3cdbe86045a88967e86f2666}
+      \strng{fullhash}{9fcc8f1f3cdbe86045a88967e86f2666}
+      \strng{bibnamehash}{9fcc8f1f3cdbe86045a88967e86f2666}
+      \strng{authorbibnamehash}{9fcc8f1f3cdbe86045a88967e86f2666}
+      \strng{authornamehash}{9fcc8f1f3cdbe86045a88967e86f2666}
+      \strng{authorfullhash}{9fcc8f1f3cdbe86045a88967e86f2666}
+      \field{extraname}{2}
+      \field{sortinit}{W}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Active safety technology helping prevent accidents}
+      \verb{urlraw}
+      \verb https://www.mazda.com/en/innovation/technology/safety/active_safety
+      \endverb
+      \verb{url}
+      \verb https://www.mazda.com/en/innovation/technology/safety/active_safety
+      \endverb
+    \endentry
+    \entry{SensorTechnology}{online}{}
+      \name{author}{1}{}{%
+        {{hash=4176e6a4109255fba7ff517161296513}{%
+           family={Website},
+           familyi={W\bibinitperiod},
+           given={OXTS},
+           giveni={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{4176e6a4109255fba7ff517161296513}
+      \strng{fullhash}{4176e6a4109255fba7ff517161296513}
+      \strng{bibnamehash}{4176e6a4109255fba7ff517161296513}
+      \strng{authorbibnamehash}{4176e6a4109255fba7ff517161296513}
+      \strng{authornamehash}{4176e6a4109255fba7ff517161296513}
+      \strng{authorfullhash}{4176e6a4109255fba7ff517161296513}
+      \field{extraname}{3}
+      \field{sortinit}{W}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{ADAS sensors}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://www.oxts.com/adas-sensors/
+      \endverb
+      \verb{url}
+      \verb https://www.oxts.com/adas-sensors/
+      \endverb
+    \endentry
     \entry{ActivePassive}{online}{}
       \name{author}{1}{}{%
         {{hash=9c677286866aad38f8e9b660f5411814}{%
