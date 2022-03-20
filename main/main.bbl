@@ -225,6 +225,58 @@
       \verb https://www.electronicdesign.com/markets/automotive/article/21805470/radar-and-ultrasonic-sensors-strengthen-adas-object-detection
       \endverb
     \endentry
+    \entry{CamerasSensors}{online}{}
+      \name{author}{1}{}{%
+        {{hash=5c92870223d6699840f59f37930b3762}{%
+           family={rsipvision},
+           familyi={r\bibinitperiod}}}%
+      }
+      \strng{namehash}{5c92870223d6699840f59f37930b3762}
+      \strng{fullhash}{5c92870223d6699840f59f37930b3762}
+      \strng{bibnamehash}{5c92870223d6699840f59f37930b3762}
+      \strng{authorbibnamehash}{5c92870223d6699840f59f37930b3762}
+      \strng{authornamehash}{5c92870223d6699840f59f37930b3762}
+      \strng{authorfullhash}{5c92870223d6699840f59f37930b3762}
+      \field{sortinit}{r}
+      \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{ADAS sensors: 1. RGB cameras}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://www.rsipvision.com/adas-sensors-rgb-cameras/
+      \endverb
+      \verb{url}
+      \verb https://www.rsipvision.com/adas-sensors-rgb-cameras/
+      \endverb
+    \endentry
+    \entry{RadarLidarSensors}{online}{}
+      \name{author}{1}{}{%
+        {{hash=0a135b5122b93212b81f2634cca5113a}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={Grant\bibnamedelima Maloy},
+           giveni={G\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{0a135b5122b93212b81f2634cca5113a}
+      \strng{fullhash}{0a135b5122b93212b81f2634cca5113a}
+      \strng{bibnamehash}{0a135b5122b93212b81f2634cca5113a}
+      \strng{authorbibnamehash}{0a135b5122b93212b81f2634cca5113a}
+      \strng{authornamehash}{0a135b5122b93212b81f2634cca5113a}
+      \strng{authorfullhash}{0a135b5122b93212b81f2634cca5113a}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Types of ADAS Sensors in Use Today}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://dewesoft.com/daq/types-of-adas-sensors
+      \endverb
+      \verb{url}
+      \verb https://dewesoft.com/daq/types-of-adas-sensors
+      \endverb
+    \endentry
     \entry{WhatIsAdas}{online}{}
       \name{author}{1}{}{%
         {{hash=aa7d702a29406816e4931de886c960e4}{%
@@ -280,6 +332,34 @@
       \verb https://www.mazda.com/en/innovation/technology/safety/active_safety
       \endverb
     \endentry
+    \entry{DIPGeeks}{online}{}
+      \name{author}{1}{}{%
+        {{hash=666e855ccd7641aaa435da37b9326c8d}{%
+           family={website},
+           familyi={w\bibinitperiod},
+           given={Nishant\bibnamedelimb Kumar.\bibnamedelimi GeeksforGeeks},
+           giveni={N\bibinitperiod\bibinitdelim K\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \strng{namehash}{666e855ccd7641aaa435da37b9326c8d}
+      \strng{fullhash}{666e855ccd7641aaa435da37b9326c8d}
+      \strng{bibnamehash}{666e855ccd7641aaa435da37b9326c8d}
+      \strng{authorbibnamehash}{666e855ccd7641aaa435da37b9326c8d}
+      \strng{authornamehash}{666e855ccd7641aaa435da37b9326c8d}
+      \strng{authorfullhash}{666e855ccd7641aaa435da37b9326c8d}
+      \field{extraname}{1}
+      \field{sortinit}{w}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Digital Image Processing Basics}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://www.geeksforgeeks.org/digital-image-processing-basics/
+      \endverb
+      \verb{url}
+      \verb https://www.geeksforgeeks.org/digital-image-processing-basics/
+      \endverb
+    \endentry
     \entry{SensorTechnology}{online}{}
       \name{author}{1}{}{%
         {{hash=4176e6a4109255fba7ff517161296513}{%
@@ -306,6 +386,62 @@
       \endverb
       \verb{url}
       \verb https://www.oxts.com/adas-sensors/
+      \endverb
+    \endentry
+    \entry{DIPViva}{online}{}
+      \name{author}{1}{}{%
+        {{hash=46e5a9dba8386c48b9a353284d99f5fd}{%
+           family={website},
+           familyi={w\bibinitperiod},
+           given={Vivadifferences},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{46e5a9dba8386c48b9a353284d99f5fd}
+      \strng{fullhash}{46e5a9dba8386c48b9a353284d99f5fd}
+      \strng{bibnamehash}{46e5a9dba8386c48b9a353284d99f5fd}
+      \strng{authorbibnamehash}{46e5a9dba8386c48b9a353284d99f5fd}
+      \strng{authornamehash}{46e5a9dba8386c48b9a353284d99f5fd}
+      \strng{authorfullhash}{46e5a9dba8386c48b9a353284d99f5fd}
+      \field{extraname}{2}
+      \field{sortinit}{w}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Difference Between Sampling And Quantization In Digital Image Processing}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://vivadifferences.com/difference-between-sampling-and-quantization-in-digital-image-processing/
+      \endverb
+      \verb{url}
+      \verb https://vivadifferences.com/difference-between-sampling-and-quantization-in-digital-image-processing/
+      \endverb
+    \endentry
+    \entry{DIPMeduim}{online}{}
+      \name{author}{1}{}{%
+        {{hash=03e167eb71b86048875c6c24f56db931}{%
+           family={website},
+           familyi={w\bibinitperiod},
+           given={Wimarshika\bibnamedelimb Thamali\bibnamedelima Meduim},
+           giveni={W\bibinitperiod\bibinitdelim T\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{03e167eb71b86048875c6c24f56db931}
+      \strng{fullhash}{03e167eb71b86048875c6c24f56db931}
+      \strng{bibnamehash}{03e167eb71b86048875c6c24f56db931}
+      \strng{authorbibnamehash}{03e167eb71b86048875c6c24f56db931}
+      \strng{authornamehash}{03e167eb71b86048875c6c24f56db931}
+      \strng{authorfullhash}{03e167eb71b86048875c6c24f56db931}
+      \field{extraname}{3}
+      \field{sortinit}{w}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Sampling and Quantization in Digital Image Processing}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://wimarshikathamali1995.medium.com/sampling-quantization-in-digital-image-processing-8c4490357039
+      \endverb
+      \verb{url}
+      \verb https://wimarshikathamali1995.medium.com/sampling-quantization-in-digital-image-processing-8c4490357039
       \endverb
     \endentry
     \entry{ActivePassive}{online}{}

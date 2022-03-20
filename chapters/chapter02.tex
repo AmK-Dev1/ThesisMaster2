@@ -1,0 +1,36 @@
+\chapter{Theory and Concepts}
+
+\emph{
+In this chapter, we will simply introduce some basic concepts, methods, and mathematical background that we use in this thesis. We also provide symbols, image notations, and the equations that will be consistently used in the following chapters.
+}
+
+
+\section{Digital Image Processing Basics}
+\emph{Digital Image Processing means processing digital image by means of a digital computer. We can also say that it is a use of computer algorithms, in order to get enhanced image either to extract some useful information \parencite{DIPGeeks}.}\\
+
+
+In Digital Image Processing, signals captured from the physical world need to be translated into digital form by Digitization\footnote{Digitization: is the process of converting information into a digital (i.e. computer-readable) format.} Process. In order to become suitable for digital processing.
+
+An image is defined as a two-dimensional function,I(x,y), where x and y are spatial coordinates, and the amplitude of I at any pair of coordinates (x,y) is called the intensity of that image at that point.An image must be digitized both spatially and in amplitude \parencite{DIPGeeks}. This digitization process involves two main processes \emph{Sampling}, and \emph{Quantization} \parencite{DIPMeduim}.
+
+\subsection{Sampling}
+In digital image processing, Sampling is the reduction of a continuous-time signal to a discrete-time signal.Since an analogue image is continuous not just in its co-ordinates (x axis), but also in its amplitude (y axis), so the part that deals with the digitizing of co-ordinates is known as sampling \parencite{DIPViva}, see Figure \ref{fig:Sampling} .
+
+\subsection{Quantization}
+Quantization is the process of mapping input values from a large set to output values in a smaller set, often with a finite number of elements. Quantization is the opposite of sampling, It is done on the y-axis \parencite{DIPViva}, see Figure \ref{fig:Quantization}
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.4\textwidth]{Sampling}
+\caption{Sampling an analogue signal}
+\label{fig:Sampling}
+\end{figure}
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.4\textwidth]{Quantization}
+\caption{Example of Quantization}
+\label{fig:Quantization}
+\end{figure}

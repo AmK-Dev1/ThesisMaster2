@@ -7,14 +7,13 @@ improve reliability, performance, and decrease costs.
 } 
 
 
-\section{Background and Motivation}
+\section{Background and Problems}
 
 According to the World Health Organization (WHO) \parencite{WhoFactSheet} around 1.3 million people die each year as a result of road traffic accidents, in addition to 50 million serious injuries. This cost most countries 3\% of their gross domestic product.In 2016\\
 
 The report also highlights More than 90\% of road traffic deaths occur in low- and middle-income countries. Road traffic injury death rates are highest in the African region. Even within high-income countries, people from lower socioeconomic backgrounds are more likely to be involved in road traffic crashes.\\
- 
-Although current "\emph{passive}"  and "\emph{active}" safety systems \parencite{ActivePassive} can reduce the impact
-of traffic accidents, only a few car accidents are caused by bad weather and unsafe road infrastructure while most by human fault \parencite{HumanFault}, such as: \parencite{WhoFactSheet} \\ 
+
+Although current "\emph{passive}"\footnote{Passive systems such as air-bags, seat belts, padded dashboards, or physical structure of a vehicle, normally help to reduce the severity or the consequences of an accident.}  and "\emph{active}"\footnote{Active systems like adaptive cruise control (ACC), automatic braking systems (ABS), or lane departure warning systems (LDWS) are designed to prevent or decrease the chance of crash occurrence.} safety systems \parencite{ActivePassive} can reduce the impact of traffic accidents, only a few car accidents are caused by bad weather and unsafe road infrastructure while most by human fault \parencite{HumanFault}, such as: \parencite{WhoFactSheet} \\ 
 -Speeding \\
 -Driving under the influence of alcohol and other psychoactive substances\\
 -Nonuse of motorcycle helmets, seat-belts, and child restraints\\
@@ -25,6 +24,7 @@ time to realize the road status, which leads to car accidents.\\
 
 These shocking statistics highlight the importance of research and development of advanced driver assistance systems (ADAS) focusing on \emph{"Driver Monitoring"} by driver behavior analysis as well as \emph{"Road Monitoring"} by road hazards detection.\\ 
 
+\section{Motivation}
 
 Various driving assistant systems have been developed in automotive engineering, the U.S. National Highway Traffic Safety Administration (NHTSA) defined six levels of automation from level 0 to level 5, which describes the relationship from no autonomous driving to fully
 autonomous driving in automotive engineering, see \ref{fig:SafetyTechnologiesEvolution} .
@@ -52,16 +52,30 @@ To collect these parameters. ADAS and autonomous driving functions feed off a co
 \label{fig:AdasSensors}
 \end{figure}
 
-The most common sensors used in DAS and autonomous driving are \parencite{SensorTechnology}:\\ Ultrasonic sensors \parencite{UltrasonicSensors}, RADAR, LIDAR, Cameras.\\
+The three main sensors used by the automotive industry to maintain the perception for autonomous vehicles at various levels of autonomy are
+\parencite{SensorTechnology}:\\ Ultrasonic sensors \parencite{UltrasonicSensors}, (RADAR, LIDAR) \parencite{RadarLidarSensors}, Cameras \parencite{CamerasSensors}.\\
 
-Ultrasonic sensors operates by transmitting short bursts of sound waves and measuring the time taken for the sound to travel to a target object, be reflected, and return to the receiver, they are usually used for short-distance applications at low speeds, such as park assist, self-parking, and blind-spot detection.
+Ultrasonic sensors operates by transmitting short bursts of sound waves and measuring the time taken for the sound to travel to a target object, be reflected, and return to the receiver, they are usually used for short-distance applications at low speeds, such as park assist, self-parking, and blind-spot detection.\\
+
+RADAR (Radio Detection and Ranging)  sensors emit radio waves and analyse the bounced wave via a receiver. Because RADAR signals can range 300 meters in front of the vehicle, they are particularly important during highway speed driving. Additionally, RADAR can see through bad weather and other visibility occlusions. Because their wavelengths are just a few millimeters long, they can detect objects of several cm or larger . LiDAR (Light Detection and Ranging) systems are used to detect objects and map their distances in real-time. Essentially, LiDAR is a type of RADAR that uses one or more lasers as the energy source. LIDARs can provide a higher resolution result but in a narrower angular field.\\
+
+Camera sensors are similar to regular consumer cameras, like those that equip most smartphones. They are cheaper than both RADAR and LIDAR sensors. They can be adapted to any vehicle and any user can use them with no difficulty. For many years the fields of computer vision and image processing have used them to solve their problems. On the other hand, camera’s performance drops dramatically under bad lighting  conditions and they generally need a more complicated post-processing (image processing, image classification, and object detection) in order to convert the raw perceived images into a meaningful information. \\
 
 
+Each of the above mentioned sensors have advantages and disadvantages, so that the ideal system would be a combination of all three.
 
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Here add some contribution talk .....  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \section{Related Work} 
 
-Bla Bla Bla
+There is a wide range of research topics under the umbrella of road safety and driver assistance systems (DAS) such as \emph{traffic signs recognition} [x], \emph{lane detection} [x] \emph{pedestrian detection} [x], \emph{vehicle detection} [x], and \emph{driver behaviour monitoring} [x] including driver fatigue, drowsiness and distraction detection. However, at a higher level, the research could be classified into two main categories: the research related to “Road monitoring” and the research works that focus on the “Driver monitoring”.
+
+\subsection{Driver monitoring}
+bla bla bla 
+\subsection{Road monitoring}
+bla bla bla
+
+
+\section{Thesis Organization}
+bla bla bla

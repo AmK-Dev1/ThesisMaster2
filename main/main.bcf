@@ -2194,6 +2194,13 @@
     <bcf:citekey order="10">SensorTechnology</bcf:citekey>
     <bcf:citekey order="11">SensorTechnology</bcf:citekey>
     <bcf:citekey order="12">UltrasonicSensors</bcf:citekey>
+    <bcf:citekey order="13">RadarLidarSensors</bcf:citekey>
+    <bcf:citekey order="14">CamerasSensors</bcf:citekey>
+    <bcf:citekey order="15">DIPGeeks</bcf:citekey>
+    <bcf:citekey order="16">DIPGeeks</bcf:citekey>
+    <bcf:citekey order="17">DIPMeduim</bcf:citekey>
+    <bcf:citekey order="18">DIPViva</bcf:citekey>
+    <bcf:citekey order="19">DIPViva</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
