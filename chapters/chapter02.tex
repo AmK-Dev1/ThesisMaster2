@@ -19,18 +19,50 @@ In digital image processing, Sampling is the reduction of a continuous-time sign
 \subsection{Quantization}
 Quantization is the process of mapping input values from a large set to output values in a smaller set, often with a finite number of elements. Quantization is the opposite of sampling, It is done on the y-axis \parencite{DIPViva}, see Figure \ref{fig:Quantization}
 
-
 \begin{figure}[h]
-\centering
-\includegraphics[width=0.4\textwidth]{Sampling}
-\caption{Sampling an analogue signal}
-\label{fig:Sampling}
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.9\linewidth]{Sampling}  
+  \caption{Sampling}
+  \label{fig:Sampling}
+\end{subfigure}
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.9\linewidth]{Quantization}  
+  \caption{Quantization}
+  \label{fig:Quantization}
+\end{subfigure}
+\caption{Sampling and Quantization}
+\label{fig:SamplingAndQuantization}
 \end{figure}
 
+A digital image is typically composed of picture elements (pixels) located at the intersection of each row "\textbf{I}" and column "\textbf{J}" in each "\textbf{N}" color channels \parencite{MinakshiKumar}.
+Digital images are stored in the form of a matrix of numbers where these numbers represent the intensity of each pixel, the range of these numbers (pixel values) is relative to the \textbf{Bit depth}\footnote{The bit depth "\textbf{k}" is the number of bits per pixel, the grey scale of an image is equal to $2^k$}, in general images are stored in 8 byte that means $2^8 = 256$ possible values.
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.4\textwidth]{Quantization}
-\caption{Example of Quantization}
-\label{fig:Quantization}
+\begin{figure}[!h]
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.6\linewidth]{number8}  
+  \caption{Matrix of pixels}
+  \label{fig:MatrixOfPixels}
+\end{subfigure}
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.6\linewidth]{matrix8}  
+  \caption{pixels values}
+  \label{fig:PixelValues}
+\end{subfigure}
+\caption{Gray scale image of Handwritten digit}
+\label{fig:GrayScaleImageOfHandwrittenDigit}
 \end{figure}
+
+\section{Color Models}
+
+\emph{
+Generally, images that are captured by camera sensors are color images, by default they use RGB color model \parencite{RgbAndCameras}, and because in the following chapters we mainly work on grayscale images like in Figure \ref{fig:GrayScaleImageOfHandwrittenDigit} we need to do a color space conversion. In this section, we will introduce briefly some basic concepts related to color models used in digital image processing and color space conversion
+}
+
+\subsection{RGB to Grayscale}
+Bla bla bla
+\subsubsection{RGB to HSV}
+Bla bla bla

@@ -1,23 +1,26 @@
 \documentclass[a4paper,12pt]{report}
 
 \usepackage[utf8]{inputenc}
-\usepackage{graphicx}
+
 \usepackage[a4paper , hmargin=2cm,vmargin=2cm ]{geometry}
-\renewcommand{\baselinestretch}{1.33}
 
 \usepackage{graphicx}
 \graphicspath{ {../images/} }
+\usepackage{subcaption}
 
 \usepackage{fancyhdr}
 \fancypagestyle{plain}{}
 \pagestyle{fancy}
+%baselinestretch (lespaces bin les lignes )
+\renewcommand{\baselinestretch}{1.33}
+\renewcommand{\headrulewidth}{0.3pt}
+\renewcommand{\footrulewidth}{0.3pt}
+
 
 \usepackage[backend=biber]{biblatex}
 \addbibresource{references.bib}
-
 \usepackage[english]{nomencl}
 \makenomenclature
-
 
 \title{
 {Ai approach for road Safety}\\

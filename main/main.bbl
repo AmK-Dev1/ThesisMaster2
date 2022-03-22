@@ -117,6 +117,29 @@
       \field{title}{The impact of driver inattention on near-crash/crash risk: An analysis using the 100-car naturalistic driving study data}
       \field{year}{2006}
     \endentry
+    \entry{MinakshiKumar}{report}{}
+      \name{author}{1}{}{%
+        {{hash=9ecd133dce49c201e95a07c577982b2a}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={Minakshi},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Indian Institute of Remote Sensing, Dehra Dun}%
+      }
+      \strng{namehash}{9ecd133dce49c201e95a07c577982b2a}
+      \strng{fullhash}{9ecd133dce49c201e95a07c577982b2a}
+      \strng{bibnamehash}{9ecd133dce49c201e95a07c577982b2a}
+      \strng{authorbibnamehash}{9ecd133dce49c201e95a07c577982b2a}
+      \strng{authornamehash}{9ecd133dce49c201e95a07c577982b2a}
+      \strng{authorfullhash}{9ecd133dce49c201e95a07c577982b2a}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{DIGITAL IMAGE PROCESSING}
+    \endentry
     \entry{WhoFactSheet}{report}{}
       \name{author}{1}{}{%
         {{hash=8179b1fdebe9235e54501d2878c47e1b}{%
@@ -414,6 +437,33 @@
       \endverb
       \verb{url}
       \verb https://vivadifferences.com/difference-between-sampling-and-quantization-in-digital-image-processing/
+      \endverb
+    \endentry
+    \entry{RgbAndCameras}{online}{}
+      \name{author}{1}{}{%
+        {{hash=62b676bbba9859a6e9f9d2e0bfb88202}{%
+           family={website},
+           familyi={w\bibinitperiod},
+           prefix={wikipedia},
+           prefixi={w\bibinitperiod}}}%
+      }
+      \strng{namehash}{62b676bbba9859a6e9f9d2e0bfb88202}
+      \strng{fullhash}{62b676bbba9859a6e9f9d2e0bfb88202}
+      \strng{bibnamehash}{62b676bbba9859a6e9f9d2e0bfb88202}
+      \strng{authorbibnamehash}{62b676bbba9859a6e9f9d2e0bfb88202}
+      \strng{authornamehash}{62b676bbba9859a6e9f9d2e0bfb88202}
+      \strng{authorfullhash}{62b676bbba9859a6e9f9d2e0bfb88202}
+      \field{sortinit}{w}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{RGB color model}
+      \field{year}{last edit 2022}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/wiki/RGB_color_model
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/RGB_color_model
       \endverb
     \endentry
     \entry{DIPMeduim}{online}{}
