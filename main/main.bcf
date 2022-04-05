@@ -2203,6 +2203,10 @@
     <bcf:citekey order="19">DIPViva</bcf:citekey>
     <bcf:citekey order="20">MinakshiKumar</bcf:citekey>
     <bcf:citekey order="21">RgbAndCameras</bcf:citekey>
+    <bcf:citekey order="22">RGBTOGRAY</bcf:citekey>
+    <bcf:citekey order="23">PaulViola</bcf:citekey>
+    <bcf:citekey order="24">Classification</bcf:citekey>
+    <bcf:citekey order="25">PaulViola</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

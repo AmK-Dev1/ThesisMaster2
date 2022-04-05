@@ -26,4 +26,14 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.1}RGB to Grayscale}{13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{RGB to HSV}{13}%
+\contentsline {subsubsection}{Average method}{13}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{The Weighted Method}{13}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Image Values and Statistics}{14}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.4}Integral Image}{14}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.5}Classification}{15}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.6}Haar Feature-based Classifiers}{16}%
