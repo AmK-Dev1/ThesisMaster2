@@ -2,16 +2,20 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.1}{\ignorespaces The Evolution of Automated Safety Technologies\relax }}{7}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces The Evolution of Automated Safety Technologies\relax }}{8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Typical types of sensors for ADAS\relax }}{8}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Typical types of sensors for ADAS\relax }}{9}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Sampling and Quantization\relax }}{12}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Sampling and Quantization\relax }}{13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Gray scale image of Handwritten digit\relax }}{12}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Gray scale image of Handwritten digit\relax }}{13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Calculation of integral values and integral image\relax }}{14}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Calculation of integral values and integral image\relax }}{15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Common types of Haar-like features\relax }}{16}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Common types of Haar-like features\relax }}{17}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Example of Haar-feature matches in eyes\relax }}{17}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.6}{\ignorespaces A cascade of weak-classifiers\relax }}{18}%

@@ -146,5 +146,78 @@ $$ PR = \frac{TP}{TP + FP} \quad\quad   RR = \frac{TP}{TP + FN} \quad\quad ACC =
 \label{fig:HaarLikeFeatures}
 \end{figure}
 
+The common types of Haar-like features are \emph{Line Features},\emph{Edge features}, and \emph{Diagonal features}. They are just like the convolutional kernel. Each feature is a single value obtained by subtracting the sum of pixels under the white rectangle from the sum of pixels under the black rectangle, to reduce these computations they use the integral image. These features are very important in the context of face detection because they can detect a face based on the face's properties see Figure \ref{fig:HaarLikeFeaturesDetection}.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=.6\textwidth]{face_props}
+\caption{Example of Haar-feature matches in eyes}
+\label{fig:HaarLikeFeaturesDetection}
+\end{figure}
+
+\newpage Consider the Figure \ref{fig:HaarLikeFeaturesDetection}. The top row shows two good features. The first feature selected seems to focus on the property that the region of the eyes is often darker than the region of the nose and cheeks. The second feature selected relies on the property that the eyes are darker than the bridge of the nose.\\
+
+A \emph{strong classifier} comprises of a series of weak classifiers (normally more than 10), and a weak classifier itself includes a set of a few Haar features (normally 2 to 5).
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=.8\textwidth]{classifiers_haar}
+\caption{A cascade of weak-classifiers}
+\label{fig:CascadeOfWeakClassifiers}
+\end{figure}
+
+Figure \ref{fig:CascadeOfWeakClassifiers} visualizes a cascade of weak classifiers, that all together make a strong
+classifier. The classifier starts with the first weak classifier by evaluating the region of interest (ROI). It proceeds to the second stage (second weak classifier) if all the Haar-features in the first weak classifier match with the ROI, and so on, until reaching the final stage; otherwise the search-region under the sliding window will be rejected as non-object. Then the sliding window moves to the next neighbour ROI. If all the Haar-features within the all weak classifiers, successfully match with the ROI, then the region will be marked with a bonding box as a detected object. \\
+
+The process of selecting appropriate Haar-features for each weak classifier, and
+then for the whole strong classifier constitutes the training phase which could be done using a machine learning technique like AdaBoost algorithm \parencite{Adaboost}.
+
+\newpage
+\subsection{AdaBoost algorithm}
+\emph{is an approach to machine learning based on the idea of creating a highly accurate prediction rule by combining many relatively weak and inaccurate rules. The AdaBoost algorithm of Freund and Schapire was the first practical boosting algorithm, and remains one of the most widely used and studied, with applications in numerous fields \parencite{Adaboost}.}
+
+\begin{algorithm}[h]
+  \caption{The AdaBoost algorithm for classifier learning.}
+  \begin{itemize}
+  	\item 
+  	Given example images $(x_1,y_1),...,(x_n,y_n)$ where $y_i = 0,1$ for negative and positive examples respectively. 
+
+    \item
+    Initialize the weights $w_{1,i} = \frac{1}{2m}, \frac{1}{2l}$ for $y_i = 0,1 $ respectively, where $m$ and $l$ are the number of negatives and positives respectively. 
+
+    \item
+    For $t = 1$ to $T$:
+    
+    \begin{enumerate}
+	  \item
+	  Normalize the weights,
+	  $$w_{t,i} \leftarrow \frac{ w_{t,i} } { \sum_{j=1}^{n} w_{t,j}} $$    
+	  so that $w_t$ is a probability distribution.
+	
+	 \item
+	  For each feature, $j$, train a classifier $h_j$ which is restricted to using a single feature. The error is evaluated with respect to 
+	  $$w_t , \epsilon_j = \sum_{i} w_i |h_j(x_i)-y_i|$$
+	  
+	  \item
+	  Choose the classifier, $h_t$,with the lowest error $\epsilon_t$.
+	  
+	  \item
+	  Update the weights:
+	  $$w_{t+1,i} = w_{t,i}\beta_{t}^{1-e_i}$$
+	  
+	  where $e_i = 0$ if example $x_i$ is classified coreectly, $e_i = 1$ otherwise,and $\beta_t = \frac{\epsilon_t}{1-\epsilon_t}$ 
+      
+    \end{enumerate}
+	
+   \item
+   The final strong classifier is:
+
+   $$ h(x) = \{_{o \quad\quad otherwise}^{1 \quad\quad \sum_{t=1}^{T} \alpha_t h_t(x) \geq \frac{1}{2} \sum_{t=1}^{T} \alpha_t } \} $$
+  
+   where $\alpha_t = \log \frac{1}{\beta_t}$  
+  \end{itemize}
+\end{algorithm}
+
+
 
 

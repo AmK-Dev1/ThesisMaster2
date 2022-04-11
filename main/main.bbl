@@ -273,6 +273,33 @@
       \verb https://www.rsipvision.com/adas-sensors-rgb-cameras/
       \endverb
     \endentry
+    \entry{Adaboost}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=08900c47ecc2f4dbcb934ad47bb6db9b}{%
+           family={Schapire},
+           familyi={S\bibinitperiod},
+           given={Robert\bibnamedelima E},
+           giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{08900c47ecc2f4dbcb934ad47bb6db9b}
+      \strng{fullhash}{08900c47ecc2f4dbcb934ad47bb6db9b}
+      \strng{bibnamehash}{08900c47ecc2f4dbcb934ad47bb6db9b}
+      \strng{authorbibnamehash}{08900c47ecc2f4dbcb934ad47bb6db9b}
+      \strng{authornamehash}{08900c47ecc2f4dbcb934ad47bb6db9b}
+      \strng{authorfullhash}{08900c47ecc2f4dbcb934ad47bb6db9b}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Empirical inference}
+      \field{title}{Explaining adaboost}
+      \field{year}{2013}
+      \field{pages}{37\bibrangedash 52}
+      \range{pages}{16}
+    \endentry
     \entry{RadarLidarSensors}{online}{}
       \name{author}{1}{}{%
         {{hash=0a135b5122b93212b81f2634cca5113a}{%

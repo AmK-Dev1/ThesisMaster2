@@ -2207,6 +2207,8 @@
     <bcf:citekey order="23">PaulViola</bcf:citekey>
     <bcf:citekey order="24">Classification</bcf:citekey>
     <bcf:citekey order="25">PaulViola</bcf:citekey>
+    <bcf:citekey order="26">Adaboost</bcf:citekey>
+    <bcf:citekey order="27">Adaboost</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

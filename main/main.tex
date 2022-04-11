@@ -6,6 +6,11 @@
 \usepackage{subcaption}
 \usepackage{fancyhdr}
 
+\usepackage{algorithm,amsmath,lipsum,xcolor,caption}
+\DeclareMathOperator{\sgn}{sign}
+\renewcommand{\thealgorithm}{\thechapter.\arabic{algorithm}}
+
+
 \fancypagestyle{plain}{}
 \pagestyle{fancy}
 %baselinestretch (lespaces bin les lignes )
@@ -18,6 +23,7 @@
 \addbibresource{references.bib}
 \usepackage[english]{nomencl}
 \makenomenclature
+
 
 \title{
 {Ai approach for road Safety}\\
@@ -46,6 +52,7 @@ I want to thank...
 
 \tableofcontents
 \listoffigures
+\listofalgorithms
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Nomenclature %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \nomenclature{ADAS}{Advanced Driving assistance Systems}
@@ -63,7 +70,7 @@ I want to thank...
 \nomenclature{PR}{Precision rate}
 \nomenclature{RR}{Recall rate}
 \nomenclature{ACC}{Accuracy}
-
+\nomenclature{ROI}{Reagion of Interest}
 
 
 \printnomenclature
