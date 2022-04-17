@@ -2204,11 +2204,24 @@
     <bcf:citekey order="20">MinakshiKumar</bcf:citekey>
     <bcf:citekey order="21">RgbAndCameras</bcf:citekey>
     <bcf:citekey order="22">RGBTOGRAY</bcf:citekey>
-    <bcf:citekey order="23">PaulViola</bcf:citekey>
-    <bcf:citekey order="24">Classification</bcf:citekey>
+    <bcf:citekey order="23">Classification</bcf:citekey>
+    <bcf:citekey order="24">PaulViola</bcf:citekey>
     <bcf:citekey order="25">PaulViola</bcf:citekey>
     <bcf:citekey order="26">Adaboost</bcf:citekey>
     <bcf:citekey order="27">Adaboost</bcf:citekey>
+    <bcf:citekey order="28">DrowsinessDetectionSystem</bcf:citekey>
+    <bcf:citekey order="29">DrowsinessDetectionSystem</bcf:citekey>
+    <bcf:citekey order="30">DrowsinessDetectionSystem</bcf:citekey>
+    <bcf:citekey order="31">EvaluationOfTechnologies</bcf:citekey>
+    <bcf:citekey order="32">Zilberg2007MethodologyAI</bcf:citekey>
+    <bcf:citekey order="33">DrowsinessSigns</bcf:citekey>
+    <bcf:citekey order="34">HaarFeaturesUses</bcf:citekey>
+    <bcf:citekey order="35">Open Source Computer Vision</bcf:citekey>
+    <bcf:citekey order="35">is a library of programming functions mainly aimed at real-time computer vision. Originally developed by Intel</bcf:citekey>
+    <bcf:citekey order="35">it was later supported by Willow Garage then Itseez.</bcf:citekey>
+    <bcf:citekey order="36">PyImageSearchHaarCascades</bcf:citekey>
+    <bcf:citekey order="37">OpenCvHaarCascades</bcf:citekey>
+    <bcf:citekey order="38">HaarFeaturesUses</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

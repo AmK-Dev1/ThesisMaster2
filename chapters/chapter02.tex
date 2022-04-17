@@ -95,6 +95,22 @@ $$ variance  =  \frac{1}{XY}  \sum_{i=1}^{X}  \sum_{j}^{Y}  | I(i,j) - mean|^2  
 \textbf{Energy}: 
 $$ energy  =  \frac{1}{XY}  \sum_{i=1}^{X}  \sum_{j}^{Y}  | I(i,j)|^2  $$
 
+\section{Classification}
+
+Classification is a process that uses a set of features or parameters to recognize an object. In this thesis we use supervised classification techniques, which means that an expert defines the classes of objects (e.g., face, eye, vehicles), and also provides a set of sample objects for a given class which is called training set. Regardless of the chosen classification technique (e.g., neural networks, decision trees, or nearest neighbour rule), we have two phases to construct a classifier: a training phase and an application phase.\\
+
+Based on the provided training dataset, a classifier learns to use which set of features, parameters, and weights to be combined together in order to distinguish objects from non-objects. In the application phase, the classifier applies the already trained features and weights to an unknown query image to detect similar objects, based on what is has previously learned from the training set.\\
+
+Regardless of the classification technique, the performance of a classifier can be evaluated based on the detection efficiency. Let \textbf{TP} denotes the number of true-positives or hit, when a classifiers can correctly detect the objects. Also let \textbf{FP} be the number of false-positives or miss, when a classifier wrongly detects a non-object as an object. Similarly, we can define true-negatives \textbf{(TN)} and false-negatives \textbf{(FN)} to describe correct classification of non-objects and the missing objects, respectively. Although we always can measure (count) the number of \textbf{FN}, we can not simply define the number of \textbf{TN} for an application such as vehicle detection in a road scene.\\ 
+
+That is because the background of an image in basically uncountable. Therefore, for performance evaluation of a classifier we mainly rely on evaluations using TP, FP, and FN.
+
+We define the precision-rate (PR), recall-rate (RR), and accuracy (ACC) as follows \parencite{Classification} :
+
+$$ PR = \frac{TP}{TP + FP} \quad\quad   RR = \frac{TP}{TP + FN} \quad\quad ACC = \frac{TP + TN}{TP + FN + TN +FP}  $$
+
+\newpage Where PR is the ratio of true-positives to all detections by the classifier, RR is the ratio of true-positives to the total number of actual existing objects (i.e. the ground truth objects) in the analysed frames, and ACC is defined as the number of classifications a model correctly predicts divided by the total number of predictions made. It's a way of assessing the performance of a model.
+
 \section{Integral Image}
 \emph{
 For a given image I, the integral image $I_{int}$ , which was first used by Viola and Jones in computer vision \parencite{PaulViola}, is the summation of all pixel values in the image, or in a window (sub-image).
@@ -117,23 +133,6 @@ Taking the figure \ref{fig:IntegralImage} as an example, The sum of the pixels w
 Having the integral values of each pixel calculated and saved in a data structure
 array, we can calculate the integral image of any image or sub-image just by applying one addition and two subtraction operations. This is very fast and cost-efficient
 for real-time feature-based classification algorithms, with a computational complexity of $O(N_{cols} N_{rows})$.
-
-
-\section{Classification}
-
-Classification is a process that uses a set of features or parameters to recognize an object. In this thesis we use supervised classification techniques, which means that an expert defines the classes of objects (e.g., face, eye, vehicles), and also provides a set of sample objects for a given class which is called training set. Regardless of the chosen classification technique (e.g., neural networks, decision trees, or nearest neighbour rule), we have two phases to construct a classifier: a training phase and an application phase.\\
-
-Based on the provided training dataset, a classifier learns to use which set of features, parameters, and weights to be combined together in order to distinguish objects from non-objects. In the application phase, the classifier applies the already trained features and weights to an unknown query image to detect similar objects, based on what is has previously learned from the training set.\\
-
-Regardless of the classification technique, the performance of a classifier can be evaluated based on the detection efficiency. Let \textbf{TP} denotes the number of true-positives or hit, when a classifiers can correctly detect the objects. Also let \textbf{FP} be the number of false-positives or miss, when a classifier wrongly detects a non-object as an object. Similarly, we can define true-negatives \textbf{(TN)} and false-negatives \textbf{(FN)} to describe correct classification of non-objects and the missing objects, respectively. Although we always can measure (count) the number of \textbf{FN}, we can not simply define the number of \textbf{TN} for an application such as vehicle detection in a road scene.\\ 
-
-That is because the background of an image in basically uncountable. Therefore, for performance evaluation of a classifier we mainly rely on evaluations using TP, FP, and FN.
-
-We define the precision-rate (PR), recall-rate (RR), and accuracy (ACC) as follows \parencite{Classification} :
-
-$$ PR = \frac{TP}{TP + FP} \quad\quad   RR = \frac{TP}{TP + FN} \quad\quad ACC = \frac{TP + TN}{TP + FN + TN +FP}  $$
-
-\newpage Where PR is the ratio of true-positives to all detections by the classifier, RR is the ratio of true-positives to the total number of actual existing objects (i.e. the ground truth objects) in the analysed frames, and ACC is defined as the number of classifications a model correctly predicts divided by the total number of predictions made. It's a way of assessing the performance of a model.
 
 
 \section{Haar Feature-based Classifiers}

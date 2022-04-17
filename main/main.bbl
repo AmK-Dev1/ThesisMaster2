@@ -19,6 +19,33 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{HaarFeaturesUses}{online}{}
+      \name{author}{1}{}{%
+        {{hash=6956acb811998503f1b88d4fe502713a}{%
+           family={Behera},
+           familyi={B\bibinitperiod},
+           given={Girija\bibnamedelima Shankar},
+           giveni={G\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{6956acb811998503f1b88d4fe502713a}
+      \strng{fullhash}{6956acb811998503f1b88d4fe502713a}
+      \strng{bibnamehash}{6956acb811998503f1b88d4fe502713a}
+      \strng{authorbibnamehash}{6956acb811998503f1b88d4fe502713a}
+      \strng{authornamehash}{6956acb811998503f1b88d4fe502713a}
+      \strng{authorfullhash}{6956acb811998503f1b88d4fe502713a}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Face Detection with Haar Cascade}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://towardsdatascience.com/face-detection-with-haar-cascade-727f68dafd08
+      \endverb
+      \verb{url}
+      \verb https://towardsdatascience.com/face-detection-with-haar-cascade-727f68dafd08
+      \endverb
+    \endentry
     \entry{HumanFault}{inproceedings}{}
       \name{author}{6}{}{%
         {{hash=49817d321882eea7b3720975a9e5d313}{%
@@ -69,6 +96,40 @@
       \range{pages}{6}
       \verb{doi}
       \verb 10.23919/ChiCC.2019.8866334
+      \endverb
+    \endentry
+    \entry{DrowsinessSigns}{online}{}
+      \name{author}{2}{}{%
+        {{hash=ff13ca2cafb4a1126605a16fc82bae0d}{%
+           family={Chronic\bibnamedelimb Disease\bibnamedelima Prevention},
+           familyi={C\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim P\bibinitperiod},
+           given={National\bibnamedelima Center},
+           giveni={N\bibinitperiod\bibinitdelim C\bibinitperiod},
+           prefix={for},
+           prefixi={f\bibinitperiod}}}%
+        {{hash=cc5eec4b32891fa2b17ceda2cc7c1387}{%
+           family={Health\bibnamedelima Promotion},
+           familyi={H\bibinitperiod\bibinitdelim P\bibinitperiod},
+           given={Division\bibnamedelimb of\bibnamedelimb Population\bibnamedelima Health},
+           giveni={D\bibinitperiod\bibinitdelim o\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{afee4b385465de034b872e6b0cf606dd}
+      \strng{fullhash}{afee4b385465de034b872e6b0cf606dd}
+      \strng{bibnamehash}{afee4b385465de034b872e6b0cf606dd}
+      \strng{authorbibnamehash}{afee4b385465de034b872e6b0cf606dd}
+      \strng{authornamehash}{afee4b385465de034b872e6b0cf606dd}
+      \strng{authorfullhash}{afee4b385465de034b872e6b0cf606dd}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Drowsy Driving: Asleep at the Wheel}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://www.cdc.gov/sleep/features/drowsy-driving.html
+      \endverb
+      \verb{url}
+      \verb https://www.cdc.gov/sleep/features/drowsy-driving.html
       \endverb
     \endentry
     \entry{NhtsaBook2006}{article}{}
@@ -139,6 +200,54 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{DIGITAL IMAGE PROCESSING}
+    \endentry
+    \entry{DrowsinessDetectionSystem}{online}{}
+      \name{author}{1}{}{%
+        {{hash=693dc7131b63db321521ddc2a26c0462}{%
+           family={Messaoud\bibnamedelima Doudou},
+           familyi={M\bibinitperiod\bibinitdelim D\bibinitperiod},
+           given={Vero},
+           giveni={V\bibinitperiod},
+           suffix={Abdelmadjid\bibnamedelima Bouabdallah},
+           suffixi={A\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \strng{namehash}{693dc7131b63db321521ddc2a26c0462}
+      \strng{fullhash}{693dc7131b63db321521ddc2a26c0462}
+      \strng{bibnamehash}{693dc7131b63db321521ddc2a26c0462}
+      \strng{authorbibnamehash}{693dc7131b63db321521ddc2a26c0462}
+      \strng{authornamehash}{693dc7131b63db321521ddc2a26c0462}
+      \strng{authorfullhash}{693dc7131b63db321521ddc2a26c0462}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A Light on Physiological Sensors for Efficient Driver Drowsiness Detection System}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://hal.archives-ouvertes.fr/hal-02162758/document
+      \endverb
+      \verb{url}
+      \verb https://hal.archives-ouvertes.fr/hal-02162758/document
+      \endverb
+    \endentry
+    \entry{OpenCvHaarCascades}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=cfaf4de8d6aaa9548c1796afe44c06f8}{%
+           family={OpenCv},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{cfaf4de8d6aaa9548c1796afe44c06f8}
+      \strng{fullhash}{cfaf4de8d6aaa9548c1796afe44c06f8}
+      \strng{bibnamehash}{cfaf4de8d6aaa9548c1796afe44c06f8}
+      \strng{authorbibnamehash}{cfaf4de8d6aaa9548c1796afe44c06f8}
+      \strng{authornamehash}{cfaf4de8d6aaa9548c1796afe44c06f8}
+      \strng{authorfullhash}{cfaf4de8d6aaa9548c1796afe44c06f8}
+      \field{sortinit}{O}
+      \field{sortinithash}{ff8d4eeb5101e3cf3809959b3592d942}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Cascade Classifier}
+      \field{year}{2017}
     \endentry
     \entry{WhoFactSheet}{report}{}
       \name{author}{1}{}{%
@@ -248,6 +357,33 @@
       \verb https://www.electronicdesign.com/markets/automotive/article/21805470/radar-and-ultrasonic-sensors-strengthen-adas-object-detection
       \endverb
     \endentry
+    \entry{PyImageSearchHaarCascades}{online}{}
+      \name{author}{1}{}{%
+        {{hash=ad5eaecc2721564034f710ce9a318887}{%
+           family={Rosebrock},
+           familyi={R\bibinitperiod},
+           given={Adrian},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{ad5eaecc2721564034f710ce9a318887}
+      \strng{fullhash}{ad5eaecc2721564034f710ce9a318887}
+      \strng{bibnamehash}{ad5eaecc2721564034f710ce9a318887}
+      \strng{authorbibnamehash}{ad5eaecc2721564034f710ce9a318887}
+      \strng{authornamehash}{ad5eaecc2721564034f710ce9a318887}
+      \strng{authorfullhash}{ad5eaecc2721564034f710ce9a318887}
+      \field{sortinit}{R}
+      \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{OpenCV Haar Cascades}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://pyimagesearch.com/2021/04/12/opencv-haar-cascades/
+      \endverb
+      \verb{url}
+      \verb https://pyimagesearch.com/2021/04/12/opencv-haar-cascades/
+      \endverb
+    \endentry
     \entry{CamerasSensors}{online}{}
       \name{author}{1}{}{%
         {{hash=5c92870223d6699840f59f37930b3762}{%
@@ -271,6 +407,53 @@
       \endverb
       \verb{url}
       \verb https://www.rsipvision.com/adas-sensors-rgb-cameras/
+      \endverb
+    \endentry
+    \entry{EvaluationOfTechnologies}{article}{}
+      \name{author}{3}{}{%
+        {{hash=8dd688ae6f754e2adde8f05aa80eb061}{%
+           family={Sahayadhas},
+           familyi={S\bibinitperiod},
+           given={Arun},
+           giveni={A\bibinitperiod}}}%
+        {{hash=9cd4a723cf71fe4980d32ea30e3b6cb5}{%
+           family={Sundaraj},
+           familyi={S\bibinitperiod},
+           given={Kenneth},
+           giveni={K\bibinitperiod}}}%
+        {{hash=c69f9312e04aa3468c601eda508c14cb}{%
+           family={Murugappan},
+           familyi={M\bibinitperiod},
+           given={Murugappan},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{8d207e0d4a0491d016eee3d07d808802}
+      \strng{fullhash}{8d207e0d4a0491d016eee3d07d808802}
+      \strng{bibnamehash}{8d207e0d4a0491d016eee3d07d808802}
+      \strng{authorbibnamehash}{8d207e0d4a0491d016eee3d07d808802}
+      \strng{authornamehash}{8d207e0d4a0491d016eee3d07d808802}
+      \strng{authorfullhash}{8d207e0d4a0491d016eee3d07d808802}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In recent years, driver drowsiness has been one of the major causes of road accidents and can lead to severe physical injuries, deaths and significant economic losses. Statistics indicate the need of a reliable driver drowsiness detection system which could alert the driver before a mishap happens. Researchers have attempted to determine driver drowsiness using the following measures: (1) vehicle-based measures; (2) behavioral measures and (3) physiological measures. A detailed review on these measures will provide insight on the present systems, issues associated with them and the enhancements that need to be done to make a robust system. In this paper, we review these three measures as to the sensors used and discuss the advantages and limitations of each. The various ways through which drowsiness has been experimentally manipulated is also discussed. We conclude that by designing a hybrid drowsiness detection system that combines non-intusive physiological measures with other measures one would accurately determine the drowsiness level of a driver. A number of road accidents might then be avoided if an alert is sent to a driver that is deemed drowsy.}
+      \field{issn}{1424-8220}
+      \field{journaltitle}{Sensors}
+      \field{number}{12}
+      \field{title}{Detecting Driver Drowsiness Based on Sensors: A Review}
+      \field{volume}{12}
+      \field{year}{2012}
+      \field{pages}{16937\bibrangedash 16953}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.3390/s121216937
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/1424-8220/12/12/16937
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/1424-8220/12/12/16937
       \endverb
     \endentry
     \entry{Adaboost}{inproceedings}{}
@@ -636,7 +819,54 @@
       \verb https://en.wikipedia.org/wiki/Automotive_safety
       \endverb
     \endentry
+    \entry{Zilberg2007MethodologyAI}{article}{}
+      \name{author}{5}{}{%
+        {{hash=b42c803ddc6018465aefb61f56bfdd92}{%
+           family={Zilberg},
+           familyi={Z\bibinitperiod},
+           given={Eugene},
+           giveni={E\bibinitperiod}}}%
+        {{hash=b4518d25be6107be9288b0c160f73ba0}{%
+           family={Burton},
+           familyi={B\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=6efcdbf03249c2b0a95f023de878ee25}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Zheng\bibnamedelima Ming},
+           giveni={Z\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=538fd42f2799a569736245ef6303f097}{%
+           family={Karrar},
+           familyi={K\bibinitperiod},
+           given={Murad},
+           giveni={M\bibinitperiod}}}%
+        {{hash=5769ddd1ce44040369f08ab2454f006f}{%
+           family={Lal},
+           familyi={L\bibinitperiod},
+           given={Saroj},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{7b0f127fbe7f452723f778554dbdbb07}
+      \strng{fullhash}{901dae0ca1a26ea5b1d4fae6d0d0e1c4}
+      \strng{bibnamehash}{7b0f127fbe7f452723f778554dbdbb07}
+      \strng{authorbibnamehash}{7b0f127fbe7f452723f778554dbdbb07}
+      \strng{authornamehash}{7b0f127fbe7f452723f778554dbdbb07}
+      \strng{authorfullhash}{901dae0ca1a26ea5b1d4fae6d0d0e1c4}
+      \field{sortinit}{Z}
+      \field{sortinithash}{8f7b480688e809b50b6f6577b16f3db5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The 2nd International Conference on Wireless Broadband and Ultra Wideband Communications (AusWireless 2007)}
+      \field{title}{Methodology and initial analysis results for development of non-invasive and hybrid driver drowsiness detection systems}
+      \field{year}{2007}
+      \field{pages}{16\bibrangedash 16}
+      \range{pages}{1}
+    \endentry
   \enddatalist
+  \missing{Open Source Computer Vision}
+  \missing{is a library of programming functions mainly aimed at real-time computer vision. Originally developed by Intel}
+  \missing{it was later supported by Willow Garage then Itseez.}
 \endrefsection
 \endinput
 

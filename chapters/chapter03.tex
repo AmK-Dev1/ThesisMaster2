@@ -1,0 +1,112 @@
+\chapter{Driver Monitoring}
+
+To Update !
+\emph{In this chapter, we propose methods to assess the driver's state of drowsiness and inattention based on face and eyes-status analysis. The chapter  begins with a brief discussion of signs of drowsiness and available methods for detecting them, and it continues with the first proposed method which is based on traditional computer vision techniques followed by the seconde method which is based on deep learning, then we discuss the strengths, weakness, and limitations for each method. The chapter continues with our optimization techniques to improve the performance of these methods in terms of speed, detection rate, and detection accuracy under non-ideal lighting conditions and for noisy images. } %% to edit
+
+
+\section{Introduction}
+A driver-monitoring system is an advanced safety feature that track driver drowsiness or distraction, and to issue a warning or alert to get the driver’s attention back to the task of driving.
+
+Driver-monitoring systems typically use sensors to collect data about the driver and pass these data to a software. The software can then determine whether the driver is blinking more than usual, whether the eyes are narrowing or closing, and whether the head is tilting at an odd angle. It can also determine whether the driver is looking at the road ahead, and whether the driver is actually paying attention or just absent-mindedly staring. [x]
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!! Into from thesis x about driver monitoring !!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+\section{Driver Monitoring Technologies}
+According to \parencite{DrowsinessDetectionSystem} there are many approaches and measurement technologies to predict driver's behaviors. The most commonly used measurement can be categorized upon the monitoring instrument into : 
+\begin{itemize}
+	\item Video-based sensors
+	\item Physiological signals sensors 
+\end{itemize}
+
+\begin{figure}[!h]
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.6\linewidth]{cmsensors}  
+  \caption{Video-based sensors (used in this thesis)}
+  \label{fig:CamSensors}
+\end{subfigure}
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.6\linewidth]{phsensors}  
+  \caption{physiological signals sensors}
+  \label{fig:PhSensors}
+\end{subfigure}
+\caption{Illustration of difrent Driver monitoring approches}
+\label{fig:DifrentMonitoringApproches}
+\end{figure}
+
+
+\subsection{Physiological Signals Sensors}
+Physiological signals of the driver are the most accurate solutions, they can be used to measure his vigilance level since these signals originated from human organs such as brain, eyes, muscles, and heart that can indicate the fatigue and alertness level in real-time as depicted in Figure \ref{fig:PhSensors}. Physiological measures can be recorded from different organs that show visible correlation with the wakefulness/drowsiness state of a person. This includes \parencite{DrowsinessDetectionSystem}:
+
+	\begin{itemize}
+		\item \textbf{Brain activity},which can be captured by electroencephalography (EEG) or Near Infrared Spectroscopy
+(NIRS).
+		\item \textbf{Cardiac activity}, monitored through electrocardiography (ECG) and Blood Pressure signals.
+		\item \textbf{Ocular activity}, measured by electrooculography (EOG)
+	\end{itemize}
+
+\subsection{Video-based sensors}
+To determine alertness/drowsiness level of driver as illustrated in Figure \ref{fig:CamSensors}. The behaviour of the driver is mainly monitored through a camera and thus this approach is known as video-based measure. Visible symptoms of fatigue and sleepiness can be observed when driver becomes drowsy through measuring its abnormal behaviours. Research on fatigue and drowsiness detection using driver behavioural monitoring focused on three main measure: \emph{Eyes state}, \emph{Face expression}, and \emph{Head position}.
+
+\subsection{Evaluation}
+\emph{The following evaluation and ranking are based on our online search of driver monitoring technologies and we belive that it is not the only evaluation method.}
+
+According to \parencite{DrowsinessDetectionSystem}, physiological sensors make it possible to alert driver at earlier stages of drowsiness and thereby prevent many drastic accidents \parencite{EvaluationOfTechnologies}.  Physiological measures have been shown to be reliable and accurate since they are less impacted by environmental and road conditions and thus may have fewer false positives \parencite{Zilberg2007MethodologyAI}.
+
+On the other hand, video sensors technology is user friendly and can be mounted comfortably in various areas inside a vehicle also,it has the lowest coast. The common limitation is lighting conditions.
+
+\begin{table}[h!]
+\centering
+
+\begin{tabular}{ |c c c| } 
+\hline
+Technology & Video-Based Sensors & Physiological Signals Sensors \\
+\hline
+Coast & ++ & +\\
+Ease of Use & +++ & + \\
+Intrusiveness & + & +++ \\
+Accuracy & ++ & +++\\
+\hline
+\end{tabular}
+\caption{shows the evaluation results of the two above described Driver Monitoring Technologies. The (+) symbol represents the rating level}
+\label{table:DriverMonitoringTEchnologiesEvaluationResult}
+\end{table}
+
+
+
+\section{Driver Drowsiness}
+Feeling sleepy or tired during the day is commonly called drowsiness. Drowsiness can lead to additional symptoms, such as forgetting or falling asleep at inappropriate times, especially in the case of driving because it leads to a car accident.
+
+Drowsiness in general is accompanied by warning signs that differ from one person to another, such as yawning\footnote{yawning is a response to fatigue,  it is characterized by opening up of mouth which is accompanied by a long inspiration, with a brief interruption of ventilation and followed by a short expiration.} or blinking frequently, nodding\footnote{nodding also is a response to fatigue, it is characterized by lower or raising the head slowly and briefly}, drifting off the track, and the most critical sign of drowsiness is closed eyes.\parencite{DrowsinessSigns}
+
+\section{Driver Inattention}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+\newpage
+\section{Proposed work}
+\emph{In this section, we propose methods for detecting driver’s drowsiness and distraction using computer vision techniques discussed in chapter 2 with other algorithms that aim for improve performance and accuracy (ACC), then !!!!!!!! gol beli rah ndiro comparaison w rah ndiro analyse l kol methode w nokhorjo b natija ... (!!!! ahki ela system d'alarme)  }
+
+Before anything, the main goal of this work is to invoke audio-alert when a bad thing happend .. 
+!!!!
+
+
+\subsection{method 1 : Haar Cascades}
+\emph{Viola-Jones facial detection technique, commonly known as Haar Cascades. This work was done well before the beginning of the era of deep learning. But it’s a great job in comparison with powerful models that can be built with modern deep learning techniques, especially in terms of speed. The algorithm is still used almost everywhere.}\\
+
+Haar Cascades in general is an object detection algorithm uses haar features. Haar Features were not only used to detect faces, but also for eyes, lips, license number plates, etc. \parencite{HaarFeaturesUses}.
+
+For a good detection rate, we need a strong classifier that is trained in using a large set of \emph{positive}\footnote{Positive data points are examples of regions containing a face} and \emph{negative}\footnote{Negative data points are examples of regions that do not contain a face} samples of a face, however, \emph{OpenCV}\footcite{Open Source Computer Vision, is a library of programming functions mainly aimed at real-time computer vision. Originally developed by Intel, it was later supported by Willow Garage then Itseez.} can perform face detection out-of-the-box using a pre-trained Haar cascade that is mean OpenCV's Haar cascade has already picked the best haar-like features for face detection, eyes detection, etc. This ensures that we do not need to provide our own positive and negative samples, train our own classifier, or worry about getting the parameters tuned exactly right. Instead, we need to focus on improving speed, accuracy and finding solutions for challenging conditions \parencite{PyImageSearchHaarCascades} \parencite{OpenCvHaarCascades} \parencite{HaarFeaturesUses}.
+
+
+
+\subsubsection{Application-phase}
+
+
+
+
+
+
+

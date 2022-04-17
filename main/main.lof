@@ -2,20 +2,24 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.1}{\ignorespaces The Evolution of Automated Safety Technologies\relax }}{8}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces The Evolution of Automated Safety Technologies\relax }}{9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Typical types of sensors for ADAS\relax }}{9}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Typical types of sensors for ADAS\relax }}{10}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Sampling and Quantization\relax }}{13}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Sampling and Quantization\relax }}{14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Gray scale image of Handwritten digit\relax }}{13}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Gray scale image of Handwritten digit\relax }}{14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Calculation of integral values and integral image\relax }}{15}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Calculation of integral values and integral image\relax }}{18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Common types of Haar-like features\relax }}{17}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Common types of Haar-like features\relax }}{19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Example of Haar-feature matches in eyes\relax }}{17}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Example of Haar-feature matches in eyes\relax }}{19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.6}{\ignorespaces A cascade of weak-classifiers\relax }}{18}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces A cascade of weak-classifiers\relax }}{20}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Illustration of difrent Driver monitoring approches\relax }}{23}%
