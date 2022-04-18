@@ -1,23 +1,20 @@
 [0] Config.pm:304> INFO - This is Biber 2.14 (beta)
 [0] Config.pm:307> INFO - Logfile is 'main.blg'
-[66] biber:322> INFO - === dim. avril 17, 2022, 10:52:16
-[78] Biber.pm:415> INFO - Reading 'main.bcf'
-[137] Biber.pm:943> INFO - Found 31 citekeys in bib section 0
-[148] Biber.pm:4256> INFO - Processing section 0
-[149] Utils.pm:75> INFO - Globbing data source 'references.bib'
-[149] Utils.pm:91> INFO - Globbed data source 'references.bib' to references.bib
-[157] Biber.pm:4455> INFO - Looking for bibtex format file 'references.bib' for section 0
-[158] bibtex.pm:1653> INFO - LaTeX decoding ...
-[178] bibtex.pm:1471> INFO - Found BibTeX data source 'references.bib'
-[199] Utils.pm:293> WARN - year field '21 June 2021' in entry 'WhoFactSheet' is not an integer - this will probably not sort properly.
-[258] Utils.pm:293> WARN - year field 'last edit 2022' in entry 'RgbAndCameras' is not an integer - this will probably not sort properly.
-[311] Utils.pm:293> WARN - I didn't find a database entry for 'Open Source Computer Vision' (section 0)
-[311] Utils.pm:293> WARN - I didn't find a database entry for 'is a library of programming functions mainly aimed at real-time computer vision. Originally developed by Intel' (section 0)
-[311] Utils.pm:293> WARN - I didn't find a database entry for 'it was later supported by Willow Garage then Itseez.' (section 0)
-[362] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[362] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[362] Biber.pm:4084> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[362] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
-[387] bbl.pm:652> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[400] bbl.pm:755> INFO - Output to main.bbl
-[400] Biber.pm:128> INFO - WARNINGS: 5
+[68] biber:322> INFO - === lun. avril 18, 2022, 07:40:42
+[81] Biber.pm:415> INFO - Reading 'main.bcf'
+[140] Biber.pm:943> INFO - Found 28 citekeys in bib section 0
+[151] Biber.pm:4256> INFO - Processing section 0
+[151] Utils.pm:75> INFO - Globbing data source 'references.bib'
+[151] Utils.pm:91> INFO - Globbed data source 'references.bib' to references.bib
+[160] Biber.pm:4455> INFO - Looking for bibtex format file 'references.bib' for section 0
+[161] bibtex.pm:1653> INFO - LaTeX decoding ...
+[181] bibtex.pm:1471> INFO - Found BibTeX data source 'references.bib'
+[202] Utils.pm:293> WARN - year field '21 June 2021' in entry 'WhoFactSheet' is not an integer - this will probably not sort properly.
+[251] Utils.pm:293> WARN - year field 'last edit 2022' in entry 'RgbAndCameras' is not an integer - this will probably not sort properly.
+[323] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[323] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[323] Biber.pm:4084> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[323] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
+[347] bbl.pm:652> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[358] bbl.pm:755> INFO - Output to main.bbl
+[358] Biber.pm:128> INFO - WARNINGS: 2

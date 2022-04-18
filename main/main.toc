@@ -60,4 +60,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.5.1}method 1 : Haar Cascades}{25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Application-phase}{25}%
+\contentsline {subsubsection}{Application-phase}{26}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Limits and problems}{26}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Optimization}{26}%

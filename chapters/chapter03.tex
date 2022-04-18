@@ -92,17 +92,59 @@ Drowsiness in general is accompanied by warning signs that differ from one perso
 Before anything, the main goal of this work is to invoke audio-alert when a bad thing happend .. 
 !!!!
 
+For the application phase, the driver’s surveillance camera is mounted in front of the driver’s face it can be placed in the areas of the steering wheel or it can be hung on the rearview mirror.
+
+
 
 \subsection{method 1 : Haar Cascades}
 \emph{Viola-Jones facial detection technique, commonly known as Haar Cascades. This work was done well before the beginning of the era of deep learning. But it’s a great job in comparison with powerful models that can be built with modern deep learning techniques, especially in terms of speed. The algorithm is still used almost everywhere.}\\
 
 Haar Cascades in general is an object detection algorithm uses haar features. Haar Features were not only used to detect faces, but also for eyes, lips, license number plates, etc. \parencite{HaarFeaturesUses}.
 
-For a good detection rate, we need a strong classifier that is trained in using a large set of \emph{positive}\footnote{Positive data points are examples of regions containing a face} and \emph{negative}\footnote{Negative data points are examples of regions that do not contain a face} samples of a face, however, \emph{OpenCV}\footcite{Open Source Computer Vision, is a library of programming functions mainly aimed at real-time computer vision. Originally developed by Intel, it was later supported by Willow Garage then Itseez.} can perform face detection out-of-the-box using a pre-trained Haar cascade that is mean OpenCV's Haar cascade has already picked the best haar-like features for face detection, eyes detection, etc. This ensures that we do not need to provide our own positive and negative samples, train our own classifier, or worry about getting the parameters tuned exactly right. Instead, we need to focus on improving speed, accuracy and finding solutions for challenging conditions \parencite{PyImageSearchHaarCascades} \parencite{OpenCvHaarCascades} \parencite{HaarFeaturesUses}.
+For a good detection rate, we need a strong classifier that is trained in using a large set of \emph{positive}\footnote{Positive data points are examples of regions containing a face} and \emph{negative}\footnote{Negative data points are examples of regions that do not contain a face} samples of a face, however, \emph{OpenCV}\footnote{Open Source Computer Vision, is a library of programming functions mainly aimed at real-time computer vision. Originally developed by Intel, it was later supported by Willow Garage then Itseez.} can perform face detection out-of-the-box using a pre-trained Haar cascade that is mean OpenCV's Haar cascade has already picked the best haar-like features for face detection, eyes detection, etc. 
+
+This ensures that we do not need to provide our own positive and negative samples, train our own classifier, or worry about getting the parameters tuned exactly right. Instead, we need to focus on improving speed, accuracy and finding solutions for challenging conditions \parencite{PyImageSearchHaarCascades} \parencite{OpenCvHaarCascades} \parencite{HaarFeaturesUses}.
+
+In the application of this method, we use Haar-like detectors provided by \emph{OpenCv}, a haar-like detector takes as argumments \parencite{OpenCvHaarCascades}:
+
+\begin{itemize}
+
+	\item \textbf{Image}: matrix of the type \emph{CV\_8U} \footnote{CV\_8U is unsigned 8bit pixel, a pixel can have values 0-255, this is the normal range for most image and video formats.} containing an gray-scale image where objects are detected.
+
+	\item \textbf{ScaleFactor}: parameter specifying how much the image size is reduced at each image scale.
+
+	\item \textbf{MinNeighbors}: parameter specifying how many neighbors each candidate rectangle should have to retain it.
+
+	\item \textbf{MinSize}: minimum possible object size. Objects smaller than this are ignored.
+	
+	\item \textbf{MaxSize}: maximum possible object size. Objects larger than this are ignored.
+
+\end{itemize}
+
+By default a haar-like detector returns 4 values \parencite{OpenCvHaarCascades} x-coordinate, y-coordinate, width(w), height(h) of the detected target object, these 4 values represent 2 spatial points $(x , y)$ and $(\quad x + w ,\quad y + h) $ of the rectangle that contains the object see Figure \ref{fig:bbprincipe}. 
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=.5\textwidth]{bbprincipe}
+\caption{Illustration of Bounding Box in object detection using haar-like detector}
+\label{fig:bbprincipe}
+\end{figure}
+ 
+Taking the Figure \ref{fig:bbprincipe} as an example. After a successful object detection, a haar-like detector returns :  $(x,\quad y, \quad w, \quad h) = (20, \quad 40, \quad 40, \quad 40)$ respectively.So, $p1 = (20, \quad 40)$ and $p2 = (20 + 40 , 40 + 40 ) = (60 ,\quad 80)$.
 
 
 
 \subsubsection{Application-phase}
+
+  
+
+
+\subsubsection{Limits and problems}
+
+
+\subsubsection{Optimization}
+
+
 
 
 

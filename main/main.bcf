@@ -2216,12 +2216,11 @@
     <bcf:citekey order="32">Zilberg2007MethodologyAI</bcf:citekey>
     <bcf:citekey order="33">DrowsinessSigns</bcf:citekey>
     <bcf:citekey order="34">HaarFeaturesUses</bcf:citekey>
-    <bcf:citekey order="35">Open Source Computer Vision</bcf:citekey>
-    <bcf:citekey order="35">is a library of programming functions mainly aimed at real-time computer vision. Originally developed by Intel</bcf:citekey>
-    <bcf:citekey order="35">it was later supported by Willow Garage then Itseez.</bcf:citekey>
-    <bcf:citekey order="36">PyImageSearchHaarCascades</bcf:citekey>
-    <bcf:citekey order="37">OpenCvHaarCascades</bcf:citekey>
-    <bcf:citekey order="38">HaarFeaturesUses</bcf:citekey>
+    <bcf:citekey order="35">PyImageSearchHaarCascades</bcf:citekey>
+    <bcf:citekey order="36">OpenCvHaarCascades</bcf:citekey>
+    <bcf:citekey order="37">HaarFeaturesUses</bcf:citekey>
+    <bcf:citekey order="38">OpenCvHaarCascades</bcf:citekey>
+    <bcf:citekey order="39">OpenCvHaarCascades</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

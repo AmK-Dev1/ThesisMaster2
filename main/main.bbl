@@ -864,9 +864,6 @@
       \range{pages}{1}
     \endentry
   \enddatalist
-  \missing{Open Source Computer Vision}
-  \missing{is a library of programming functions mainly aimed at real-time computer vision. Originally developed by Intel}
-  \missing{it was later supported by Willow Garage then Itseez.}
 \endrefsection
 \endinput
 
