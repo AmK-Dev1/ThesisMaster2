@@ -25,3 +25,9 @@
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Illustration of difrent Driver monitoring approches\relax }}{23}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Illustration of Bounding Box in object detection using haar-like detector\relax }}{26}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Initial flowchart for driver monitoring with haarcascades\relax }}{27}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.4}{\ignorespaces face/eyes detection with Haar cascades\relax }}{28}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.5}{\ignorespaces face/eyes detection with Haar cascades under diferent lighting conditions\relax }}{29}%

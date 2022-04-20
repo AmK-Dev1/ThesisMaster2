@@ -85,6 +85,9 @@ Drowsiness in general is accompanied by warning signs that differ from one perso
 \section{Driver Inattention}
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
+
+
+
 \newpage
 \section{Proposed work}
 \emph{In this section, we propose methods for detecting driver’s drowsiness and distraction using computer vision techniques discussed in chapter 2 with other algorithms that aim for improve performance and accuracy (ACC), then !!!!!!!! gol beli rah ndiro comparaison w rah ndiro analyse l kol methode w nokhorjo b natija ... (!!!! ahki ela system d'alarme)  }
@@ -130,16 +133,96 @@ By default a haar-like detector returns 4 values \parencite{OpenCvHaarCascades} 
 \label{fig:bbprincipe}
 \end{figure}
  
-Taking the Figure \ref{fig:bbprincipe} as an example. After a successful object detection, a haar-like detector returns :  $(x,\quad y, \quad w, \quad h) = (20, \quad 40, \quad 40, \quad 40)$ respectively.So, $p1 = (20, \quad 40)$ and $p2 = (20 + 40 , 40 + 40 ) = (60 ,\quad 80)$.
+Taking the Figure \ref{fig:bbprincipe} as an example. After a successful object detection, a haar-like detector returns :  $(x,\quad y, \quad w, \quad h) = (20, \quad 40, \quad 40, \quad 40)$ respectively.So, $p1 = (20, \quad 40)$ and $p2 = (20 + 40 , 40 + 40 ) = (60 ,\quad 80)$. However, these bounding boxes are useless in the case of driver monitoring, the most important thing is to alert the driver in real time when he is asleep or distracted.
+
+In the application stage of this method to serve as a driver monitoring technique. we used two Haar-like detectors, the first one is a face detector to check whether a given image contains a face or not, In other words, the face detector can check whether the driver is focusing on the road or distracted. Assuming the camera is in front of the driver’s face, if the face detector finds a face on a given image, This means that the driver looks forward and if the detector cannot find a face that means that the driver is distracted by looking in a direction other than the road, which is a dangerous situation, especially when driving fast. 
+
+The second Haar-like detector is an eye detector, which can find an "open" eye in a given image. Using this condition, the eye detector can check if the driver’s eyes are open or closed, simply by performing an eye detection if the detector finds one or both eyes that means the driver is focusing on the road if not, This means that one or both eyes of the driver are closed and this is the critical sign of driver's drowsiness which requires an alert to wake up the driver.
+ 
+As this method works with images, and the camera feeds the system with a video stream which is basically a sequence of images we processed the video frame by frame, and for each frame, we performed haar cascades see Figure\ref{fig:Initfchc}. 
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=.7\textwidth]{Init haarcascades}
+\caption{Initial flowchart for driver monitoring with haarcascades}
+\label{fig:Initfchc}
+\end{figure}
+
+\newpage
+
+ The first implementation of this method was done with the following algorithm under difrent lighting conditions :  
+ 
+ 
+\begin{algorithm}[!h]
+  \caption{first algorithm for face/eyes detection using Haar cascades}
+  \begin{itemize}
+  	\item Load haar-like detectors provided by OpenCv
+  	\item Foreach frame from video input :	
+  	\begin{enumerate}	
+		\item Change color space from RGB to Gray	
+		\item Face detection with following parameters : 
+		      \begin{itemize}
+		      	\item \textbf{Image} : frame
+		      	\item \textbf{ScaleFactor} : 1.1
+		      	\item \textbf{MinNeighbors} :  2
+		      \end{itemize}	     
+		\item Eye detection with following parameters :
+			  \begin{itemize}
+		      	\item \textbf{Image} : frame
+		      	\item \textbf{ScaleFactor} : 1.1
+		      	\item \textbf{MinNeighbors} :  2
+		      \end{itemize}	
+		\item draw bounding boxes on frame
+		\item display frame		
+  	\end{enumerate}
+  \end{itemize}
+\end{algorithm}
 
 
+As expected, the first implementation of face/eyes detection with haar cascades in real-time using a laptop camera was very fast and computation friendly. Despite of the speed, both detectors showed few FPs (Flse positives) see Figure\ref{fig:Fedwhc}.
 
-\subsubsection{Application-phase}
+\begin{figure}[!h]
+\centering
+\includegraphics[width=.5\textwidth]{f0}
+\caption{face/eyes detection with Haar cascades}
+\label{fig:Fedwhc}
+\end{figure}
 
+
+Figure \ref{fig:Fedwhcudlc} shows face/eyes detection with haarcascades under non-ideal lighting conditions. So, By applying haar-like detectors for face and eyes detection, we gained time and speed wich allows us to use this method in real-time driver monitoring. However, we also need further improvements, as we still may encounter issues of either missing detections (FNs) or false detections (FPs). In the case of this study FNs does not a serious problem because, in the worst case they only invoke alerts, Unlike FPs. False-positive means the driver is maybe distracted but the system can detect the face/eyes of the driver and this is too dangerous because no alert will be invoked in this case. So, in the optimization section we will focus more on decreasing the (FPs), and improving algorithm robustness under variable lighting conditions.
+
+
+\begin{figure}[!h]
+\centering
+  \subcaptionbox{}{\includegraphics[width = 3in]{f1}}\quad
+  \subcaptionbox{}{\includegraphics[width = 3in]{f4}}\\
+  \subcaptionbox{}{\includegraphics[width = 3in]{f3}}\quad
+  \subcaptionbox{}{\includegraphics[width = 3in]{f2}}
   
+  \caption{face/eyes detection with Haar cascades under diferent lighting conditions}
+\label{fig:Fedwhcudlc}
+\end{figure}
 
 
-\subsubsection{Limits and problems}
+\subsubsection{Problems and limitations}
+
+Haar cascades are notoriously prone to false-positives, the Haar-like classifier can easily report a face in an image when no face is present under normal lighting conditions, eye classifier is worse in false detection because there are many parts of face have the same color and shape property of the eyes for example the \emph{Oral commissure}\footnote{The commissure is the corner of the mouth, where the vermillion border of the superior labium (upper lip) meets that of the inferior labium (lower lip).}. The situation becomes even more complicated when a part of the driver's face is brighter than the other part (due to light falling in through a side-window), making eye status detection extremely difficult. In addition to that we noticed that sometimes the performance drops dramaticaly after a while due to 
+the big number of computations per frame.
+
+Another important thing to note here , along the testing of this method we found a problem which is sometimes a face or an eye can be detected 2 times in the same instance. this situation apears generraly when trying to approach the camera, sudenly a bounding box apears in the screen including both the object (face / eye ), and the other bounding box.
+
+
+In the next section we propose few methods to tackle the above issues which mainly summarized in :
+
+\begin{itemize}
+
+\item False positives for both face and eyes
+
+\item double detection, this problem is when an object has been detected two times in the same instance
+
+\item detection fails under bad lighting conditions
+
+\end{itemize}
 
 
 \subsubsection{Optimization}
