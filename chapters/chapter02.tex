@@ -107,9 +107,22 @@ That is because the background of an image in basically uncountable. Therefore, 
 
 We define the precision-rate (PR), recall-rate (RR), and accuracy (ACC) as follows \parencite{Classification} :
 
-$$ PR = \frac{TP}{TP + FP} \quad\quad   RR = \frac{TP}{TP + FN} \quad\quad ACC = \frac{TP + TN}{TP + FN + TN +FP}  $$
+\begin{center}
+$$ PR = \frac{TP}{TP + FP} $$ \\  
+$$ RR = \frac{TP}{TP + FN} $$ \\
+$$ ACC = \frac{TP + TN}{TP + FN + TN +FP}  $$
+\end{center}
 
-\newpage Where PR is the ratio of true-positives to all detections by the classifier, RR is the ratio of true-positives to the total number of actual existing objects (i.e. the ground truth objects) in the analysed frames, and ACC is defined as the number of classifications a model correctly predicts divided by the total number of predictions made. It's a way of assessing the performance of a model.
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.6\textwidth]{fpfntptn}
+\caption{Illustration of FP, FN, TP, and TN}
+\label{fig:Ifpfntptn}
+\end{figure}
+
+
+\newpage 
+Where PR is the ratio of true-positives to all detections by the classifier, RR is the ratio of true-positives to the total number of actual existing objects (i.e. the ground truth objects) in the analysed frames, and ACC is defined as the number of classifications a model correctly predicts divided by the total number of predictions made. It's a way of assessing the performance of a model.
 
 \section{Integral Image}
 \emph{

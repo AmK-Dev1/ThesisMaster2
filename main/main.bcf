@@ -2215,12 +2215,15 @@
     <bcf:citekey order="31">EvaluationOfTechnologies</bcf:citekey>
     <bcf:citekey order="32">Zilberg2007MethodologyAI</bcf:citekey>
     <bcf:citekey order="33">DrowsinessSigns</bcf:citekey>
-    <bcf:citekey order="34">HaarFeaturesUses</bcf:citekey>
-    <bcf:citekey order="35">PyImageSearchHaarCascades</bcf:citekey>
-    <bcf:citekey order="36">OpenCvHaarCascades</bcf:citekey>
-    <bcf:citekey order="37">HaarFeaturesUses</bcf:citekey>
-    <bcf:citekey order="38">OpenCvHaarCascades</bcf:citekey>
+    <bcf:citekey order="34">DriverInnatention</bcf:citekey>
+    <bcf:citekey order="35">HaarFeaturesUses</bcf:citekey>
+    <bcf:citekey order="36">PyImageSearchHaarCascades</bcf:citekey>
+    <bcf:citekey order="37">OpenCvHaarCascades</bcf:citekey>
+    <bcf:citekey order="38">HaarFeaturesUses</bcf:citekey>
     <bcf:citekey order="39">OpenCvHaarCascades</bcf:citekey>
+    <bcf:citekey order="40">OpenCvHaarCascades</bcf:citekey>
+    <bcf:citekey order="41">ScaleFactorImagePyramide</bcf:citekey>
+    <bcf:citekey order="42">Scale</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

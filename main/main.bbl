@@ -98,6 +98,33 @@
       \verb 10.23919/ChiCC.2019.8866334
       \endverb
     \endentry
+    \entry{Scale}{online}{}
+      \name{author}{1}{}{%
+        {{hash=e9ae52b572736e47052cb52b4ce1b750}{%
+           family={Bradley},
+           familyi={B\bibinitperiod},
+           given={Steven},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{e9ae52b572736e47052cb52b4ce1b750}
+      \strng{fullhash}{e9ae52b572736e47052cb52b4ce1b750}
+      \strng{bibnamehash}{e9ae52b572736e47052cb52b4ce1b750}
+      \strng{authorbibnamehash}{e9ae52b572736e47052cb52b4ce1b750}
+      \strng{authornamehash}{e9ae52b572736e47052cb52b4ce1b750}
+      \strng{authorfullhash}{e9ae52b572736e47052cb52b4ce1b750}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{How To Use Size, Scale, And Proportion In Web Design}
+      \field{year}{2010}
+      \verb{urlraw}
+      \verb https://vanseodesign.com/web-design/size-scale-proportion/#:~:text=Size%20is%20the%20physical%20dimensions,Proportion%20is%20harmony%20of%20scale.
+      \endverb
+      \verb{url}
+      \verb https://vanseodesign.com/web-design/size-scale-proportion/#:~:text=Size%20is%20the%20physical%20dimensions,Proportion%20is%20harmony%20of%20scale.
+      \endverb
+    \endentry
     \entry{DrowsinessSigns}{online}{}
       \name{author}{2}{}{%
         {{hash=ff13ca2cafb4a1126605a16fc82bae0d}{%
@@ -357,6 +384,33 @@
       \verb https://www.electronicdesign.com/markets/automotive/article/21805470/radar-and-ultrasonic-sensors-strengthen-adas-object-detection
       \endverb
     \endentry
+    \entry{ScaleFactorImagePyramide}{online}{}
+      \name{author}{1}{}{%
+        {{hash=c227897570b0a4b39c6f089cf005f45a}{%
+           family={Ranu},
+           familyi={R\bibinitperiod},
+           given={Rashmi},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{c227897570b0a4b39c6f089cf005f45a}
+      \strng{fullhash}{c227897570b0a4b39c6f089cf005f45a}
+      \strng{bibnamehash}{c227897570b0a4b39c6f089cf005f45a}
+      \strng{authorbibnamehash}{c227897570b0a4b39c6f089cf005f45a}
+      \strng{authornamehash}{c227897570b0a4b39c6f089cf005f45a}
+      \strng{authorfullhash}{c227897570b0a4b39c6f089cf005f45a}
+      \field{sortinit}{R}
+      \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Terminologies used In Face Detection with Haar Cascade Classifier: Open CV}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://ai.plainenglish.io/terminologies-used-in-face-detection-with-haar-cascade-classifier-open-cv-6346c5c926c
+      \endverb
+      \verb{url}
+      \verb https://ai.plainenglish.io/terminologies-used-in-face-detection-with-haar-cascade-classifier-open-cv-6346c5c926c
+      \endverb
+    \endentry
     \entry{PyImageSearchHaarCascades}{online}{}
       \name{author}{1}{}{%
         {{hash=ad5eaecc2721564034f710ce9a318887}{%
@@ -482,6 +536,33 @@
       \field{year}{2013}
       \field{pages}{37\bibrangedash 52}
       \range{pages}{16}
+    \endentry
+    \entry{DriverInnatention}{online}{}
+      \name{author}{1}{}{%
+        {{hash=dc6e45ffa53fd09bbc26135dcde1e0d2}{%
+           family={site},
+           familyi={s\bibinitperiod},
+           prefix={lowmanlawfirm\bibnamedelima web},
+           prefixi={l\bibinitperiod\bibinitdelim w\bibinitperiod}}}%
+      }
+      \strng{namehash}{dc6e45ffa53fd09bbc26135dcde1e0d2}
+      \strng{fullhash}{dc6e45ffa53fd09bbc26135dcde1e0d2}
+      \strng{bibnamehash}{dc6e45ffa53fd09bbc26135dcde1e0d2}
+      \strng{authorbibnamehash}{dc6e45ffa53fd09bbc26135dcde1e0d2}
+      \strng{authornamehash}{dc6e45ffa53fd09bbc26135dcde1e0d2}
+      \strng{authorfullhash}{dc6e45ffa53fd09bbc26135dcde1e0d2}
+      \field{sortinit}{s}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Driver Inattention and Distraction Explained}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://www.lowmanlawfirm.com/blog/driver-inattention-and-distraction-explained
+      \endverb
+      \verb{url}
+      \verb https://www.lowmanlawfirm.com/blog/driver-inattention-and-distraction-explained
+      \endverb
     \endentry
     \entry{RadarLidarSensors}{online}{}
       \name{author}{1}{}{%

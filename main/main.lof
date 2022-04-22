@@ -8,26 +8,34 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Sampling and Quantization\relax }}{14}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Sampling and Quantization\relax }}{13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Gray scale image of Handwritten digit\relax }}{14}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Gray scale image of Handwritten digit\relax }}{13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Calculation of integral values and integral image\relax }}{18}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Illustration of FP, FN, TP, and TN\relax }}{16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Common types of Haar-like features\relax }}{19}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Calculation of integral values and integral image\relax }}{17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Example of Haar-feature matches in eyes\relax }}{19}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Common types of Haar-like features\relax }}{18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.6}{\ignorespaces A cascade of weak-classifiers\relax }}{20}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Example of Haar-feature matches in eyes\relax }}{18}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.7}{\ignorespaces A cascade of weak-classifiers\relax }}{19}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Illustration of difrent Driver monitoring approches\relax }}{23}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Illustration of difrent Driver monitoring approches\relax }}{22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Illustration of Bounding Box in object detection using haar-like detector\relax }}{26}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Distracted Driver Sceenes\relax }}{24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Initial flowchart for driver monitoring with haarcascades\relax }}{27}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Illustration of Bounding Box in object detection using haar-like detector\relax }}{26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.4}{\ignorespaces face/eyes detection with Haar cascades\relax }}{28}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Initial flowchart for driver monitoring with haarcascades\relax }}{27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.5}{\ignorespaces face/eyes detection with Haar cascades under diferent lighting conditions\relax }}{29}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces face/eyes detection with Haar cascades\relax }}{28}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.6}{\ignorespaces face/eyes detection with Haar cascades under diferent lighting conditions\relax }}{29}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Image Pyramid and Scale Factor\relax }}{31}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.8}{\ignorespaces detections using various MNN values. Dir eyes whdha w face whdha ! \relax }}{31}%

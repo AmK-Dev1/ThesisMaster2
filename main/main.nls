@@ -10,11 +10,13 @@
   \item [{FP}]\begingroup False positive\nomeqref {0}\nompageref{6}
   \item [{LAS}]\begingroup lane keep assist system\nomeqref {0}\nompageref{6}
   \item [{LIDAR}]\begingroup Light Detection and Ranging\nomeqref {0}\nompageref{6}
+  \item [{MNN}]\begingroup Minimum Neighbors\nomeqref {0}\nompageref{6}
   \item [{NHTSA}]\begingroup National Highway Traffic safety administration\nomeqref {0}\nompageref{6}
   \item [{PR}]\begingroup Precision rate\nomeqref {0}\nompageref{6}
   \item [{RADAR}]\begingroup Radio Detection and Ranging\nomeqref {0}\nompageref{6}
   \item [{ROI}]\begingroup Reagion of Interest\nomeqref {0}\nompageref{6}
   \item [{RR}]\begingroup Recall rate\nomeqref {0}\nompageref{6}
+  \item [{SF}]\begingroup Scale Factor\nomeqref {0}\nompageref{6}
   \item [{TN}]\begingroup True negative\nomeqref {0}\nompageref{6}
   \item [{TP}]\begingroup True positive\nomeqref {0}\nompageref{6}
 

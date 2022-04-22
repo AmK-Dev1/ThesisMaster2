@@ -14,3 +14,5 @@
 \nomenclatureentry{aRR@[{RR}]\begingroup Recall rate\nomeqref {0}|nompageref}{6}
 \nomenclatureentry{aACC@[{ACC}]\begingroup Accuracy\nomeqref {0}|nompageref}{6}
 \nomenclatureentry{aROI@[{ROI}]\begingroup Reagion of Interest\nomeqref {0}|nompageref}{6}
+\nomenclatureentry{aMNN@[{MNN}]\begingroup Minimum Neighbors\nomeqref {0}|nompageref}{6}
+\nomenclatureentry{aSF@[{SF}]\begingroup Scale Factor\nomeqref {0}|nompageref}{6}

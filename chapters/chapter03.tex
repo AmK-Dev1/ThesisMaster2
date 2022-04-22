@@ -79,13 +79,39 @@ Accuracy & ++ & +++\\
 
 \section{Driver Drowsiness}
 Feeling sleepy or tired during the day is commonly called drowsiness. Drowsiness can lead to additional symptoms, such as forgetting or falling asleep at inappropriate times, especially in the case of driving because it leads to a car accident.
-
 Drowsiness in general is accompanied by warning signs that differ from one person to another, such as yawning\footnote{yawning is a response to fatigue,  it is characterized by opening up of mouth which is accompanied by a long inspiration, with a brief interruption of ventilation and followed by a short expiration.} or blinking frequently, nodding\footnote{nodding also is a response to fatigue, it is characterized by lower or raising the head slowly and briefly}, drifting off the track, and the most critical sign of drowsiness is closed eyes.\parencite{DrowsinessSigns}
 
 \section{Driver Inattention}
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Driver inattention or distraction occurs when a driver engages in a secondary activity that interferes with the primary task of operating a vehicle. Drivers can be distracted in many ways by things inside or outside of the vehicle. There are three categories in which driver distraction \parencite{DriverInnatention}:
 
 
+\begin{enumerate}
+\item \textbf{Visual} : taking your eyes off the road, such as :
+						
+		\begin{itemize}						
+			\item Texting
+			\item Other distractions outside the vehicle
+		\end{itemize}
+																			
+					
+\item \textbf{Physical} : taking your hands off the steering wheel, like :
+		
+		\begin{itemize}						
+			\item Adjusting vehicle controls, such as the air conditioner
+			\item Eating or drinking
+		\end{itemize}
+
+\item \textbf{Cognitive} : taking your attention away from the driving task. Cognitive distraction usually accompanies physical and visual distractions.
+\end{enumerate}
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=.99\textwidth]{distracteddrivers}
+\caption{Distracted Driver Sceenes}
+\label{fig:DDS}
+\end{figure}
+
+the common sign of driver inattention is the head position, when the driver looks in a direction other than the road it means he is not focusing on the road and this is too dangerous see Figure\ref{fig:DDS}.
 
 
 \newpage
@@ -198,7 +224,6 @@ Figure \ref{fig:Fedwhcudlc} shows face/eyes detection with haarcascades under no
   \subcaptionbox{}{\includegraphics[width = 3in]{f4}}\\
   \subcaptionbox{}{\includegraphics[width = 3in]{f3}}\quad
   \subcaptionbox{}{\includegraphics[width = 3in]{f2}}
-  
   \caption{face/eyes detection with Haar cascades under diferent lighting conditions}
 \label{fig:Fedwhcudlc}
 \end{figure}
@@ -226,6 +251,38 @@ In the next section we propose few methods to tackle the above issues which main
 
 
 \subsubsection{Optimization}
+
+\emph{Haar-based detectors use haar features to detect objects. So it is very common to find an object in the image that has the same properties as the face, this problem has also encountered in eye detection. In the first part of this section, we focus to improve the accuracy of the algorithm by reducing Fps detections. In the second part, we define a method to avoid the double detection problem based on spatial cordinates. Then we propose a night vision mode to improove the algorithm robustness under bad lighting conditions.Finally we work on improoving speed of the algorithm.}\\
+
+
+The main factors that control the object detection process are the detector's arguments (ScaleFactor, MinNeighbors, MinSize, MaxSize). Starting with ScaleFactor, since the classifier was trained with a fixed object size, it can detect the object with the same size that was used during the training phase \parencite{ScaleFactorImagePyramide}.Usually in the application phase, the size of the object may be smaller or larger than what was used in training, this may be related to the distance between the object and the camera. To ensure the detection of object in different scales\footnote{Scale is the relative size of different objects in relation to each other or a common standard \parencite{Scale} } there are two terminologies: Image Pyramid, and Scale Factor.\\
+
+Image pyramid and ScaleFactor specifies how much we reduce the image size each time we scale (i.e., ScaleFactor = 1.5 means reduce the input image size by 5\% ). Or, how much we increase the sliding window size (i.e., ScaleFactor = 1.2 means increase window size by 20\% at each iteration), see Figure\ref{fig:IPASF}. 
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=.8\textwidth]{pyramid}
+\caption{Image Pyramid and Scale Factor}
+\label{fig:IPASF}
+\end{figure}
+
+Generally, the smaller the ScaleFactor (SF), the more detailed the research, and the higher the calculation costs. 
+
+As object detection works within the image pyramid combination (multi-scale) , the detector can find multiple True response for a single region of an object. These responses are object candidates in a given region, here the detector use the Minimum Neighbors (MNN) parameter to confirm the detection by summing the number of rectangles candidates in that region this value must be higher than the MNN to decide whether there is an object or not. So, MNN is a parameter that can enhance algorithm accuracy in case of using high values, thus reduce detection rate. Also, decreasing MNN value increase of detection rate wich means increasing the false-positives (FPs) rate as well See Figure \ref{fig:MNNINITVALUES}.
+
+
+\begin{figure}[!h]
+\centering
+  \subcaptionbox{}{\includegraphics[width = .3\textwidth]{MNNF0E0}}\quad
+  \subcaptionbox{}{\includegraphics[width = .3\textwidth]{MNNF1E0}}\quad
+  \subcaptionbox{}{\includegraphics[width = .3\textwidth]{MNNF1E1}}
+  \caption{detections using various MNN values. Dir eyes whdha w face whdha ! }
+\label{fig:MNNINITVALUES}
+\end{figure}
+
+
+there are also two additional parameters which are Minsize and Maxsize, thier utility is to control the detection by the size of the detected object ( width , height ) if the size fall outside the range [minsize ... maxsize] the detection are ignored, only objects which have size in that range are accepted. These arguments are very important for decreasing FPs detection rate. In this point we supposed that the driver will be sitting about 1m far from the camera, and we recorded the width and height of the detected face and eyes, in general the distance between the driver's face and the camera is constant this what insure that we dont need a dynamic values for MinSize and MaxSize only in a specifique cases like changing the vheicle in this case we can simply adjust camera's position.
+
 
 
 
