@@ -2224,6 +2224,7 @@
     <bcf:citekey order="40">OpenCvHaarCascades</bcf:citekey>
     <bcf:citekey order="41">ScaleFactorImagePyramide</bcf:citekey>
     <bcf:citekey order="42">Scale</bcf:citekey>
+    <bcf:citekey order="43">DayNight</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

@@ -215,18 +215,9 @@ As expected, the first implementation of face/eyes detection with haar cascades 
 \end{figure}
 
 
-Figure \ref{fig:Fedwhcudlc} shows face/eyes detection with haarcascades under non-ideal lighting conditions. So, By applying haar-like detectors for face and eyes detection, we gained time and speed wich allows us to use this method in real-time driver monitoring. However, we also need further improvements, as we still may encounter issues of either missing detections (FNs) or false detections (FPs). In the case of this study FNs does not a serious problem because, in the worst case they only invoke alerts, Unlike FPs. False-positive means the driver is maybe distracted but the system can detect the face/eyes of the driver and this is too dangerous because no alert will be invoked in this case. So, in the optimization section we will focus more on decreasing the (FPs), and improving algorithm robustness under variable lighting conditions.
+So, By applying haar-like detectors for face and eyes detection, we gained time and speed wich allows us to use this method in real-time driver monitoring. However, we also need further improvements, as we still may encounter issues of either missing detections (FNs) or false detections (FPs). In the case of this study FNs does not a serious problem because, in the worst case they only invoke alerts, Unlike FPs. False-positive means the driver is maybe distracted but the system can detect the face/eyes of the driver and this is too dangerous because no alert will be invoked in this case. So, in the optimization section we will focus more on decreasing the (FPs), and improving algorithm robustness under variable lighting conditions.
 
 
-\begin{figure}[!h]
-\centering
-  \subcaptionbox{}{\includegraphics[width = 3in]{f1}}\quad
-  \subcaptionbox{}{\includegraphics[width = 3in]{f4}}\\
-  \subcaptionbox{}{\includegraphics[width = 3in]{f3}}\quad
-  \subcaptionbox{}{\includegraphics[width = 3in]{f2}}
-  \caption{face/eyes detection with Haar cascades under diferent lighting conditions}
-\label{fig:Fedwhcudlc}
-\end{figure}
 
 
 \subsubsection{Problems and limitations}
@@ -273,17 +264,91 @@ As object detection works within the image pyramid combination (multi-scale) , t
 
 \begin{figure}[!h]
 \centering
-  \subcaptionbox{}{\includegraphics[width = .3\textwidth]{MNNF0E0}}\quad
-  \subcaptionbox{}{\includegraphics[width = .3\textwidth]{MNNF1E0}}\quad
-  \subcaptionbox{}{\includegraphics[width = .3\textwidth]{MNNF1E1}}
+  \subcaptionbox{Face MNN = 0 , Eye MNN = 0}{\includegraphics[width = .3\textwidth]{MNNF0E0}}\quad
+  \subcaptionbox{Face MNN = 0 , Eye MNN = 1}{\includegraphics[width = .3\textwidth]{MNNF1E0}}\quad
+  \subcaptionbox{Face MNN = 1 , Eye MNN = 1}{\includegraphics[width = .3\textwidth]{MNNF1E1}}
   \caption{detections using various MNN values. Dir eyes whdha w face whdha ! }
 \label{fig:MNNINITVALUES}
 \end{figure}
 
 
-there are also two additional parameters which are Minsize and Maxsize, thier utility is to control the detection by the size of the detected object ( width , height ) if the size fall outside the range [minsize ... maxsize] the detection are ignored, only objects which have size in that range are accepted. These arguments are very important for decreasing FPs detection rate. In this point we supposed that the driver will be sitting about 1m far from the camera, and we recorded the width and height of the detected face and eyes, in general the distance between the driver's face and the camera is constant this what insure that we dont need a dynamic values for MinSize and MaxSize only in a specifique cases like changing the vheicle in this case we can simply adjust camera's position.
+there are also two additional parameters which are Minsize and Maxsize, thier utility is to control the detection by the size of the detected object ( width , height ) if the size fall outside the range [minsize ... maxsize] the detection are ignored, only objects which have size in that range are accepted. These arguments are very important for decreasing FPs detection rate. In this point we supposed that the driver will be sitting about 1m far from the camera, and we recorded the width and height of the detected face and eyes, in general the distance between the driver's face and the camera is constant this what insure that we dont need a dynamic values for MinSize and MaxSize only in a specifique cases like changing the vheicle in this case we can simply adjust camera's position. (here put figure illustate the relation between distance and object size ! )
+
+\begin{figure}[!h]
+\centering
+  \subcaptionbox{distance = 20cm}{\includegraphics[width = .3\textwidth]{20cm}}\quad
+  \subcaptionbox{distance = 60cm}{\includegraphics[width = .3\textwidth]{60cm}}\quad
+  \subcaptionbox{distance = 100cm}{\includegraphics[width = .3\textwidth]{100cm}}
+  \caption{Face/Eyes sizes for diffrent distances of the driver and the camera}
+\label{fig:Sizes}
+\end{figure}
 
 
+
+After finding the good values for ( MaxSize, MinSize ) relative to the distance between the driver and the camera, these values help us to reduce FPs rate by ignoring False detections based on the face/eye size.\\ 
+
+Now we need to find optimum parameters for ScaleFactor and Minimum Neighbors, in this step we recorded SF and MNN values under diffrent conditions and we realized that these parameters have a relation with luminosity level and the distance so they can not be constants. Instead we need to record the best values for diffrent situations esspecially lighting conditions because in general the distance do not change, then make these parameters dynamique with the help of a criterian that will estimate the luminosity level and decide which couple of values for SF and MNN are optimum based on the estimated luminosity level.\\
+
+For the luminosity level estimation, there are many diffrent methods like deep learning model for \emph{Day-Night Classification} \parencite{DayNight}. eventhoug the deep learning approach is the most accurate for this specifique task, it add more computation cost wich will slow down the algorithm. So, we used the image basic statistiques to solve this issue.Figure \ref{fig:Fedwhcudlc} shows face/eyes detection with haarcascades under non-ideal lighting conditions.
+
+
+\begin{figure}[!h]
+\centering
+  \subcaptionbox{}{\includegraphics[width = .2\textwidth]{f1}}\quad
+  \subcaptionbox{}{\includegraphics[width = .2\textwidth]{f4}}\quad
+  \subcaptionbox{}{\includegraphics[width = .2\textwidth]{f3}}\quad
+  \subcaptionbox{}{\includegraphics[width = .2\textwidth]{f2}}
+  \caption{face/eyes detection with Haar cascades under diferent lighting conditions}
+\label{fig:Fedwhcudlc}
+\end{figure}
+
+
+In images (a) and (b), the detection was performed for the face and both eyes, but in the image (c), only the face was detected successfully, both detectors failed in the image (d). For a first test we assumed that the image (b) is the minimum luminosity value for face/eye detection, so we calculated basic statistics (Mean , Variance , Energy) for each image in Figure \ref{fig:Fedwhcudlc} in grayscale color system.
+
+
+\begin{table}[!h]
+\centering
+
+\begin{tabular}{ | c | c | c | c | c | } 
+\hline
+ & image (a) & image (b) & image (c) & image (d) \\
+\hline
+Mean     & 68.47 & 13.82 & 6.71 & 5.66 \\
+\hline
+Variance & 2615.06 & 428.27 & 86.71 & 54.06 \\
+\hline
+Energy   & 111.55 & 42.29 & 31.41 & 29.59 \\
+\hline
+\end{tabular}
+\caption{Table shows basic statistics for gray scale images of Figure \ref{fig:Fedwhcudlc} under difrent lighting conditions}
+\label{table:BasicStatisticsForGrayScaleImages}
+\end{table}
+
+we need a criteria to classify lighting conditions into (good/bad). According to Table above, the Mean and Energy show a difference between the images, but we cannot use them because the difference between the values of the image (b) (minimum) and the image (c) of the Mean or Energy is too small and can be easily affected by light, however, the Variance shows a large difference between the image (b) and the image (c). So we used the Variance as ctiteria for the classification of lighting conditions.\\
+
+
+To find the optimum values in diffrent conditions which was done in terms of TP and FP rates with the help of python programming language wich allows us to see algorithm results with the possibility of changing parameters values in real-time.
+
+\begin{table}[!h]
+\centering
+
+\begin{tabular}{ |c|c|c|c|c|c|c|  }
+ \hline
+ & \multicolumn{2}{|c|}{Good LC} & \multicolumn{2}{|c|}{Bad LC}& \multicolumn{2}{|c|}{All LC}\\
+ \hline
+ & SF & MNN & SF & MNN &MinSize&MaxSize\\
+ \hline
+ Face & 1.3 & 1 & 1.1 & 1 & (116,116) &(331,331) \\
+ \hline
+Eye & 2.2 & 3 & None & None & (44,44) &(44,44) \\
+ \hline
+\end{tabular}
+
+\caption{Table shows optimum values for detector parameters under difrent lighting conditions}
+\label{table:OptimumValuesParameters}
+\end{table}
+
+Due to the fail of eyes detection under bad lighting conditions, we propose a night vision system based on image preprocessing technique called "Power Law Transformations" (Gamma Correction) with the help of the Variance. (AHder ela gamma correction w kifeh takhdem ) w dir des photos ela resultats
 
 
 

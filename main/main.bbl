@@ -384,6 +384,33 @@
       \verb https://www.electronicdesign.com/markets/automotive/article/21805470/radar-and-ultrasonic-sensors-strengthen-adas-object-detection
       \endverb
     \endentry
+    \entry{DayNight}{online}{}
+      \name{author}{1}{}{%
+        {{hash=800321127751e585b4d1bc473ab29212}{%
+           family={Rai},
+           familyi={R\bibinitperiod},
+           given={Nitin},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{800321127751e585b4d1bc473ab29212}
+      \strng{fullhash}{800321127751e585b4d1bc473ab29212}
+      \strng{bibnamehash}{800321127751e585b4d1bc473ab29212}
+      \strng{authorbibnamehash}{800321127751e585b4d1bc473ab29212}
+      \strng{authornamehash}{800321127751e585b4d1bc473ab29212}
+      \strng{authorfullhash}{800321127751e585b4d1bc473ab29212}
+      \field{sortinit}{R}
+      \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{ay-Night Classification}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://medium.com/@mneonizer/day-night-classification-a01a7d9af695
+      \endverb
+      \verb{url}
+      \verb https://medium.com/@mneonizer/day-night-classification-a01a7d9af695
+      \endverb
+    \endentry
     \entry{ScaleFactorImagePyramide}{online}{}
       \name{author}{1}{}{%
         {{hash=c227897570b0a4b39c6f089cf005f45a}{%

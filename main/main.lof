@@ -34,8 +34,10 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.5}{\ignorespaces face/eyes detection with Haar cascades\relax }}{28}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.6}{\ignorespaces face/eyes detection with Haar cascades under diferent lighting conditions\relax }}{29}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Image Pyramid and Scale Factor\relax }}{30}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Image Pyramid and Scale Factor\relax }}{31}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces detections using various MNN values. Dir eyes whdha w face whdha ! \relax }}{31}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.8}{\ignorespaces detections using various MNN values. Dir eyes whdha w face whdha ! \relax }}{31}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Face/Eyes sizes for diffrent distances of the driver and the camera\relax }}{31}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.9}{\ignorespaces face/eyes detection with Haar cascades under diferent lighting conditions\relax }}{32}%
