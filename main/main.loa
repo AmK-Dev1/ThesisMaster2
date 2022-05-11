@@ -1,4 +1,6 @@
 \defcounter {refsection}{0}\relax 
-\contentsline {algorithm}{\numberline {2.1}{\ignorespaces The AdaBoost algorithm for classifier learning.\relax }}{20}%
+\contentsline {algorithm}{\numberline {2.1}{\ignorespaces The AdaBoost algorithm for classifier learning.\relax }}{21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {algorithm}{\numberline {3.2}{\ignorespaces first algorithm for face/eyes detection using Haar cascades\relax }}{28}%
+\contentsline {algorithm}{\numberline {3.2}{\ignorespaces first algorithm for face/eyes detection using Haar cascades\relax }}{29}%
+\defcounter {refsection}{0}\relax 
+\contentsline {algorithm}{\numberline {3.3}{\ignorespaces Algorithm used in the proposed night vision system based on variance and gamma correction\relax }}{36}%

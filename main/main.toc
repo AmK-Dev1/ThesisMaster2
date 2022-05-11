@@ -1,61 +1,81 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}Introduction}{8}%
+\contentsline {chapter}{\numberline {1}Introduction}{9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}Background and Problems}{8}%
+\contentsline {section}{\numberline {1.1}Background and Problems}{9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}Motivation}{9}%
+\contentsline {section}{\numberline {1.2}Motivation}{10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.3}Related Work}{11}%
+\contentsline {section}{\numberline {1.3}Related Work}{12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.4}Thesis Organization}{11}%
+\contentsline {section}{\numberline {1.4}Thesis Organization}{12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Theory and Concepts}{12}%
+\contentsline {chapter}{\numberline {2}Theory and Concepts}{13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Digital Image Processing Basics}{12}%
+\contentsline {section}{\numberline {2.1}Digital Image Processing Basics}{13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.1}Sampling}{12}%
+\contentsline {subsection}{\numberline {2.1.1}Sampling}{13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.2}Quantization}{13}%
+\contentsline {subsection}{\numberline {2.1.2}Quantization}{14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Color Models}{14}%
+\contentsline {section}{\numberline {2.2}Color Models}{15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}RGB to Grayscale}{14}%
+\contentsline {subsection}{\numberline {2.2.1}RGB to Grayscale}{15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Average method}{14}%
+\contentsline {subsubsection}{Average method}{15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{The Weighted Method}{14}%
+\contentsline {subsubsection}{The Weighted Method}{15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Image Values and Statistics}{15}%
+\contentsline {section}{\numberline {2.3}Image Values and Statistics}{16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Classification}{15}%
+\contentsline {section}{\numberline {2.4}Classification}{16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Integral Image}{17}%
+\contentsline {section}{\numberline {2.5}Integral Image}{18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.6}Haar Feature-based Classifiers}{18}%
+\contentsline {section}{\numberline {2.6}Haar Feature-based Classifiers}{19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.6.1}AdaBoost algorithm}{20}%
+\contentsline {subsection}{\numberline {2.6.1}AdaBoost algorithm}{21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Driver Monitoring}{21}%
+\contentsline {chapter}{\numberline {3}Driver Monitoring}{22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Introduction}{21}%
+\contentsline {section}{\numberline {3.1}Introduction}{22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Driver Monitoring Technologies}{21}%
+\contentsline {section}{\numberline {3.2}Driver Monitoring Technologies}{22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}Physiological Signals Sensors}{22}%
+\contentsline {subsection}{\numberline {3.2.1}Physiological Signals Sensors}{23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}Video-based sensors}{22}%
+\contentsline {subsection}{\numberline {3.2.2}Video-based sensors}{23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.3}Evaluation}{22}%
+\contentsline {subsection}{\numberline {3.2.3}Evaluation}{23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Driver Drowsiness}{23}%
+\contentsline {section}{\numberline {3.3}Driver Drowsiness}{24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Driver Inattention}{23}%
+\contentsline {section}{\numberline {3.4}Driver Inattention}{24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}Proposed work}{25}%
+\contentsline {section}{\numberline {3.5}Proposed work}{26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5.1}method 1 : Haar Cascades}{25}%
+\contentsline {section}{\numberline {3.6}method 1 : Haar Cascades}{26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Problems and limitations}{29}%
+\contentsline {subsection}{\numberline {3.6.1}Problems and limitations}{30}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Optimization}{29}%
+\contentsline {subsection}{\numberline {3.6.2}Optimization}{30}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.7}method 2 : Facial key landmarks}{38}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Road monitoring}{40}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1} RADAR:}{41}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.1}What is RADAR?}{41}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.2}How does radar detection work?}{41}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.3}What are the radar technology’s characteristics?}{41}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.4}What are the advantages of radar technology?}{42}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.5}What makes radar different from other sensor technologies?}{43}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.6}POSSIBILITIES OF RADAR TECHNOLOGY}{43}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.7}STRUCTURE OF A RADAR :}{44}%

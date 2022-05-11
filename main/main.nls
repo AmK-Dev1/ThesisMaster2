@@ -1,24 +1,24 @@
 
 \begin{thenomenclature} 
 \nomgroup{A}
-  \item [{ACC}]\begingroup Accuracy\nomeqref {0}\nompageref{6}
-  \item [{ADAS}]\begingroup Advanced Driving assistance Systems\nomeqref {0}\nompageref{6}
-  \item [{BSM}]\begingroup Blind-Spot Monitoring\nomeqref {0}\nompageref{6}
-  \item [{DAA}]\begingroup Driver Attention Alert\nomeqref {0}\nompageref{6}
-  \item [{DAS}]\begingroup Driving assistance Systems\nomeqref {0}\nompageref{6}
-  \item [{FN}]\begingroup False negative\nomeqref {0}\nompageref{6}
-  \item [{FP}]\begingroup False positive\nomeqref {0}\nompageref{6}
-  \item [{LAS}]\begingroup lane keep assist system\nomeqref {0}\nompageref{6}
-  \item [{LC}]\begingroup Lighting conditions\nomeqref {0}\nompageref{6}
-  \item [{LIDAR}]\begingroup Light Detection and Ranging\nomeqref {0}\nompageref{6}
-  \item [{MNN}]\begingroup Minimum Neighbors\nomeqref {0}\nompageref{6}
-  \item [{NHTSA}]\begingroup National Highway Traffic safety administration\nomeqref {0}\nompageref{6}
-  \item [{PR}]\begingroup Precision rate\nomeqref {0}\nompageref{6}
-  \item [{RADAR}]\begingroup Radio Detection and Ranging\nomeqref {0}\nompageref{6}
-  \item [{ROI}]\begingroup Reagion of Interest\nomeqref {0}\nompageref{6}
-  \item [{RR}]\begingroup Recall rate\nomeqref {0}\nompageref{6}
-  \item [{SF}]\begingroup Scale Factor\nomeqref {0}\nompageref{6}
-  \item [{TN}]\begingroup True negative\nomeqref {0}\nompageref{6}
-  \item [{TP}]\begingroup True positive\nomeqref {0}\nompageref{6}
+  \item [{ACC}]\begingroup Accuracy\nomeqref {0}\nompageref{7}
+  \item [{ADAS}]\begingroup Advanced Driving assistance Systems\nomeqref {0}\nompageref{7}
+  \item [{BSM}]\begingroup Blind-Spot Monitoring\nomeqref {0}\nompageref{7}
+  \item [{DAA}]\begingroup Driver Attention Alert\nomeqref {0}\nompageref{7}
+  \item [{DAS}]\begingroup Driving assistance Systems\nomeqref {0}\nompageref{7}
+  \item [{FN}]\begingroup False negative\nomeqref {0}\nompageref{7}
+  \item [{FP}]\begingroup False positive\nomeqref {0}\nompageref{7}
+  \item [{LAS}]\begingroup lane keep assist system\nomeqref {0}\nompageref{7}
+  \item [{LC}]\begingroup Lighting conditions\nomeqref {0}\nompageref{7}
+  \item [{LIDAR}]\begingroup Light Detection and Ranging\nomeqref {0}\nompageref{7}
+  \item [{MNN}]\begingroup Minimum Neighbors\nomeqref {0}\nompageref{7}
+  \item [{NHTSA}]\begingroup National Highway Traffic safety administration\nomeqref {0}\nompageref{7}
+  \item [{PR}]\begingroup Precision rate\nomeqref {0}\nompageref{7}
+  \item [{RADAR}]\begingroup Radio Detection and Ranging\nomeqref {0}\nompageref{7}
+  \item [{ROI}]\begingroup Reagion of Interest\nomeqref {0}\nompageref{7}
+  \item [{RR}]\begingroup Recall rate\nomeqref {0}\nompageref{7}
+  \item [{SF}]\begingroup Scale Factor\nomeqref {0}\nompageref{7}
+  \item [{TN}]\begingroup True negative\nomeqref {0}\nompageref{7}
+  \item [{TP}]\begingroup True positive\nomeqref {0}\nompageref{7}
 
 \end{thenomenclature}

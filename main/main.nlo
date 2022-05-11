@@ -1,19 +1,19 @@
-\nomenclatureentry{aADAS@[{ADAS}]\begingroup Advanced Driving assistance Systems\nomeqref {0}|nompageref}{6}
-\nomenclatureentry{aDAS@[{DAS}]\begingroup Driving assistance Systems\nomeqref {0}|nompageref}{6}
-\nomenclatureentry{aNHTSA@[{NHTSA}]\begingroup National Highway Traffic safety administration\nomeqref {0}|nompageref}{6}
-\nomenclatureentry{aLAS@[{LAS}]\begingroup lane keep assist system\nomeqref {0}|nompageref}{6}
-\nomenclatureentry{aBSM@[{BSM}]\begingroup Blind-Spot Monitoring\nomeqref {0}|nompageref}{6}
-\nomenclatureentry{aDAA@[{DAA}]\begingroup Driver Attention Alert\nomeqref {0}|nompageref}{6}
-\nomenclatureentry{aRADAR@[{RADAR}]\begingroup Radio Detection and Ranging\nomeqref {0}|nompageref}{6}
-\nomenclatureentry{aLIDAR@[{LIDAR}]\begingroup Light Detection and Ranging\nomeqref {0}|nompageref}{6}
-\nomenclatureentry{aTP@[{TP}]\begingroup True positive\nomeqref {0}|nompageref}{6}
-\nomenclatureentry{aTN@[{TN}]\begingroup True negative\nomeqref {0}|nompageref}{6}
-\nomenclatureentry{aFP@[{FP}]\begingroup False positive\nomeqref {0}|nompageref}{6}
-\nomenclatureentry{aFN@[{FN}]\begingroup False negative\nomeqref {0}|nompageref}{6}
-\nomenclatureentry{aPR@[{PR}]\begingroup Precision rate\nomeqref {0}|nompageref}{6}
-\nomenclatureentry{aRR@[{RR}]\begingroup Recall rate\nomeqref {0}|nompageref}{6}
-\nomenclatureentry{aACC@[{ACC}]\begingroup Accuracy\nomeqref {0}|nompageref}{6}
-\nomenclatureentry{aROI@[{ROI}]\begingroup Reagion of Interest\nomeqref {0}|nompageref}{6}
-\nomenclatureentry{aMNN@[{MNN}]\begingroup Minimum Neighbors\nomeqref {0}|nompageref}{6}
-\nomenclatureentry{aSF@[{SF}]\begingroup Scale Factor\nomeqref {0}|nompageref}{6}
-\nomenclatureentry{aLC@[{LC}]\begingroup Lighting conditions\nomeqref {0}|nompageref}{6}
+\nomenclatureentry{aADAS@[{ADAS}]\begingroup Advanced Driving assistance Systems\nomeqref {0}|nompageref}{7}
+\nomenclatureentry{aDAS@[{DAS}]\begingroup Driving assistance Systems\nomeqref {0}|nompageref}{7}
+\nomenclatureentry{aNHTSA@[{NHTSA}]\begingroup National Highway Traffic safety administration\nomeqref {0}|nompageref}{7}
+\nomenclatureentry{aLAS@[{LAS}]\begingroup lane keep assist system\nomeqref {0}|nompageref}{7}
+\nomenclatureentry{aBSM@[{BSM}]\begingroup Blind-Spot Monitoring\nomeqref {0}|nompageref}{7}
+\nomenclatureentry{aDAA@[{DAA}]\begingroup Driver Attention Alert\nomeqref {0}|nompageref}{7}
+\nomenclatureentry{aRADAR@[{RADAR}]\begingroup Radio Detection and Ranging\nomeqref {0}|nompageref}{7}
+\nomenclatureentry{aLIDAR@[{LIDAR}]\begingroup Light Detection and Ranging\nomeqref {0}|nompageref}{7}
+\nomenclatureentry{aTP@[{TP}]\begingroup True positive\nomeqref {0}|nompageref}{7}
+\nomenclatureentry{aTN@[{TN}]\begingroup True negative\nomeqref {0}|nompageref}{7}
+\nomenclatureentry{aFP@[{FP}]\begingroup False positive\nomeqref {0}|nompageref}{7}
+\nomenclatureentry{aFN@[{FN}]\begingroup False negative\nomeqref {0}|nompageref}{7}
+\nomenclatureentry{aPR@[{PR}]\begingroup Precision rate\nomeqref {0}|nompageref}{7}
+\nomenclatureentry{aRR@[{RR}]\begingroup Recall rate\nomeqref {0}|nompageref}{7}
+\nomenclatureentry{aACC@[{ACC}]\begingroup Accuracy\nomeqref {0}|nompageref}{7}
+\nomenclatureentry{aROI@[{ROI}]\begingroup Reagion of Interest\nomeqref {0}|nompageref}{7}
+\nomenclatureentry{aMNN@[{MNN}]\begingroup Minimum Neighbors\nomeqref {0}|nompageref}{7}
+\nomenclatureentry{aSF@[{SF}]\begingroup Scale Factor\nomeqref {0}|nompageref}{7}
+\nomenclatureentry{aLC@[{LC}]\begingroup Lighting conditions\nomeqref {0}|nompageref}{7}

@@ -438,6 +438,34 @@
       \verb https://ai.plainenglish.io/terminologies-used-in-face-detection-with-haar-cascade-classifier-open-cv-6346c5c926c
       \endverb
     \endentry
+    \entry{GPC}{online}{}
+      \name{author}{1}{}{%
+        {{hash=ad5eaecc2721564034f710ce9a318887}{%
+           family={Rosebrock},
+           familyi={R\bibinitperiod},
+           given={Adrian},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{ad5eaecc2721564034f710ce9a318887}
+      \strng{fullhash}{ad5eaecc2721564034f710ce9a318887}
+      \strng{bibnamehash}{ad5eaecc2721564034f710ce9a318887}
+      \strng{authorbibnamehash}{ad5eaecc2721564034f710ce9a318887}
+      \strng{authornamehash}{ad5eaecc2721564034f710ce9a318887}
+      \strng{authorfullhash}{ad5eaecc2721564034f710ce9a318887}
+      \field{extraname}{1}
+      \field{sortinit}{R}
+      \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{OpenCV Gamma Correction}
+      \field{year}{2015}
+      \verb{urlraw}
+      \verb https://pyimagesearch.com/2015/10/05/opencv-gamma-correction/
+      \endverb
+      \verb{url}
+      \verb https://pyimagesearch.com/2015/10/05/opencv-gamma-correction/
+      \endverb
+    \endentry
     \entry{PyImageSearchHaarCascades}{online}{}
       \name{author}{1}{}{%
         {{hash=ad5eaecc2721564034f710ce9a318887}{%
@@ -452,6 +480,7 @@
       \strng{authorbibnamehash}{ad5eaecc2721564034f710ce9a318887}
       \strng{authornamehash}{ad5eaecc2721564034f710ce9a318887}
       \strng{authorfullhash}{ad5eaecc2721564034f710ce9a318887}
+      \field{extraname}{2}
       \field{sortinit}{R}
       \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
       \field{labelnamesource}{author}
@@ -616,6 +645,114 @@
       \endverb
       \verb{url}
       \verb https://dewesoft.com/daq/types-of-adas-sensors
+      \endverb
+    \endentry
+    \entry{Soukupov2016RealTimeEB}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=30087b674e74264a8013c47b557bc59f}{%
+           family={Soukupov{á}},
+           familyi={S\bibinitperiod},
+           given={Tereza},
+           giveni={T\bibinitperiod}}}%
+        {{hash=d17acc8569433e9a946f67b3842b7b0c}{%
+           family={Cech},
+           familyi={C\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{4252468df59b4512d2e976f4365f4e70}
+      \strng{fullhash}{4252468df59b4512d2e976f4365f4e70}
+      \strng{bibnamehash}{4252468df59b4512d2e976f4365f4e70}
+      \strng{authorbibnamehash}{4252468df59b4512d2e976f4365f4e70}
+      \strng{authornamehash}{4252468df59b4512d2e976f4365f4e70}
+      \strng{authorfullhash}{4252468df59b4512d2e976f4365f4e70}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Real-Time Eye Blink Detection using Facial Landmarks}
+      \field{year}{2016}
+    \endentry
+    \entry{THARSANEE2021117}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=cd47f248d412459fbae08d9848d97c70}{%
+           family={Tharsanee},
+           familyi={T\bibinitperiod},
+           given={R.M.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=f3caf3deb34175f7b69e44062600a01f}{%
+           family={Soundariya},
+           familyi={S\bibinitperiod},
+           given={R.S.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=65dee77af188aa3bdccc2eeb2a52d503}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={A.\bibnamedelimi Saran},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=d1abe1418421498049350f6563e9104a}{%
+           family={Karthiga},
+           familyi={K\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=cedf51f4566028e0c238a18149fa92e6}{%
+           family={Sountharrajan},
+           familyi={S\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+      }
+      \name{editor}{4}{}{%
+        {{hash=08855108432e0cf4b97018e175d8467e}{%
+           family={Kose},
+           familyi={K\bibinitperiod},
+           given={Utku},
+           giveni={U\bibinitperiod}}}%
+        {{hash=2da3c22a96d1c2bba1801bd0662e4244}{%
+           family={Gupta},
+           familyi={G\bibinitperiod},
+           given={Deepak},
+           giveni={D\bibinitperiod}}}%
+        {{hash=6e0b8e1750e03a69b5587a038c8f8188}{%
+           family={{de Albuquerque}},
+           familyi={d\bibinitperiod},
+           given={Victor\bibnamedelimb Hugo\bibnamedelima C.},
+           giveni={V\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=928363b7ecb7c4d21b8cabf472577905}{%
+           family={Khanna},
+           familyi={K\bibinitperiod},
+           given={Ashish},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Academic Press}%
+      }
+      \strng{namehash}{d24f429dd3c9b20e615cc8c1366a5598}
+      \strng{fullhash}{4c1e0cee4b7ae7f212f658b37f7012e4}
+      \strng{bibnamehash}{d24f429dd3c9b20e615cc8c1366a5598}
+      \strng{authorbibnamehash}{d24f429dd3c9b20e615cc8c1366a5598}
+      \strng{authornamehash}{d24f429dd3c9b20e615cc8c1366a5598}
+      \strng{authorfullhash}{4c1e0cee4b7ae7f212f658b37f7012e4}
+      \strng{editorbibnamehash}{4ba94ccd7ff54183160324886239902e}
+      \strng{editornamehash}{4ba94ccd7ff54183160324886239902e}
+      \strng{editorfullhash}{46b543e87a49364cc2c6b6df07ed9644}
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Data Science for COVID-19}
+      \field{isbn}{978-0-12-824536-1}
+      \field{title}{7 - Deep convolutional neural network–based image classification for COVID-19 diagnosis}
+      \field{year}{2021}
+      \field{pages}{117\bibrangedash 145}
+      \range{pages}{29}
+      \verb{doi}
+      \verb https://doi.org/10.1016/B978-0-12-824536-1.00012-5
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/B9780128245361000125
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/B9780128245361000125
       \endverb
     \endentry
     \entry{PaulViola}{inproceedings}{}

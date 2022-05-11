@@ -2225,6 +2225,9 @@
     <bcf:citekey order="41">ScaleFactorImagePyramide</bcf:citekey>
     <bcf:citekey order="42">Scale</bcf:citekey>
     <bcf:citekey order="43">DayNight</bcf:citekey>
+    <bcf:citekey order="44">THARSANEE2021117</bcf:citekey>
+    <bcf:citekey order="45">GPC</bcf:citekey>
+    <bcf:citekey order="46">Soukupov2016RealTimeEB</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
