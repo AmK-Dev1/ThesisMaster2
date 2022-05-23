@@ -1,0 +1,88 @@
+           ------ HOG information ---------
+
+\subsection{Histogram of oriented gradients (HOG):}	
+\emph{is a feature descriptor used in computer vision and image processing for the purpose of object detection. The technique counts occurrences of gradient orientation in localized portions of an image. This method is similar to that of edge orientation histograms, scale-invariant feature transform descriptors, and shape contexts, but differs in that it is computed on a dense grid of uniformly spaced cells and uses overlapping local contrast normalization for improved accuracy.}
+\subsubsection{Algorithm implementation of HOG :}
+\begin{itemize}
+	\item \textbf {Gradient computation :} \newline
+	The first step of calculation in many feature detectors in image pre-processing is to ensure normalized color and gamma values. As Dalal and Triggs point out, however, this step can be omitted in HOG descriptor computation, as the ensuing descriptor normalization essentially achieves the same result. Image pre-processing thus provides little impact on performance. Instead, the first step of calculation is the computation of the gradient values. The most common method is to apply the 1-D centered, point discrete derivative mask in one or both of the horizontal and vertical directions. Specifically, this method requires filtering the color or intensity data of the image with the following filter kernels:
+	$$  [-1,0,1] and [-1,0,1]^T $$
+	Dalal and Triggs tested other, more complex masks, such as the 3x3 Sobel mask or diagonal masks, but these masks generally performed more poorly in detecting humans in images. They also experimented with Gaussian smoothing before applying the derivative mask, but similarly found that omission of any smoothing performed better in practice.\parencite{HOG Algo}
+	
+	\item \textbf {Orientation binning :} \newline
+	\hspace{1cm}The second step of calculation is creating the cell histograms. Each pixel within the cell casts a weighted vote for an orientation-based histogram channel based on the values found in the gradient computation. The cells themselves can either be rectangular or radial in shape, and the histogram channels are evenly spread over 0 to 180 degrees or 0 to 360 degrees, depending on whether the gradient is “unsigned” or “signed”. Dalal and Triggs found that unsigned gradients used in conjunction with 9 histogram channels performed best in their human detection experiments. As for the vote weight, pixel contribution can either be the gradient magnitude itself, or some function of the magnitude. In tests, the gradient magnitude itself generally produces the best results. Other options for the vote weight could include the square root or square of the gradient magnitude, or some clipped version of the magnitude.\parencite{HOG Algo}
+	
+	\item \textbf {Descriptor blocks :} \newline
+	To account for changes in illumination and contrast, the gradient strengths must be locally normalized, which requires grouping the cells together into larger, spatially connected blocks. The HOG descriptor is then the concatenated vector of the components of the normalized cell histograms from all of the block regions. These blocks typically overlap, meaning that each cell contributes more than once to the final descriptor. Two main block geometries exist: rectangular R-HOG blocks and circular C-HOG blocks. R-HOG blocks are generally square grids, represented by three parameters: the number of cells per block, the number of pixels per cell, and the number of channels per cell histogram. In the Dalal and Triggs human detection experiment, the optimal parameters were found to be four 8x8 pixels cells per block (16x16 pixels per block) with 9 histogram channels. Moreover, they found that some minor improvement in performance could be gained by applying a Gaussian spatial window within each block before tabulating histogram votes in order to weight pixels around the edge of the blocks less. The R-HOG blocks appear quite similar to the scale-invariant feature transform (SIFT) descriptors; however, despite their similar formation, R-HOG blocks are computed in dense grids at some single scale without orientation alignment, whereas SIFT descriptors are usually computed at sparse, scale-invariant key image points and are rotated to align orientation. In addition, the R-HOG blocks are used in conjunction to encode spatial form information, while SIFT descriptors are used singly.
+	\newline
+	Circular HOG blocks (C-HOG) can be found in two variants: those with a single, central cell and those with an angularly divided central cell. In addition, these C-HOG blocks can be described with four parameters: the number of angular and radial bins, the radius of the center bin, and the expansion factor for the radius of additional radial bins. Dalal and Triggs found that the two main variants provided equal performance, and that two radial bins with four angular bins, a center radius of 4 pixels, and an expansion factor of 2 provided the best performance in their experimentation (to achieve a good performance, at last use this configure). Also, Gaussian weighting provided no benefit when used in conjunction with the C-HOG blocks. C-HOG blocks appear similar to shape context descriptors, but differ strongly in that C-HOG blocks contain cells with several orientation channels, while shape contexts only make use of a single edge presence count in their formulation.\parencite{HOG Algo}
+	
+	\item \textbf {Block normalization :} \newline
+	Dalal and Triggs explored four different methods for block normalization.Let \emph{V} be the non-normalized vector containing all histograms in a given block,$\lvert \lvert V \rvert \rvert _ \emph{k} $ be its k-norm for $ \emph{k} &=1,2 $ and $ \emph{e} $ be some small constant (the exact value, hopefully, is unimportant). Then the normalization factor can be one of the following:\newline
+	L2-norm:$ f &=  \dfrac{\emph{V}}{\sqrt{\lvert \lvert V \rvert \rvert _2 ^2 + e^2}}$ \newline
+	L2-hys: L2-norm followed by clipping (limiting the maximum values of v to 0.2) and renormalizing, as in\newline
+	L1-norm:$ f &=  \dfrac{\emph{V}}{\sqrt{\lvert \lvert V \rvert \rvert _1 + e}}$ \newline
+	L1-sqrt:$ f &= \sqrt{ \dfrac{\emph{V}}{\sqrt{\lvert \lvert V \rvert \rvert _1 + e}} }$ \newline
+	
+	In addition, the scheme L2-hys can be computed by first taking the L2-norm, clipping the result, and then renormalizing. In their experiments, Dalal and Triggs found the L2-hys, L2-norm, and L1-sqrt schemes provide similar performance, while the L1-norm provides slightly less reliable performance; however, all four methods showed very significant improvement over the non-normalized data.
+	
+	\item \textbf {Object recognition :} \newline
+	HOG descriptors may be used for object recognition by providing them as features to a machine learning algorithm. Dalal and Triggs used HOG descriptors as features in a support vector machine (SVM);however, HOG descriptors are not tied to a specific machine learning algorithm.
+\end{itemize}
+
+                  ---- SVM information  ------------
+                  
+  \subsection{Support-vector machine (SVM):}
+  \emph{In machine learning, support-vector machines (SVMs, also support-vector networks) are supervised learning models with associated learning algorithms that analyze data for classification and regression analysis. Developed at AT&T Bell Laboratories by Vladimir Vapnik with colleagues (Boser et al., 1992, Guyon et al., 1993, Cortes and Vapnik, 1995,Vapnik et al., 1997[citation needed]) SVMs are one of the most robust prediction methods, being based on statistical learning frameworks or VC theory proposed by Vapnik (1982, 1995) and Chervonenkis (1974). Given a set of training examples, each marked as belonging to one of two categories, an SVM training algorithm builds a model that assigns new examples to one category or the other, making it a non-probabilistic binary linear classifier (although methods such as Platt scaling exist to use SVM in a probabilistic classification setting). SVM maps training examples to points in space so as to maximise the width of the gap between the two categories. New examples are then mapped into that same space and predicted to belong to a category based on which side of the gap they fall.}
+  \subsubsection{Linear SVM :}
+  We are given a training dataset of \emph{n} points of the form\newline
+  $${\displaystyle (\mathbf {x} _{1},y_{1}),\ldots ,(\mathbf {x} _{n},y_{n}),}$$\newline
+  where the$ {\displaystyle y_{i}} $ are either 1 or -1, each indicating the class to which the point ${\displaystyle \mathbf {x} _{i}}\mathbf $ belongs. Each ${\displaystyle \mathbf {x} _{i}}$ is a ${\displaystyle p}$ p-dimensional real vector. We want to find the "maximum-margin hyperplane" that divides the group of points ${\displaystyle \mathbf {x} _{i}}$ for which ${\displaystyle y_{i}=1} $ from the group of points for which ${\displaystyle y_{i}=-1}$, which is defined so that the distance between the hyperplane and the nearest point ${\displaystyle \mathbf {x} _{i}}$ from either group is maximized.
+  \newline
+  Any hyperplane can be written as the set of points ${\displaystyle \mathbf {x} }$ satisfying \newline $$ W^T X - b =0$$ ,
+  where $ {\displaystyle \mathbf {w} }$  is the (not necessarily normalized) normal vector to the hyperplane. This is much like Hesse normal form, except that ${\displaystyle \mathbf {w} }$  is not necessarily a unit vector. The parameter ${\displaystyle {\tfrac {b}{\|\mathbf {w} \|}}}$ determines the offset of the hyperplane from the origin along the normal vector ${\displaystyle \mathbf {w} }$\mathbf .\newline
+  \begin{figure}[h!]
+  	\centering
+  	\includegraphics[width=0.5\linewidth]{images/SVM_margin.png}
+  	\caption{Maximum-margin hyperplane and margins for an SVM trained with samples from two classes. Samples on the margin are called the support vectors.}
+  	\label{fig:my_label}
+  \end{figure}
+\chapter*{Hard-margin:}\newline
+If the training data is linearly separable, we can select two parallel hyperplanes that separate the two classes of data, so that the distance between them is as large as possible. The region bounded by these two hyperplanes is called the "margin", and the maximum-margin hyperplane is the hyperplane that lies halfway between them. With a normalized or standardized dataset, these hyperplanes can be described by the equations \newline $ W^T X - b =1 $ (anything on or above this boundary is of one class, with label 1) \newline and \newline  $ W^T X - b =1 $ (anything on or below this boundary is of the other class, with label -1) \newline Geometrically, the distance between these two hyperplanes is ${\displaystyle {\tfrac {2}{\|\mathbf {w} \|}}}$ \parencite{SVM_HM}, so to maximize the distance between the planes we want to minimize ${\displaystyle \|\mathbf {w} \|}$. The distance is computed using the distance from a point to a plane equation. We also have to prevent data points from falling into the margin, we add the following constraint: for each ${\displaystyle i}$ either
+${\displaystyle \mathbf {w} ^{T}\mathbf {x} _{i}-b\geq 1}, if {\displaystyle y_{i}=1},$
+or
+${\displaystyle \mathbf {w} ^{T}\mathbf {x} _{i}-b\leq -1}, if {\displaystyle y_{i}=-1}.$\newline
+These constraints state that each data point must lie on the correct side of the margin.\newline
+This can be rewritten as\newline
+$${\displaystyle y_{i}(\mathbf {w} ^{T}\mathbf {x} _{i}-b)\geq 1,\quad {\text{ for all }}1\leq i\leq n.\qquad \qquad (1)}$$\newline
+We can put this together to get the optimization problem: \newline
+$"Minimize {\displaystyle \|\mathbf {w} \|}\ $ subject to ${\displaystyle y_{i}(\mathbf {w} ^{T}\mathbf {x} _{i}-b)\geq 1}$ for ${\displaystyle i=1,\ldots ,n}"$ \newline
+The ${\displaystyle \mathbf {w} }$  and ${\displaystyle b}$ that solve this problem determine our classifier, ${\displaystyle \mathbf {x} \mapsto \operatorname {sgn}(\mathbf {w} ^{T}\mathbf {x} -b)}$ where ${\displaystyle \operatorname {sgn}(\cdot )}$ is the sign function.\newline
+An important consequence of this geometric description is that the max-margin hyperplane is completely determined by those ${\displaystyle {\vec {x}}_{i}}$ that lie nearest to it. These ${\displaystyle \mathbf {x} _{i}}$ are called support vectors.
+\chapter*{Soft-margin :}
+To extend SVM to cases in which the data are not linearly separable, the hinge loss function is helpful\newline
+${\displaystyle \max \left(0,1-y_{i}(\mathbf {w} ^{T}\mathbf {x} _{i}-b)\right).}$\newline
+Note that ${\displaystyle y_{i}}$ is the i-th target (i.e., in this case, 1 or −1), and ${\displaystyle \mathbf {w} ^{T}\mathbf {x} _{i}-b}$ is the i-th output.\newline
+This function is zero if the constraint in (1) is satisfied, in other words, if ${\displaystyle \mathbf {x} _{i}}$ lies on the correct side of the margin. For data on the wrong side of the margin, the function's value is proportional to the distance from the margin.\newline
+The goal of the optimization then is to minimize
+$${\displaystyle \lambda \lVert \mathbf {w} \rVert ^{2}+\left[{\frac {1}{n}}\sum _{i=1}^{n}\max \left(0,1-y_{i}(\mathbf {w} ^{T}\mathbf {x} _{i}-b)\right)\right],}$$ \newline
+where the parameter ${\displaystyle \lambda >0}$ determines the trade-off between increasing the margin size and ensuring that the ${\displaystyle \mathbf {x} _{i}}$ lie on the correct side of the margin. Thus, for sufficiently small values of ${\displaystyle \lambda }$ , it will behave similar to the hard-margin SVM, if the input data are linearly classifiable, but will still learn if a classification rule is viable or not. (This parameter ${\displaystyle \lambda }$  is also called C, e.g. in LIBSVM.)
+  \subsubsection{Nonlinear Kernels :}
+  The original maximum-margin hyperplane algorithm proposed by Vapnik in 1963 constructed a linear classifier. However, in 1992, Bernhard Boser, Isabelle Guyon and Vladimir Vapnik suggested a way to create nonlinear classifiers by applying the kernel trick (originally proposed by Aizerman et al.\parencite{SVM1}) to maximum-margin hyperplanes\parencite{SVM2}.The resulting algorithm is formally similar, except that every dot product is replaced by a nonlinear kernel function. This allows the algorithm to fit the maximum-margin hyperplane in a transformed feature space. The transformation may be nonlinear and the transformed space high-dimensional; although the classifier is a hyperplane in the transformed feature space, it may be nonlinear in the original input space.\newline
+  \begin{figure}[h!]
+  	\centering
+  	\includegraphics[width=0.5\linewidth]{Kernel_Machine_SVM.png}
+  	\caption{Kernel machine}
+  	\label{fig:my_label}
+  \end{figure}
+  \newline
+  It is noteworthy that working in a higher-dimensional feature space increases the generalization error of support-vector machines, although given enough samples the algorithm still performs well.\parencite{SVM3}\newline
+  Some common kernels include:
+  \begin{itemize}
+  	\item Polynomial (homogeneous): ${\displaystyle k({\vec {x_{i}}},{\vec {x_{j}}})=({\vec {x_{i}}}\cdot {\vec {x_{j}}})^{d}}$. Particularly, when $ {\displaystyle d=1}$, this becomes the linear kernel.
+  	\item Polynomial (inhomogeneous):${\displaystyle k({\vec {x_{i}}},{\vec {x_{j}}})=({\vec {x_{i}}}\cdot {\vec {x_{j}}}+r)^{d}}$.
+  	\item Gaussian radial basis function: ${\displaystyle k({\vec {x_{i}}},{\vec {x_{j}}})=\exp(-\gamma \|{\vec {x_{i}}}-{\vec {x_{j}}}\|^{2})}$ for$ {\displaystyle \gamma >0}.$ Sometimes parametrized using ${\displaystyle \gamma =1/(2\sigma ^{2})}$.
+  	\item Sigmoid function (Hyperbolic tangent): ${\displaystyle k({\vec {x_{i}}},{\vec {x_{j}}})=\tanh(\kappa {\vec {x_{i}}}\cdot {\vec {x_{j}}}+c)}$ for some (not every) ${\displaystyle \kappa >0} $ and $ {\displaystyle c<0}$.
+  \end{itemize}
+  The kernel is related to the transform ${\displaystyle \varphi ({\vec {x_{i}}})}$ by the equation ${\displaystyle k({\vec {x_{i}}},{\vec {x_{j}}})=\varphi ({\vec {x_{i}}})\cdot \varphi ({\vec {x_{j}}})}$. The value w is also in the transformed space, with ${\displaystyle \textstyle {\vec {w}}=\sum _{i}\alpha _{i}y_{i}\varphi ({\vec {x}}_{i})}$. Dot products with w for classification can again be computed by the kernel trick, i.e.${\displaystyle \textstyle {\vec {w}}\cdot \varphi ({\vec {x}})=\sum _{i}\alpha _{i}y_{i}k({\vec {x}}_{i},{\vec {x}})}$.
+  

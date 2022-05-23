@@ -1,20 +1,21 @@
 [0] Config.pm:304> INFO - This is Biber 2.14 (beta)
 [0] Config.pm:307> INFO - Logfile is 'main.blg'
-[81] biber:322> INFO - === jeu. mai 12, 2022, 00:11:45
-[94] Biber.pm:415> INFO - Reading 'main.bcf'
-[162] Biber.pm:943> INFO - Found 35 citekeys in bib section 0
-[176] Biber.pm:4256> INFO - Processing section 0
-[176] Utils.pm:75> INFO - Globbing data source 'references.bib'
-[177] Utils.pm:91> INFO - Globbed data source 'references.bib' to references.bib
-[187] Biber.pm:4455> INFO - Looking for bibtex format file 'references.bib' for section 0
-[189] bibtex.pm:1653> INFO - LaTeX decoding ...
-[223] bibtex.pm:1471> INFO - Found BibTeX data source 'references.bib'
-[253] Utils.pm:293> WARN - year field '21 June 2021' in entry 'WhoFactSheet' is not an integer - this will probably not sort properly.
-[313] Utils.pm:293> WARN - year field 'last edit 2022' in entry 'RgbAndCameras' is not an integer - this will probably not sort properly.
-[462] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[462] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[462] Biber.pm:4084> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[462] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
-[498] bbl.pm:652> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[514] bbl.pm:755> INFO - Output to main.bbl
-[514] Biber.pm:128> INFO - WARNINGS: 2
+[68] biber:322> INFO - === lun. mai 23, 2022, 12:46:28
+[82] Biber.pm:415> INFO - Reading 'main.bcf'
+[141] Biber.pm:943> INFO - Found 38 citekeys in bib section 0
+[152] Biber.pm:4256> INFO - Processing section 0
+[153] Utils.pm:75> INFO - Globbing data source 'references.bib'
+[153] Utils.pm:91> INFO - Globbed data source 'references.bib' to references.bib
+[161] Biber.pm:4455> INFO - Looking for bibtex format file 'references.bib' for section 0
+[163] bibtex.pm:1653> INFO - LaTeX decoding ...
+[195] bibtex.pm:1471> INFO - Found BibTeX data source 'references.bib'
+[216] Utils.pm:293> WARN - year field '21 June 2021' in entry 'WhoFactSheet' is not an integer - this will probably not sort properly.
+[269] Utils.pm:293> WARN - year field 'last edit 2022' in entry 'RgbAndCameras' is not an integer - this will probably not sort properly.
+[360] Utils.pm:293> WARN - I didn't find a database entry for 'i' (section 0)
+[398] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[398] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[398] Biber.pm:4084> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[398] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
+[429] bbl.pm:652> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[444] bbl.pm:755> INFO - Output to main.bbl
+[445] Biber.pm:128> INFO - WARNINGS: 3

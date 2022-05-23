@@ -1,19 +1,19 @@
-\chapter{Introduction}
+\chapter*{Introduction}
 
 \emph{
-Recently, the development of advanced driver assistance systems (ADAS) has facilitated people’s daily life from comfort to safety. However, these systems are complex \parencite{AdasComplexity}, utilizing vehicle parameters, environmental observations, and traffic patterns to assist the driver. These systems are added cost-to-ownership due to the added expense of sensors and computing hardware needed to perceive the environment, especially in real-time monitoring. Thus, further development in this area is needed to
+Recently, the development of advanced driver assistance systems (ADAS) has facilitated people’s daily life from comfort to safety. However, these systems are complex, utilizing vehicle parameters, environmental observations, and traffic patterns to assist the driver. These systems are added cost-to-ownership due to the added expense of sensors and computing hardware needed to perceive the environment, especially in real-time monitoring. Thus, further development in this area is needed to
 improve reliability, performance, and decrease costs.
 \\This work describes a driver assistance system based on computer-vision techniques.
 } 
 
 
-\section{Background and Problems}
+\section*{Background and Problems}
 
 According to the World Health Organization (WHO) \parencite{WhoFactSheet} around 1.3 million people die each year as a result of road traffic accidents, in addition to 50 million serious injuries. This cost most countries 3\% of their gross domestic product.In 2016\\
 
-The report also highlights More than 90\% of road traffic deaths occur in low- and middle-income countries. Road traffic injury death rates are highest in the African region. Even within high-income countries, people from lower socioeconomic backgrounds are more likely to be involved in road traffic crashes.\\
+The report also highlights More than 90\% of road traffic deaths occur in low- and middle-income countries. The African continent has the greatest rate of traffic-related deaths. People from poorer socioeconomic origins are more likely to be involved in road traffic accidents, even in high-income countries.\\
 
-Although current "\emph{passive}"\footnote{Passive systems such as air-bags, seat belts, padded dashboards, or physical structure of a vehicle, normally help to reduce the severity or the consequences of an accident.}  and "\emph{active}"\footnote{Active systems like adaptive cruise control (ACC), automatic braking systems (ABS), or lane departure warning systems (LDWS) are designed to prevent or decrease the chance of crash occurrence.} safety systems \parencite{ActivePassive} can reduce the impact of traffic accidents, only a few car accidents are caused by bad weather and unsafe road infrastructure while most by human fault \parencite{HumanFault}, such as: \parencite{WhoFactSheet} \\ 
+Although current "\emph{passive}"\footnote{Passive systems such as air-bags, seat belts, padded dashboards, or physical structure of a vehicle, normally help to reduce the severity or the consequences of an accident.}  and "\emph{active}"\footnote{Adaptive cruise control (ACC), automated braking systems (ABS), and lane departure warning systems (LDWS) are active technologies that are meant to avoid or reduce the likelihood of a crash.} safety systems \parencite{ActivePassive} can reduce the impact of traffic accidents, only a few car accidents are caused by bad weather and unsafe road infrastructure while most by human fault \parencite{HumanFault}, such as: \parencite{WhoFactSheet} \\ 
 -Speeding \\
 -Driving under the influence of alcohol and other psychoactive substances\\
 -Nonuse of motorcycle helmets, seat-belts, and child restraints\\
@@ -22,9 +22,9 @@ Although current "\emph{passive}"\footnote{Passive systems such as air-bags, sea
 According to \parencite{WhoBook2015} the most likely causes of car accidents are: the driver may lose concentration on the road when driving, drivers falling asleep at the wheel, driver fatigue, or driver distraction, no matter the driver is experienced or not. A study in the United States by the National Highway Traffic Safety Administration (NHTSA) \parencite{NhtsaBook2006}, confirms that almost 80\% of all types of vehicle accidents involve driver fatigue, driver drowsiness, or driver distraction (in general, distracted driving), with the high speed, may cause the driver to have no
 time to realize the road status, which leads to car accidents.\\ 
 
-These shocking statistics highlight the importance of research and development of advanced driver assistance systems (ADAS) focusing on \emph{"Driver Monitoring"} by driver behavior analysis as well as \emph{"Road Monitoring"} by road hazards detection.\\ 
+These statistics emphasize the necessity of research and development of advanced driver assistance systems (ADAS) focusing on \emph{"Driver Monitoring"} by driver behavior analysis as well as \emph{"Road Monitoring"} by road hazards detection.\\ 
 
-\section{Motivation}
+\section*{Motivation}
 
 Various driving assistant systems have been developed in automotive engineering, the U.S. National Highway Traffic Safety Administration (NHTSA) defined six levels of automation from level 0 to level 5, which describes the relationship from no autonomous driving to fully
 autonomous driving in automotive engineering, see \ref{fig:SafetyTechnologiesEvolution} .
@@ -43,23 +43,22 @@ respectively, which means the system will fully control the vehicle.
 
 Among these levels, an (ADAS) is considered to be the basic and important component. Generally,  An \emph{ADAS} is an electronic system in a vehicle that uses advanced technologies to assist the driver \parencite{WhatIsAdas}. It can include many active safety systems, such as \parencite{SafetyTechnology} lane keep assist system (LAS), blind-spot monitoring (BSM), driver attention alert (DAA), and many other systems that work together to increase the safety of drivers, passengers, pedestrians, and other road users.The objective is to recognize critical driving situations by perception of the vehicle and the divers as \emph{internal parameters}, road as \emph{external parameters}, and the weather and lighting condition as \emph{additional parameters}.\\%%%%%%% Need refrence (avoid thesis of Mahdi
 
-To collect these parameters. ADAS and autonomous driving functions feed off a continuous stream of information about the environment surrounding the vehicle, and it’s the sensors’ job to provide that \parencite{SensorTechnology} see the figure \ref{fig:AdasSensors}.\\
+To collect these parameters. The sensors' role is to give ADAS and autonomous driving components with a continual stream of information about the environment surrounding the vehicle to provide that \parencite{SensorTechnology} see the figure \ref{fig:AdasSensors}.\\
  
 \begin{figure}[h]
 \centering
 \includegraphics[width=1\textwidth]{AdasSensors}
-\caption{Typical types of sensors for ADAS}
+\caption{Sensors commonly used in ADAS}
 \label{fig:AdasSensors}
 \end{figure}
 
-The three main sensors used by the automotive industry to maintain the perception for autonomous vehicles at various levels of autonomy are
-\parencite{SensorTechnology}:\\ Ultrasonic sensors \parencite{UltrasonicSensors}, (RADAR, LIDAR) \parencite{RadarLidarSensors}, Cameras \parencite{CamerasSensors}.\\
+The three major sensors used by the automobile industry to keep autonomous cars' perceptions at varied levels of autonomy are \parencite{SensorTechnology}:\\ Ultrasonic sensors \parencite{UltrasonicSensors}, (RADAR, LIDAR) \parencite{RadarLidarSensors}, Cameras \parencite{CamerasSensors}.\\
 
-Ultrasonic sensors operates by transmitting short bursts of sound waves and measuring the time taken for the sound to travel to a target object, be reflected, and return to the receiver, they are usually used for short-distance applications at low speeds, such as park assist, self-parking, and blind-spot detection.\\
+Ultrasonic sensors operates by transmitting short bursts of sound waves and measuring the the amount of time it takes for sound to travel to a target item, be reflected, and then return to the receiver, they are usually used for short-distance applications at low speeds, such as park assist, self-parking, and blind-spot detection.\\
 
-RADAR (Radio Detection and Ranging)  sensors emit radio waves and analyse the bounced wave via a receiver. Because RADAR signals can range 300 meters in front of the vehicle, they are particularly important during highway speed driving. Additionally, RADAR can see through bad weather and other visibility occlusions. Because their wavelengths are just a few millimeters long, they can detect objects of several cm or larger . LiDAR (Light Detection and Ranging) systems are used to detect objects and map their distances in real-time. Essentially, LiDAR is a type of RADAR that uses one or more lasers as the energy source. LIDARs can provide a higher resolution result but in a narrower angular field.\\
+RADAR (Radio Detection and Ranging)  sensors emit radio waves and analyse the bounced wave via a receiver. RADAR signals are especially significant during highway speed driving since they may range up to 300 meters in front of the car. RADAR can also see through poor weather and other visibility obstructions. Because their wavelengths are just a few They are millimeters long and can detect objects that are several centimeters or more. LiDAR (Light Detection and Ranging) is a form of RADAR that uses one or more lasers as a source of energy. LIDARs have a better resolution but a narrower angular field of view.\\
 
-Camera sensors are similar to regular consumer cameras, like those that equip most smartphones. They are cheaper than both RADAR and LIDAR sensors. They can be adapted to any vehicle and any user can use them with no difficulty. For many years the fields of computer vision and image processing have used them to solve their problems. On the other hand, camera’s performance drops dramatically under bad lighting  conditions and they generally need a more complicated post-processing (image processing, image classification, and object detection) in order to convert the raw perceived images into a meaningful information. \\
+Camera sensors are similar to regular consumer cameras, like those that equip most smartphones. They are cheaper than both RADAR and LIDAR sensors. They may be customized to fit any vehicle, and they are simple to operate. For many years, they have been utilized to tackle difficulties in the disciplines of computer vision and image processing. Camera performance, on the other hand, degrades drastically in poor lighting circumstances, necessitating more complex post-processing (image processing, image classification, and object detection) to convert the raw seen images into useful information. \\
 
 
 Each of the above mentioned sensors have advantages and disadvantages, so that the ideal system would be a combination of all three.
@@ -67,10 +66,7 @@ Each of the above mentioned sensors have advantages and disadvantages, so that t
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Here add some contribution talk .....  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\section{Related Work} 
+\section*{Related Work} 
 
-There is a wide range of research topics under the umbrella of road safety and driver assistance systems (DAS) such as \emph{traffic signs recognition} [x], \emph{lane detection} [x] \emph{pedestrian detection} [x], \emph{vehicle detection} [x], and \emph{driver behaviour monitoring} [x] including driver fatigue, drowsiness and distraction detection. However, at a higher level, the research could be classified into two main categories: the research related to “Road monitoring” and the research works that focus on the “Driver monitoring”.
+There is a wide range of research topics under the umbrella of road safety and driver assistance systems (DAS) such as \emph{traffic signs recognition} , \emph{lane detection} \emph{pedestrian detection}, \emph{vehicle detection}, and \emph{driver behaviour monitoring} including driver fatigue, drowsiness and distraction detection.However, the research might be divided into two groups at a higher level: the research related to “Road monitoring” and the research works that focus on the “Driver monitoring”.
 
-
-\section{Thesis Organization}
-bla bla bla

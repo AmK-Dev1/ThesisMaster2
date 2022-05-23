@@ -1,61 +1,63 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1}{\ignorespaces The Evolution of Automated Safety Technologies\relax }}{11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.1}{\ignorespaces The Evolution of Automated Safety Technologies\relax }}{10}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Typical types of sensors for ADAS\relax }}{11}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Sensors commonly used in ADAS\relax }}{12}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Sampling and Quantization\relax }}{14}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Sampling and Quantization\relax }}{15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Gray scale image of Handwritten digit\relax }}{14}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Gray scale image of Handwritten digit\relax }}{15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Illustration of FP, FN, TP, and TN\relax }}{17}%
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Illustration of FP, FN, TP, and TN\relax }}{18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Calculation of integral values and integral image\relax }}{18}%
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Calculation of integral values and integral image\relax }}{19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Common types of Haar-like features\relax }}{19}%
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Common types of Haar-like features\relax }}{20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Example of Haar-feature matches in eyes\relax }}{19}%
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Example of Haar-feature matches in eyes\relax }}{20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.7}{\ignorespaces A cascade of weak-classifiers\relax }}{20}%
+\contentsline {figure}{\numberline {1.7}{\ignorespaces A cascade of weak-classifiers\relax }}{21}%
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.8}{\ignorespaces Linear vs non-linear 2d points\relax }}{23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Illustration of difrent Driver monitoring approches\relax }}{23}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Distracted Driver Sceenes\relax }}{25}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Illustration of Bounding Box in object detection using haar-like detector\relax }}{27}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Initial flowchart for driver monitoring with haarcascades\relax }}{28}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.5}{\ignorespaces face/eyes detection with Haar cascades\relax }}{29}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Double detection problem\relax }}{31}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Image Pyramid and Scale Factor\relax }}{32}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.8}{\ignorespaces detections using various MNN values. Dir eyes whdha w face whdha ! \relax }}{32}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Face/Eyes sizes for diffrent distances of the driver and the camera\relax }}{33}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.10}{\ignorespaces face/eyes detection with Haar cascades under diferent lighting conditions\relax }}{33}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.11}{\ignorespaces the effect of diffrent values of $\lambda $ for C = 1.\relax }}{35}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Power Law Transformation effect\relax }}{35}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Flowchart illustrates the proposed night vision system based on variance and gamma correction\relax }}{36}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Face / eye detection under diffrent lighting conditions\relax }}{37}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Flowchart illustrates the proposed driver monitoring algorithm based on Haar cascades\relax }}{38}%
+\contentsline {figure}{\numberline {1.9}{\ignorespaces Object detection using HOG and SVM pipeline\relax }}{24}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces RADAR-system\relax }}{41}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Illustration of difrent Driver monitoring approches\relax }}{26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces STRUCTURE OF A RADAR\relax }}{44}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Distracted Driver Sceenes\relax }}{28}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Illustration of Bounding Box in object detection using haar-like detector\relax }}{29}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Initial flowchart for driver monitoring with haarcascades\relax }}{31}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.5}{\ignorespaces face/eyes detection with Haar cascades\relax }}{31}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Double detection problem\relax }}{34}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Image Pyramid and Scale Factor\relax }}{34}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.8}{\ignorespaces detections using various MNN values. Dir eyes whdha w face whdha ! \relax }}{35}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Face/Eyes sizes for diffrent distances of the driver and the camera\relax }}{35}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.10}{\ignorespaces face/eyes detection with Haar cascades under diferent lighting conditions\relax }}{36}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.11}{\ignorespaces the effect of diffrent values of $\lambda $ for C = 1.\relax }}{37}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Power Law Transformation effect\relax }}{38}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Flowchart illustrates the proposed night vision system based on variance and gamma correction\relax }}{39}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Face / eye detection under diffrent lighting conditions\relax }}{40}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Flowchart illustrates the proposed driver monitoring algorithm based on Haar cascades\relax }}{41}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.16}{\ignorespaces the 68 facial landmark coordinates from the iBUG 300-W dataset\relax }}{42}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.17}{\ignorespaces Top-left: A visualization of eye landmarks when then the eye is open. Top-right: Eye landmarks when the eye is closed. Bottom: Plotting the eye aspect ratio over time. The dip in the eye aspect ratio indicates a blink \parencite {soukupova2016eye}.\relax }}{43}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.18}{\ignorespaces Flowchart illustrates the proposed driver monitoring algorithm based on Facial Landmarks\relax }}{44}%

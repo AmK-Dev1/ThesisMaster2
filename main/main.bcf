@@ -2182,7 +2182,6 @@
     <bcf:datasource type="file" datatype="bibtex">references.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">AdasComplexity</bcf:citekey>
     <bcf:citekey order="2">WhoFactSheet</bcf:citekey>
     <bcf:citekey order="3">ActivePassive</bcf:citekey>
     <bcf:citekey order="4">HumanFault</bcf:citekey>
@@ -2209,25 +2208,30 @@
     <bcf:citekey order="25">PaulViola</bcf:citekey>
     <bcf:citekey order="26">Adaboost</bcf:citekey>
     <bcf:citekey order="27">Adaboost</bcf:citekey>
-    <bcf:citekey order="28">DrowsinessDetectionSystem</bcf:citekey>
-    <bcf:citekey order="29">DrowsinessDetectionSystem</bcf:citekey>
+    <bcf:citekey order="28">HOGfeature2</bcf:citekey>
+    <bcf:citekey order="29">HOGfeature</bcf:citekey>
     <bcf:citekey order="30">DrowsinessDetectionSystem</bcf:citekey>
-    <bcf:citekey order="31">EvaluationOfTechnologies</bcf:citekey>
-    <bcf:citekey order="32">Zilberg2007MethodologyAI</bcf:citekey>
-    <bcf:citekey order="33">DrowsinessSigns</bcf:citekey>
-    <bcf:citekey order="34">DriverInnatention</bcf:citekey>
-    <bcf:citekey order="35">HaarFeaturesUses</bcf:citekey>
-    <bcf:citekey order="36">PyImageSearchHaarCascades</bcf:citekey>
-    <bcf:citekey order="37">OpenCvHaarCascades</bcf:citekey>
-    <bcf:citekey order="38">HaarFeaturesUses</bcf:citekey>
+    <bcf:citekey order="31">DrowsinessDetectionSystem</bcf:citekey>
+    <bcf:citekey order="32">DrowsinessDetectionSystem</bcf:citekey>
+    <bcf:citekey order="33">EvaluationOfTechnologies</bcf:citekey>
+    <bcf:citekey order="34">Zilberg2007MethodologyAI</bcf:citekey>
+    <bcf:citekey order="35">DrowsinessSigns</bcf:citekey>
+    <bcf:citekey order="36">DriverInnatention</bcf:citekey>
+    <bcf:citekey order="37">HaarFeaturesUses</bcf:citekey>
+    <bcf:citekey order="38">PyImageSearchHaarCascades</bcf:citekey>
     <bcf:citekey order="39">OpenCvHaarCascades</bcf:citekey>
-    <bcf:citekey order="40">OpenCvHaarCascades</bcf:citekey>
-    <bcf:citekey order="41">ScaleFactorImagePyramide</bcf:citekey>
-    <bcf:citekey order="42">Scale</bcf:citekey>
-    <bcf:citekey order="43">DayNight</bcf:citekey>
-    <bcf:citekey order="44">THARSANEE2021117</bcf:citekey>
-    <bcf:citekey order="45">GPC</bcf:citekey>
-    <bcf:citekey order="46">Soukupov2016RealTimeEB</bcf:citekey>
+    <bcf:citekey order="40">HaarFeaturesUses</bcf:citekey>
+    <bcf:citekey order="41">OpenCvHaarCascades</bcf:citekey>
+    <bcf:citekey order="42">OpenCvHaarCascades</bcf:citekey>
+    <bcf:citekey order="43">ScaleFactorImagePyramide</bcf:citekey>
+    <bcf:citekey order="44">Scale</bcf:citekey>
+    <bcf:citekey order="45">DayNight</bcf:citekey>
+    <bcf:citekey order="46">THARSANEE2021117</bcf:citekey>
+    <bcf:citekey order="47">GPC</bcf:citekey>
+    <bcf:citekey order="48">Soukupov2016RealTimeEB</bcf:citekey>
+    <bcf:citekey order="49">i</bcf:citekey>
+    <bcf:citekey order="50">soukupova2016eye</bcf:citekey>
+    <bcf:citekey order="51">soukupova2016eye</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

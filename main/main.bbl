@@ -327,33 +327,6 @@
       \field{pages}{246 p.}
       \range{pages}{-1}
     \endentry
-    \entry{AdasComplexity}{online}{}
-      \name{author}{1}{}{%
-        {{hash=e4cf7d36101210924bba5692a7d69ebf}{%
-           family={Patil},
-           familyi={P\bibinitperiod},
-           given={Kunal},
-           giveni={K\bibinitperiod}}}%
-      }
-      \strng{namehash}{e4cf7d36101210924bba5692a7d69ebf}
-      \strng{fullhash}{e4cf7d36101210924bba5692a7d69ebf}
-      \strng{bibnamehash}{e4cf7d36101210924bba5692a7d69ebf}
-      \strng{authorbibnamehash}{e4cf7d36101210924bba5692a7d69ebf}
-      \strng{authornamehash}{e4cf7d36101210924bba5692a7d69ebf}
-      \strng{authorfullhash}{e4cf7d36101210924bba5692a7d69ebf}
-      \field{sortinit}{P}
-      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Speeding Up the Development of ADAS Systems with Model-Based Development}
-      \field{year}{2016}
-      \verb{urlraw}
-      \verb https://www.dspace.com/fr/fra/home/news/engineers-insights/blog_inc_adas_1607.cfm
-      \endverb
-      \verb{url}
-      \verb https://www.dspace.com/fr/fra/home/news/engineers-insights/blog_inc_adas_1607.cfm
-      \endverb
-    \endentry
     \entry{UltrasonicSensors}{article}{}
       \name{author}{1}{}{%
         {{hash=e4439ad93872312b0baa49442ef91a04}{%
@@ -647,6 +620,33 @@
       \verb https://dewesoft.com/daq/types-of-adas-sensors
       \endverb
     \endentry
+    \entry{soukupova2016eye}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=dd1d56c0cb7cfc042cf9b0fd77dea979}{%
+           family={Soukupova},
+           familyi={S\bibinitperiod},
+           given={Tereza},
+           giveni={T\bibinitperiod}}}%
+        {{hash=d17acc8569433e9a946f67b3842b7b0c}{%
+           family={Cech},
+           familyi={C\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{4715f847dff186ca52f951f0e03a004d}
+      \strng{fullhash}{4715f847dff186ca52f951f0e03a004d}
+      \strng{bibnamehash}{4715f847dff186ca52f951f0e03a004d}
+      \strng{authorbibnamehash}{4715f847dff186ca52f951f0e03a004d}
+      \strng{authornamehash}{4715f847dff186ca52f951f0e03a004d}
+      \strng{authorfullhash}{4715f847dff186ca52f951f0e03a004d}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{21st computer vision winter workshop, Rimske Toplice, Slovenia}
+      \field{title}{Eye blink detection using facial landmarks}
+      \field{year}{2016}
+    \endentry
     \entry{Soukupov2016RealTimeEB}{inproceedings}{}
       \name{author}{2}{}{%
         {{hash=30087b674e74264a8013c47b557bc59f}{%
@@ -753,6 +753,33 @@
       \endverb
       \verb{url}
       \verb https://www.sciencedirect.com/science/article/pii/B9780128245361000125
+      \endverb
+    \endentry
+    \entry{HOGfeature2}{online}{}
+      \name{author}{1}{}{%
+        {{hash=a49914a4d0d86893740d458991283473}{%
+           family={Tyagi},
+           familyi={T\bibinitperiod},
+           given={Mrinal},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{a49914a4d0d86893740d458991283473}
+      \strng{fullhash}{a49914a4d0d86893740d458991283473}
+      \strng{bibnamehash}{a49914a4d0d86893740d458991283473}
+      \strng{authorbibnamehash}{a49914a4d0d86893740d458991283473}
+      \strng{authornamehash}{a49914a4d0d86893740d458991283473}
+      \strng{authorfullhash}{a49914a4d0d86893740d458991283473}
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{HOG (Histogram of Oriented Gradients): An Overview}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://towardsdatascience.com/hog-histogram-of-oriented-gradients-67ecd887675f
+      \endverb
+      \verb{url}
+      \verb https://towardsdatascience.com/hog-histogram-of-oriented-gradients-67ecd887675f
       \endverb
     \endentry
     \entry{PaulViola}{inproceedings}{}
@@ -928,6 +955,34 @@
       \verb https://www.geeksforgeeks.org/digital-image-processing-basics/
       \endverb
     \endentry
+    \entry{HOGfeature}{online}{}
+      \name{author}{1}{}{%
+        {{hash=7bfba31207aef47dd104023cd8e4fad3}{%
+           family={Website},
+           familyi={W\bibinitperiod},
+           given={OpenGenus},
+           giveni={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{7bfba31207aef47dd104023cd8e4fad3}
+      \strng{fullhash}{7bfba31207aef47dd104023cd8e4fad3}
+      \strng{bibnamehash}{7bfba31207aef47dd104023cd8e4fad3}
+      \strng{authorbibnamehash}{7bfba31207aef47dd104023cd8e4fad3}
+      \strng{authornamehash}{7bfba31207aef47dd104023cd8e4fad3}
+      \strng{authorfullhash}{7bfba31207aef47dd104023cd8e4fad3}
+      \field{extraname}{3}
+      \field{sortinit}{W}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Using Histogram of Oriented Gradients (HOG) for Object Detection}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://iq.opengenus.org/object-detection-with-histogram-of-oriented-gradients-hog/
+      \endverb
+      \verb{url}
+      \verb https://iq.opengenus.org/object-detection-with-histogram-of-oriented-gradients-hog/
+      \endverb
+    \endentry
     \entry{SensorTechnology}{online}{}
       \name{author}{1}{}{%
         {{hash=4176e6a4109255fba7ff517161296513}{%
@@ -942,7 +997,7 @@
       \strng{authorbibnamehash}{4176e6a4109255fba7ff517161296513}
       \strng{authornamehash}{4176e6a4109255fba7ff517161296513}
       \strng{authorfullhash}{4176e6a4109255fba7ff517161296513}
-      \field{extraname}{3}
+      \field{extraname}{4}
       \field{sortinit}{W}
       \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
       \field{labelnamesource}{author}
@@ -1109,6 +1164,7 @@
       \range{pages}{1}
     \endentry
   \enddatalist
+  \missing{i}
 \endrefsection
 \endinput
 

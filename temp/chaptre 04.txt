@@ -1,0 +1,116 @@
+\chapter{Road monitoring}
+
+No one leaves their home expecting to get in a car accident. But in most accidents, you have an instant to recognize what’s happening and brace yourself. With collisions coming out of your blind spot, you have no such warning.
+
+Blind spot collisions are more common than you might think: National Highway Safety Administration statistics report that over 800,000 blind spot accidents occur each year. While blind spot collisions are rarely fatal (approximately 300 fatalities resulted from those 800,000), any kind of accident can have damaging effects that last long after the collision itself.
+
+The vehicle blind spot, also known as a ‘No Zone’ around a large truck, is the area where a driver cannot safely observe what is happening around their vehicle with their eyes or mirrors. Blind spots generally occur when a vehicle is either directly, or almost, alongside you, as your rearview mirrors are designed to monitor vehicles behind you while your eyes focus on the vehicles in front of you. Blind spots can also be caused by the side mirrors themselves and the chassis columns surrounding doors and windows. The blind spot can also vary from driver to driver, based on their height or the type of vehicle they are driving.
+
+Blind spot accidents generally occur when a vehicle is changing lanes, particularly when driving on high-speed highways, roundabouts, or intersections. Failure to check the blind spot when merging or changing lanes can lead to dangerous collisions, including rear-enders and broadsides.\parencite{Blind Spot}
+
+That is why we need to use sensors in cars to protect ourselves and our cars, and one of the best devices that can help us provide the necessary protection and provide positive results for our study .
+
+In the first chapter above, we talked about the typical types of sensors and searched for the best sensors by their results , so we find the RADAR is the best choice than the others.
+\section{ RADAR:}
+Radar sensors are a key technology that is rapidly evolving. In many areas, we are benefiting from innovative sensor solutions. But what is radar and how does the technology work?
+
+below, we would like to give you some insight into the radar sensors, explain this technology in greater detail.
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{radar-system}
+	\caption{RADAR-system}
+	\label{fig:radar-system}
+\end{figure}
+
+
+RADAR stands for Radio Detection And Ranging’ and is an active transmission and reception method in the microwave GHz range. Radar sensors are used for contactless detection, tracking, and positioning of one or more objects by means of electromagnetic waves.
+
+
+Typically, short range and long range radar sensors are deployed throughout the vehicle and each has its own different functions.
+While short-range (24 GHz) radar applications allow for blind spot monitoring, ideal lane-keeping aid, and parking aids.
+The roles of the long-range (77 GHz) radar sensors include automatic distance control and brake assist. Unlike camera sensors, radar systems have absolutely no problem identifying objects during fog or rain.
+The main component behind this independent radar technology is millimeter wave radar. It provides a set of eyes for the vehicle, making navigation easier and giving the driver more control. The military was the first to take advantage of this technology, and millimeter wave radars were used to make airplane flight safer in the 1950s and 1960s.\parencite{Radar Sensor}
+Typical long-range automotive radars can provide range measurements on objects that are as much as 300 meters to 500 meters away.\parencite{RADAR-adv}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{RADAR types}
+	\caption{RADAR types}
+	\label{fig:radar types}
+\end{figure}
+\newpage
+\subsection{Detection work of RADAR : }
+The radar antenna emits a signal in the form of radar waves, which move at the speed of light and are not perceivable by humans. When the waves hit objects, the signal changes and is reflected back to the sensor – similarly to an echo. The signal arriving at the antenna contains information about the detected object. The received signal is then processed in order to identify and position the object using the data collected. In a second step, it is possible to emit a pulse to trigger a reaction.\parencite{RADAR}
+
+\subsection{The RADAR technology’s characteristics :}
+\begin{itemize}
+	\item \underline{\textbf{Contactless:}} The radar detection measuring principle involves no contact at all. The sensor doesn’t have to have direct contact with a material or object being detected. Radar reliably measures and detects even at a long distance.
+	
+	\item \underline{\textbf{Anonymous:}} Radar sensors are used for industrial and automotive applications and don’t produce images. They merely form a sort of cloud of dots, which gives a rough indication of objects’ contours and the infrastructure of the surroundings. Contrary to with a camera, people are not identifiable.
+	
+	\item\underline{\textbf{Comprehensive data:}} Radar sensors detect movements and stationary objects. After signal processing, the data received through the reflection provides a variety of information about the detected objects, vehicles, animals, or persons. Data such as direction of movement, speed, distance, and angular position in relation to the sensor are available.
+	
+	\item \underline{\textbf{Multi-dimensional detection:}} Depending on its modulation, radar collects extensive data about its environment. This enables sensors to also record the environment in three dimensions, like a human eye.
+	
+	\item \underline{\textbf{Wide range variability:}} Radar waves spread freely in space or in the air. Depending on the sensor’s technical development and purpose, extreme ranges can be achieved if necessary. For commercial applications, the coverage range usually varies from one centimetre to a few hundred meters.
+	
+	\item \underline{\textbf{Material penetration:}} The electromagnetic waves of radar sensors penetrate various materials. Plastics, in particular, are very well-suited for covering or designing a radome – a dome-shaped protective casing for the antenna. It allows the sensors to be integrated discreetly into a product design.\parencite{RADAR}
+\end{itemize}
+
+
+\subsection{The advantages of RADAR technology :}
+Based on radar’s properties, the technology offers certain advantages for its respective application.
+Because radar : \parencite{RADAR}
+
+\begin{itemize}
+	
+	\item is independent from weather conditions .
+	
+	\item tolerates extreme heat and cold .
+	
+	\item works even despite overexposure and bad lighting conditions works in the dark .
+	
+	\item is maintenance-free .
+	
+	\item offers a great range of functions, for example measurement of distance \& speed, tracking, positioning of objects, determination of ETA, object classification, people count .
+	
+	\item is suitable for indoor \& outdoor use .
+	
+	\item can be used for many applications .
+	
+	
+\end{itemize}
+
+\subsection{The different  of RADAR from other sensor technologies :}
+The different measuring methods have different strengths and weaknesses. Depending on the application, users must consider which sensor technology offers the greatest added value and manages the respective tasks and challenges. The following table provides a rough overview:\parencite{RADAR}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{diff types}
+	\label{fig:diff-types}
+\end{figure}
+\newpage
+\subsection{POSSIBILITIES OF RADAR TECHNOLOGY :}
+
+* Measurable radar information and analysis
+
+* Measurement accuracy
+
+* Antenna design
+
+* Radar waves and materials
+
+* Range
+
+* Object classification
+
+* Resolution \parencite{RADAR}
+
+\newpage
+
+\subsection{STRUCTURE OF A RADAR :}
+In addition to its front end (microwave component with antenna structure), a complete radar sensor consists of units for signal conditioning and signal processing. These elementary components may also be supplemented with a radome, housing, lens, and a component carrier.\parencite{RADAR-auto}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{RADAR}
+	\caption{STRUCTURE OF A RADAR}
+	\label{fig:radar}
+\end{figure}
