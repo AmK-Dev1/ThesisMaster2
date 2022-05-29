@@ -1,5 +1,6 @@
 \chapter{Basic Concepts}
 
+
 \emph{
 In this chapter, we will simply introduce some basic concepts, methods, and mathematical background that we use in this thesis. We also provide symbols, image notations, and the equations that will be consistently used in the following chapters.
 }
@@ -11,13 +12,13 @@ In this chapter, we will simply introduce some basic concepts, methods, and math
 
 In Digital Image Processing, signals captured from the physical world need to be translated into digital form by Digitization\footnote{Digitization: is the process of converting information into a digital (i.e. computer-readable) format.} Process. In order to become suitable for digital processing.
 
-An image is defined as a two-dimensional function,I(x,y), where x and y are spatial coordinates, and the amplitude of I at any pair of coordinates (x,y) is called the intensity of that image at that point.An image must be digitized both spatially and in amplitude \parencite{DIPGeeks}. This digitization process involves two main processes \emph{Sampling}, and \emph{Quantization} \parencite{DIPMeduim}.
+An image is defined as a two-dimensional function, I(x,y), where x and y are spatial coordinates, and the amplitude of I at any pair of coordinates (x,y) is called the intensity of that image at that point. An image must be digitized both spatially and in amplitude \parencite{DIPGeeks}. This digitization process involves two main processes \emph{Sampling}, and \emph{Quantization} \parencite{DIPMeduim}.
 
 \subsection{Sampling}
-In digital image processing, Sampling is the reduction of a continuous-time signal to a discrete-time signal.Since an analogue image is continuous not just in its co-ordinates (x axis), but also in its amplitude (y axis), so the part that deals with the digitizing of co-ordinates is known as sampling \parencite{DIPViva}, see Figure \ref{fig:Sampling} .
+In digital image processing, Sampling is the reduction of a continuous-time signal to a discrete-time signal. Since an analog image is continuous not just in its co-ordinates (x-axis), but also in its amplitude (y-axis), so the part that deals with the digitizing of co-ordinates is known as sampling \parencite{DIPViva}, see Figure \ref{fig:Sampling}.
 
 \subsection{Quantization}
-The process of transferring input values from a big set to output values in a smaller set, usually with a finite number of members, is known as quantization. Quantization is the opposite of sampling, It is done on the y-axis \parencite{DIPViva}, see Figure \ref{fig:Quantization}
+The process of transferring input values from a big set to output values in a smaller set, usually with a finite number of members, is known as quantization. Quantization is the opposite of sampling, It is done on the y-axis \parencite{DIPViva}, see Figure \ref{fig:Quantization}.
 
 \begin{figure}[h]
 \begin{subfigure}{.5\textwidth}
@@ -37,7 +38,7 @@ The process of transferring input values from a big set to output values in a sm
 \end{figure}
 
 A digital image is typically composed of picture elements (pixels) located at the intersection of each row "\textbf{I}" and column "\textbf{J}" in each "\textbf{N}" color channels \parencite{MinakshiKumar}.
-Digital images are stored in the form of a matrix of numbers where these numbers represent the intensity of each pixel, the range of these numbers (pixel values) is relative to the \textbf{Bit depth}\footnote{The bit depth "\textbf{k}" is the number of bits per pixel, the grey scale of an image is equal to $2^k$}, in general images are stored in 8 byte that means $2^8 = 256$ possible values.
+Digital images are stored in the form of a matrix of numbers where these numbers represent the intensity of each pixel, the range of these numbers (pixel values) is relative to the \textbf{Bit depth}\footnote{The bit depth "\textbf{k}" is the number of bits per pixel, the grey scale of an image is equal to $2^k$}, in general images are stored in 8 byte which means $2^8 = 256$ possible values.
 
 \begin{figure}[!h]
 \begin{subfigure}{.5\textwidth}
@@ -58,14 +59,14 @@ Digital images are stored in the form of a matrix of numbers where these numbers
 
 \section{Color Models}
 
-\emph{
+
 Generally, images that are captured by camera sensors are color images, by default they use RGB color model \parencite{RgbAndCameras}, and because in the following chapters we mainly work on grayscale images like in Figure \ref{fig:GrayScaleImageOfHandwrittenDigit} we need to do a color space conversion. In this section, we will introduce briefly some basic concepts related to color models used in digital image processing and color space conversion
-}
+
 
 \subsection{RGB to Grayscale}
-In the RGB color model, each color in the image is obtained by superimposing three colors, i.e., red, green, blue. In this model, each pixel \textbf{P} in the image can be represented by $R(x_p , y_p )$, $G(x_p , y_p )$, $B(x_p , y_p )$. When $R(x_p , y_p )$ = $G(x_p , y_p )$ = $B(x_p , y_p )$ the given image becomes a grayscale image although it still has 3 color channels.\\
+In the RGB color model, each color in the image is obtained by superimposing three colors, i.e., red, green, and blue. In this model, each pixel \textbf{P} in the image can be represented by $R(x_p , y_p )$, $G(x_p , y_p )$, $B(x_p , y_p )$. When $R(x_p , y_p )$ = $G(x_p , y_p )$ = $B(x_p , y_p )$ the given image becomes a grayscale image although it still has 3 color channels.\\
 
-The goal is to convert the 3d \footnote{3d means 3 dimensional image (width, height, depth:'number of color channels')} RGB image to a 2d\footnote{2d means 2 dimensional (width, height)  } Grayscale image because smaller data enables developers to do more complex operations in a shorter time, there are a number of commonly used methods to convert an RGB image to a grayscale image such as average method and weighted method \parencite{RGBTOGRAY}.\\
+The goal is to convert the 3d \footnote{3d means 3 dimensional image (width, height, depth:'number of color channels')} RGB image to a 2d\footnote{2d means 2 dimensional (width, height)  } Grayscale image because smaller data enables developers to do more complex operations in a shorter time, there are a number of commonly used methods to convert an RGB image to a grayscale image such as the average method and weighted method \parencite{RGBTOGRAY}.\\
 
 \subsubsection{Average method}
 The Average method takes the average value of R, G, and B as the grayscale value as follows :
@@ -97,13 +98,13 @@ $$ energy  =  \frac{1}{XY}  \sum_{i=1}^{X}  \sum_{j}^{Y}  | I(i,j)|^2  $$
 
 \section{Classification}
 
-Classification is a process that uses a set of features or parameters to recognize an object. In this thesis we use supervised classification techniques, which means that an expert defines the classes of objects (e.g., face, eye, vehicles), and also provides a set of sample objects for a given class which is called training set. Regardless of the chosen classification technique (e.g., neural networks, decision trees, or nearest neighbour rule), we have two phases to construct a classifier: a training phase and an application phase.\\
+Classification is a process that uses a set of features or parameters to recognize an object. In this thesis, we use supervised classification techniques, which means that an expert defines the classes of objects (e.g., face, eye, vehicles), and also provides a set of sample objects for a given class which is called the training set. Regardless of the chosen classification technique (e.g., neural networks, decision trees, or nearest neighbor rule), we have two phases to construct a classifier: a training phase and an application phase.\\
 
-Based on the provided training dataset, a classifier learns to use which set of features, parameters, and weights to be combined together in order to distinguish objects from non-objects. In the application phase, the classifier uses the previously taught features and weights to find comparable objects in an unknown query image, based on what it has learnt from the training set.\\
+Based on the provided training dataset, a classifier learns to use which set of features, parameters, and weights to be combined together in order to distinguish objects from non-objects. In the application phase, the classifier uses the previously taught features and weights to find comparable objects in an unknown query image, based on what it has learned from the training set.\\
 
-The detection efficiency may be used to evaluate a classifier's performance regardless of the classification approach used. Let \textbf{TP} stand for the number of true-positives or hits, which occur when a classifier successfully detects the objects. Also let \textbf{FP} be the number of false-positives or miss, when a classifier wrongly detects a non-object as an object. Similarly, we can define true-negatives \textbf{(TN)} and false-negatives \textbf{(FN)} to describe correct classification of non-objects and the missing objects, respectively. Although we always can measure (count) the number of \textbf{FN}, we can not simply define the number of \textbf{TN} for an application such as vehicle detection in a road scene.\\ 
+The detection efficiency may be used to evaluate a classifier's performance regardless of the classification approach used. Let \textbf{TP} stand for the number of true-positives or hits, which occur when a classifier successfully detects the objects. Also, let \textbf{FP} be the number of false-positives or miss, when a classifier wrongly detects a non-object as an object. Similarly, we can define true-negatives \textbf{(TN)} and false-negatives \textbf{(FN)} to describe the correct classification of non-objects and the missing objects, respectively. Although we always can measure (count) the number of \textbf{FN}, we can not simply define the number of \textbf{TN} for an application such as vehicle detection in a road scene.\\ 
 
-This is due to the fact that the backdrop of an image is virtually uncountable. Therefore, for performance evaluation of a classifier we mainly rely on evaluations using TP, FP, and FN.
+This is due to the fact that the backdrop of an image is virtually uncountable. Therefore, for performance evaluation of a classifier, we mainly rely on evaluations using TP, FP, and FN.
 
 We define the precision-rate (PR), recall-rate (RR), and accuracy (ACC) as follows \parencite{Classification} :
 
@@ -121,13 +122,12 @@ $$ ACC = \frac{TP + TN}{TP + FN + TN +FP}  $$
 \end{figure}
 
 
-\newpage 
-Where PR is the ratio of true-positives to all detections by the classifier, RR is the ratio of true-positives to the total number of actual existing objects (i.e. the ground truth objects) in the analysed frames, and ACC is defined as the number of classifications a model correctly predicts divided by the total number of predictions made. It's a way of assessing the performance of a model.
+Where PR is the ratio of true-positives to all detections by the classifier, RR is the ratio of true-positives to the total number of actually existing objects (i.e. the ground truth objects) in the analyzed frames and ACC is defined as the number of classifications a model correctly predicts divided by the total number of predictions made. It's a way of assessing the performance of a model.
 
 \section{Integral Image}
-\emph{
-For a given image I, the integral image $I_{int}$ , which was first used by Viola and Jones in computer vision \parencite{PaulViola}, is the summation of all pixel values in the image, or in a window (sub-image).
-}
+
+For a given image I, the integral image $I_{int}$ , which was first used by Viola and Jones in computer vision \parencite{PaulViola}, is the summation of all pixel values in the image, or in a window (sub-image).\\
+
 
 Rectangle features may be calculated quickly utilizing an intermediate picture representation known as the integral image. The integral image at location $(x,y)$ contains the sum of the pixels above and to the left of $(x,y)$ , inclusive:
 
@@ -169,7 +169,7 @@ The common types of Haar-like features are \emph{Line Features},\emph{Edge featu
 
 \newpage Consider the Figure \ref{fig:HaarLikeFeaturesDetection}. The top row shows two good features. The first feature selected seems to focus on the property that the region of the eyes is often darker than the region of the nose and cheeks. The second feature selected relies on the property that the eyes are darker than the bridge of the nose.\\
 
-A \emph{strong classifier} comprises of a series of weak classifiers (normally more than 10), and a weak classifier itself includes a set of a few Haar features (normally 2 to 5).
+A \emph{strong classifier} comprises a series of weak classifiers (normally more than 10), and a weak classifier itself includes a set of a few Haar features (normally 2 to 5).
 
 \begin{figure}[h]
 \centering
@@ -181,11 +181,11 @@ A \emph{strong classifier} comprises of a series of weak classifiers (normally m
 Figure \ref{fig:CascadeOfWeakClassifiers} visualizes a cascade of weak classifiers, that all together make a strong
 classifier. The classifier starts with the first weak classifier by evaluating the region of interest (ROI). It proceeds to the second stage (second weak classifier) if all the Haar-features in the first weak classifier match with the ROI, and so on, until reaching the final stage; otherwise the search-region under the sliding window will be rejected as non-object. Then the sliding window moves to the next neighbour ROI. If all Haar-features in all weak classifiers successfully match the ROI, the region will be designated as a discovered item with a bonding box.  \\
 
-The training step, which might be done using a machine learning approach like the AdaBoost algorithm \parencite{Adaboost}, consists of picking acceptable Haar-features for each weak classifier and subsequently for the whole strong classifier.
+The training step, which might be done using a machine learning approach like the AdaBoost algorithm \parencite{Adaboost}, consists of picking acceptable Haar features for each weak classifier and subsequently for the whole strong classifier.
 
 \newpage
 \subsection{AdaBoost algorithm}
-\emph{is an approach to machine learning based on the idea of creating a highly accurate prediction rule by combining many relatively weak and inaccurate rules. The AdaBoost algorithm of Freund and Schapire was the first practical boosting algorithm, and remains one of the most widely used and studied, with applications in numerous fields \parencite{Adaboost}.}
+AdaBoost is an approach to machine learning based on the idea of creating a highly accurate prediction rule by combining many relatively weak and inaccurate rules. The AdaBoost algorithm of Freund and Schapire was the first practical boosting algorithm, and remains one of the most widely used and studied, with applications in numerous fields \parencite{Adaboost}.}
 
 \begin{algorithm}[h]
   \caption{The AdaBoost algorithm for classifier learning.}
@@ -237,7 +237,7 @@ The training step, which might be done using a machine learning approach like th
 Support vector machines (SVM) are supervised machine learning models with associated learning algorithms that analyze data for classification and regression analysis.
 The goal of the support vector machine technique is to identify a hyperplane in an "N" dimensional space (where N is the number of features) that categorizes the data points.
 
- There are two types of SVM "linear" and "non-linear", Linear SVM can be used when the data is perfectly linearly separable, and non-linear SVM used when the data is not linearly separable see Figure \ref{fig:linear}
+ There are two types of SVM "linear" and "non-linear", Linear SVM can be used when the data is perfectly linearly separable, and non-linear SVM is used when the data is not linearly separable see Figure \ref{fig:linear}
  
  
 \begin{figure}[h]
@@ -254,7 +254,7 @@ The goal of the support vector machine technique is to identify a hyperplane in 
 The Histogram of Oriented Gradients (HOG) is a feature descriptor that is used in image processing to recognize objects. A feature descriptor is an image or image patch representation that simplifies the picture by extracting valuable information. It is better than any other edge descriptor because it computes features using both the magnitude and angle of the gradient \parencite{HOGfeature2}.
 
 
-According to Navneet Dalal and Bill Triggs in their paper "Histograms of Oriented Gradients for Human Detection", The first step is to resize the input image into an image of 128x64 pixels, this step is not required but desirable as it is suggested by the authors for better results. The second step is to compute the image gradient in both the x and y direction (Gx , Gy) for all pixels within the image followed by calculation of the magnitude of the gradient as (G) and the direction of the gradient as ($\theta$) using following equations :
+According to Navneet Dalal and Bill Triggs in their paper "Histograms of Oriented Gradients for Human Detection", The first step is to resize the input image into an image of 128x64 pixels, this step is not required but desirable as it is suggested by the authors for better results. The second step is to compute the image gradient in both the x and y direction (Gx , Gy) for all pixels within the image followed by calculation of the magnitude of the gradient as (G) and the direction of the gradient as ($\theta$) using the following equations :
 
 $$ G_x  =\quad I( i  ,  j + 1 ) \quad - \quad I( i  ,  j + 1 )  $$
 
@@ -267,7 +267,7 @@ $$ G  =\quad \sqrt[2]{\quad G_{x}^{2} + G_{y}^{2}  \quad}  $$
 $$ \theta =\quad |  \tan^{-1} (\frac{G_y}{G_x}) |  $$
 
 
-After that, the input image is divided into 8 x 8 cell blocks, a histogram of gradients is calculated for each block followed by vector normalizations.To calculate the final feature vector for the entire image patch, the 36×1 vectors are concatenated into one giant vector. However, a complete pipeline for object detection using HOG and SVM can be represented as follows \parencite{HOGfeature}:
+After that, the input image is divided into 8 x 8 cell blocks, and a histogram of gradients is calculated for each block followed by vector normalizations.To calculate the final feature vector for the entire image patch, the 36×1 vectors are concatenated into one giant vector. However, a complete pipeline for object detection using HOG and SVM can be represented as follows \parencite{HOGfeature}:
 
 
 \begin{figure}[h]

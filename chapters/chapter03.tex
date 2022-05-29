@@ -28,30 +28,30 @@ According to \parencite{DrowsinessDetectionSystem} there are many approaches and
   \caption{physiological signals sensors}
   \label{fig:PhSensors}
 \end{subfigure}
-\caption{Illustration of difrent Driver monitoring approches}
+\caption{Illustration of different Driver monitoring approches}
 \label{fig:DifrentMonitoringApproches}
 \end{figure}
 
 
 \subsection{Physiological Signals Sensors}
-Physiological signals of the driver are the most accurate solutions, they can be used to measure his vigilance level since these signals originated from human organs such as brain, eyes, muscles, and heart that can indicate the fatigue and alertness level in real-time as depicted in Figure \ref{fig:PhSensors}. Physiological measures can be recorded from different organs that show visible correlation with the wakefulness/drowsiness state of a person. This includes \parencite{DrowsinessDetectionSystem}:
+Physiological signals of the driver are the most accurate solutions, they can be used to measure his vigilance level since these signals originated from human organs such as the brain, eyes, muscles, and heart that can indicate the fatigue and alertness level in real-time as depicted in Figure \ref{fig:PhSensors}. Physiological measures can be recorded from different organs that show a visible correlation with the wakefulness/drowsiness state of a person. This includes \parencite{DrowsinessDetectionSystem}:
 
 	\begin{itemize}
-		\item \textbf{Brain activity},which can be captured by electroencephalography (EEG) or Near Infrared Spectroscopy
+		\item \textbf{Brain activity}, which can be captured by electroencephalography (EEG) or Near Infrared Spectroscopy
 (NIRS).
 		\item \textbf{Cardiac activity}, monitored through electrocardiography (ECG) and Blood Pressure signals.
 		\item \textbf{Ocular activity}, measured by electrooculography (EOG)
 	\end{itemize}
 
 \subsection{Video-based sensors}
-To determine alertness/drowsiness level of driver as illustrated in Figure \ref{fig:CamSensors}. The behaviour of the driver is mainly monitored through a camera and thus this approach is known as video-based measure. Visible symptoms of fatigue and sleepiness can be observed when driver becomes drowsy through measuring its abnormal behaviours. Research on fatigue and drowsiness detection using driver behavioural monitoring focused on three main measure: \emph{Eyes state}, \emph{Face expression}, and \emph{Head position}.
+To determine the alertness/drowsiness level of the driver as illustrated in Figure \ref{fig:CamSensors}. The behavior of the driver is mainly monitored through a camera and thus this approach is known as video-based measure. Visible symptoms of fatigue and sleepiness can be observed when the driver becomes drowsy through measuring its abnormal behaviors. Research on fatigue and drowsiness detection using driver behavioral monitoring focused on three main measures: \emph{Eyes state}, \emph{Face expression}, and \emph{Head position}.
 
 \subsection{Evaluation}
-\emph{The following evaluation and ranking are based on our online search of driver monitoring technologies and we belive that it is not the only evaluation method.}
+\emph{The following evaluation and ranking are based on our online search for driver monitoring technologies and we believe that it is not the only evaluation method.}
 
-According to \parencite{DrowsinessDetectionSystem}, physiological sensors make it possible to alert driver at earlier stages of drowsiness and thereby prevent many drastic accidents \parencite{EvaluationOfTechnologies}. Because physiological measurements are less affected by ambient and road conditions, they have been proved to be dependable and accurate and thus may have fewer false positives \parencite{Zilberg2007MethodologyAI}.
+According to \parencite{DrowsinessDetectionSystem}, physiological sensors make it possible to alert drivers at earlier stages of drowsiness and thereby prevent many drastic accidents \parencite{EvaluationOfTechnologies}. Because physiological measurements are less affected by ambient and road conditions, they have been proved to be dependable and accurate and thus may have fewer false positives \parencite{Zilberg2007MethodologyAI}.
 
-On the other hand, video sensors technology is user friendly and can be mounted comfortably in various areas inside a vehicle also,it has the lowest coast. The common limitation is lighting conditions.
+On the other hand, video sensors technology is user-friendly and can be mounted comfortably in various areas inside a vehicle also, it has the lowest cost. The common limitation is lighting conditions.
 
 \begin{table}[h!]
 \centering
@@ -106,10 +106,10 @@ When a driver participates in a secondary activity that interferes with the prim
 \label{fig:DDS}
 \end{figure}
 
-The head posture is a typical symptom of driver inattention, when the driver looks in a direction other than the road is extremely dangerous see Figure\ref{fig:DDS}.
+The head posture is a typical symptom of driver inattention when the driver looks in a direction other than the road is extremely dangerous, see Figure\ref{fig:DDS}.
 
 
-For the application phase, the driver’s surveillance camera is mounted in front of the driver’s face it can be placed in the areas of the steering wheel or it can be hung on the rearview mirror.In the next sections, we discuss methods for detecting driver’s drowsiness and distraction using computer vision techniques discussed in chapter 2 with other algorithms that aim for improve performance and accuracy (ACC).
+For the application phase, the driver’s surveillance camera is mounted in front of the driver’s face it can be placed in the areas of the steering wheel or it can be hung on the rearview mirror. In the next sections, we discuss methods for detecting driver’s drowsiness and distraction using computer vision techniques discussed in chapter 2 with other algorithms that aim to improve performance and accuracy (ACC).
 
 
 
@@ -121,11 +121,11 @@ Haar Cascades in general is an object detection algorithm uses haar features. Ha
 
 For a good detection rate, we need a strong classifier that is trained in using a large set of \emph{positive}\footnote{Positive data points are areas that include a face} and \emph{negative}\footnote{Negative data points are examples of regions that do not contain a face} samples of a face, however, \emph{OpenCV}\footnote{Open Source Computer Vision is a programming library that focuses on real-time computer vision. It was created by Intel and then sponsored by Willow Garage and Itseez.} can perform face detection out-of-the-box using a pre-trained Haar cascade that is mean OpenCV's Haar cascade has already picked the best haar-like features for face detection, eyes detection, etc.\\
 
-This eliminates the need for us to give our own positive and negative samples, train our own classifier, or worry about fine-tuning the parameters. Instead, we need to focus on improving speed, accuracy and finding solutions for challenging conditions \parencite{PyImageSearchHaarCascades} \parencite{OpenCvHaarCascades} \parencite{HaarFeaturesUses}.
+This eliminates the need for us to give our own positive and negative samples, train our own classifier, or worry about fine-tuning the parameters. Instead, we need to focus on improving speed, and accuracy and finding solutions for challenging conditions \parencite{PyImageSearchHaarCascades} \parencite{OpenCvHaarCascades} \parencite{HaarFeaturesUses}.
 
 \section{Implementation}
 
-In the application of this method, we use Haar-like detectors provided by \emph{OpenCv}, a haar-like detector takes as argumments \parencite{OpenCvHaarCascades}:
+In the application of this method, we use Haar-like detectors provided by \emph{OpenCv}, a haar-like detector takes as arguments \parencite{OpenCvHaarCascades}:
 
 \begin{itemize}
 
@@ -150,13 +150,13 @@ By default a haar-like detector returns 4 values \parencite{OpenCvHaarCascades} 
 \label{fig:bbprincipe}
 \end{figure}
  
-Taking the Figure \ref{fig:bbprincipe} as an example. After a successful object detection, a haar-like detector returns :  $(x,\quad y, \quad w, \quad h) = (20, \quad 40, \quad 40, \quad 40)$ respectively.So, $p1 = (20, \quad 40)$ and $p2 = (20 + 40 , 40 + 40 ) = (60 ,\quad 80)$. However, these bounding boxes are useless in the case of driver monitoring, the most important thing is to alert the driver in real time when he is asleep or distracted.
+Taking the Figure \ref{fig:bbprincipe} as an example. After a successful object detection, a haar-like detector returns :  $(x,\quad y, \quad w, \quad h) = (20, \quad 40, \quad 40, \quad 40)$ respectively.So, $p1 = (20, \quad 40)$ and $p2 = (20 + 40 , 40 + 40 ) = (60 ,\quad 80)$. However, these bounding boxes are useless in the case of driver monitoring, the most important thing is to alert the driver in real-time when he is asleep or distracted.\\
 
-In the application stage of this method to serve as a driver monitoring technique. we used two Haar-like detectors, the first one is a face detector to check whether a given image contains a face or not, In other words, the face detector can check whether the driver is focusing on the road or distracted. Assuming the camera is in front of the driver’s face, if the face detector finds a face on a given image, This means that the driver looks forward and if the detector cannot find a face that means that the driver is distracted by looking in a direction other than the road, which is a dangerous situation, especially when driving fast. 
+In the application stage of this method to serve as a driver monitoring technique. we used two Haar-like detectors, the first one is a face detector to check whether a given image contains a face or not, In other words, the face detector can check whether the driver is focusing on the road or distracted. Assuming the camera is in front of the driver’s face, if the face detector finds a face on a given image, This means that the driver looks forward and if the detector cannot find a face that means that the driver is distracted by looking in a direction other than the road, which is a dangerous situation, especially when driving fast.\\
 
-The second Haar-like detector is an eye detector, which can find an "open" eye in a given image. Using this condition, the eye detector can check if the driver’s eyes are open or closed, simply by performing an eye detection if the detector finds one or both eyes that means the driver is focusing on the road if not, This means that one or both eyes of the driver are closed and this is the critical sign of driver's drowsiness which requires an alert to wake up the driver.
+The second Haar-like detector is an eye detector, which can find an "open" eye in a given image. Using this condition, the eye detector can check if the driver’s eyes are open or closed, simply by performing an eye detection if the detector finds one or both eyes that means the driver is focusing on the road if not, This means that one or both eyes of the driver are closed and this is the critical sign of the driver's drowsiness which requires an alert to wake up the driver.\\
  
-As this method works with images, and the camera feeds the system with a video stream which is basically a sequence of images we processed the video frame by frame, and for each frame, we performed haar cascades see Figure\ref{fig:Initfchc}. 
+As this method works with images, and the camera feeds the system with a video stream which is a sequence of images we processed the video frame by frame, and for each frame, we performed haar cascades see Figure\ref{fig:Initfchc}.
 
 \begin{figure}[!h]
 \centering
@@ -167,7 +167,7 @@ As this method works with images, and the camera feeds the system with a video s
 
 \newpage
 
- The first implementation of this method was done with the following algorithm under difrent lighting conditions :  
+ The first implementation of this method was done with the following algorithm under different lighting conditions :  
  
  
 \begin{algorithm}[!h]
@@ -206,20 +206,19 @@ As expected, the first implementation of face/eyes detection with haar cascades 
 \end{figure}
 
 
-So, By applying haar-like detectors for face and eyes detection, we gained time and speed wich allows us to use this method in real-time driver monitoring. However, we also need further improvements, as we still may encounter issues of either missing detections (FNs) or false detections (FPs). In the case of this study FNs does not a serious problem because, in the worst case they only invoke alerts, Unlike FPs. False-positive means the driver is maybe distracted but the system can detect the face/eyes of the driver and this is too dangerous because no alert will be invoked in this case. So, in the optimization section we will focus more on decreasing the (FPs), and improving algorithm robustness under variable lighting conditions.
+So, By applying haar-like detectors for face and eyes detection, we gained time and speed which allows us to use this method in real-time driver monitoring. However, we also need further improvements, as we still may encounter issues of either missing detections (FNs) or false detections (FPs). In the case of this study, FNs does not a serious problem because, in the worst case they only invoke alerts, Unlike FPs. False-positive means the driver is maybe distracted but the system can detect the face/eyes of the driver and this is too dangerous because no alert will be invoked in this case. So, in the optimization section, we will focus more on decreasing the (FPs), and improving algorithm robustness under variable lighting conditions.
 
 
 
 
 \subsection{Problems and limitations}
 
-Haar cascades are notoriously prone to false-positives, the Haar-like classifier can easily report a face in an image when no face is present under normal lighting conditions, eye classifier is worse in false detection because there are many parts of face have the same color and shape property of the eyes for example the \emph{Oral commissure}\footnote{The commissure is the corner of the mouth, where the vermillion border of the superior labium (upper lip) meets that of the inferior labium (lower lip).}. The situation becomes even more complicated when a part of the driver's face is brighter than the other part (due to light falling in through a side-window), making eye status detection extremely difficult. In addition to that we noticed that sometimes the performance drops dramaticaly after a while due to 
+Haar cascades are notoriously prone to false positives, the Haar-like classifier can easily report a face in an image when no face is present under normal lighting conditions, and the eye classifier is worse in false detection because there are many parts of the face have the same color and shape property of the eyes, for example, the \emph{Oral commissure}\footnote{The commissure is the corner of the mouth, where the vermillion border of the superior labium (upper lip) meets that of the inferior labium (lower lip).}. The situation becomes even more complicated when a part of the driver's face is brighter than the other part (due to light falling in through a side window), making eye status detection extremely difficult. In addition to that we noticed that sometimes the performance drops dramatically after a while due to 
 the big number of computations per frame.
 
-Another important thing to note here , along the testing of this method we found a problem which is sometimes a face or an eye can be detected 2 times in the same instance. this situation apears generraly when trying to approach the camera, sudenly a bounding box apears in the screen including both the object (face / eye ), and the other bounding box.
+Another important thing to note here is, along with the testing of this method we found a problem which is sometimes a face or an eye can be detected 2 times in the same instance. this situation appears generally when trying to approach the camera, suddenly a bounding box appears in the screen including both the object (face / eye ), and the other bounding box.
 
-
-In the next section we propose few methods to tackle the above issues which mainly summarized in :
+In the next section, we propose a few methods to tackle the above issues which mainly summarized in :
 
 \begin{itemize}
 
@@ -234,11 +233,11 @@ In the next section we propose few methods to tackle the above issues which main
 
 \subsection{Optimization}
 
-\emph{Haar-based detectors use haar features to detect objects. So it is very common to find an object in the image that has the same properties as the face, this problem has also encountered in eye detection. In the first part of this section, we focus to improve the accuracy of the algorithm by reducing Fps detections. In the second part, we define a method to avoid the double detection problem based on spatial cordinates. Then we propose a night vision mode to improove the algorithm robustness under bad lighting conditions.Finally we work on improoving speed of the algorithm.}\\
+Haar-based detectors use haar features to detect objects. So it is very common to find an object in the image that has the same properties as the face, this problem has also been encountered in eye detection. In the first part of this section, we focus to improve the accuracy of the algorithm by reducing Fps detections. In the second part, we define a method to avoid the double detection problem based on spatial coordinates. Then we propose a night vision mode to improve the algorithm robustness under bad lighting conditions. Finally we work on improving the speed of the algorithm.\\
 
 
-Starting with the double detection problem illustrated in Figure \ref{fig:Ddetection}. to solve this problem we propose a simple function, wich uses spatial parameters ( x , y , width , height ) returned from the detector to check if there is a bounding box includes another bounding box wich means the two boxes are for the same object if this is the case the function ignores the big box. We use this function for both eye and face detection. 
-To reduce False detections for eyes, we added another function named check\_ eyes, wich order the detected objects List with respect of "y" axis values and return the first two objects. With this function we reduced false postives for eye detection.
+Starting with the double detection problem illustrated in Figure \ref{fig:Ddetection}. to solve this problem we propose a simple function, which uses spatial parameters ( x , y , width , height ) returned from the detector to check if there is a bounding box that includes another bounding box which means the two boxes are for the same object if this is the case the function ignores the big box. We use this function for both eye and face detection. 
+To reduce False detections for eyes, we added another function named check\_ eyes, which orders the detected objects List with respect of "y" axis values and return the first two objects. With this function, we reduced false positives for eye detection.
 
 \begin{figure}[!h]
 \centering
@@ -247,9 +246,9 @@ To reduce False detections for eyes, we added another function named check\_ eye
 \label{fig:Ddetection}
 \end{figure}
 
-The main factors that control the object detection process are the detector's arguments (ScaleFactor, MinNeighbors, MinSize, MaxSize). Starting with ScaleFactor, since the classifier was trained with a fixed object size, it can detect the object with the same size that was used during the training phase \parencite{ScaleFactorImagePyramide}.Usually in the application phase, the size of the object may be smaller or larger than what was used in training, this may be related to the distance between the object and the camera. To ensure the detection of object in different scales\footnote{Scale is the relative size of different objects in relation to each other or a common standard \parencite{Scale} } there are two terminologies: Image Pyramid, and Scale Factor.
+The main factors that control the object detection process are the detector's arguments (ScaleFactor, MinNeighbors, MinSize, MaxSize). Starting with ScaleFactor, since the classifier was trained with fixed object size, it can detect the object with the same size that was used during the training phase \parencite{ScaleFactorImagePyramide}. Usually in the application phase, the size of the object may be smaller or larger than what was used in training, this maybe related to the distance between the object and the camera. To ensure the detection of an object in different scales\footnote{Scale is the relative size of different objects in relation to each other or a common standard \parencite{Scale} } there are two terminologies: Image Pyramid, and Scale Factor.
 
-Image pyramid and ScaleFactor specifies how much we reduce the image size each time we scale (i.e., ScaleFactor = 1.5 means reduce the input image size by 5\% ). Or, how much we increase the sliding window size (i.e., ScaleFactor = 1.2 means increase window size by 20\% at each iteration), see Figure\ref{fig:IPASF}. 
+Image pyramid and ScaleFactor specifies how much we reduce the image size each time we scale (i.e., ScaleFactor = 1.5 means reducing the input image size by 5\% ). Or, how much we increase the sliding window size (i.e., ScaleFactor = 1.2 means increasing window size by 20\% at each iteration), see Figure\ref{fig:IPASF}. 
 
 \begin{figure}[!h]
 \centering
@@ -260,7 +259,7 @@ Image pyramid and ScaleFactor specifies how much we reduce the image size each t
 
 Generally, the smaller the ScaleFactor (SF), the more detailed the research, and the higher the calculation costs.
 
-As object detection works within the image pyramid combination (multi-scale) , the detector can find multiple True response for a single region of an object. These responses are object candidates in a given region, here the detector use the Minimum Neighbors (MNN) parameter to confirm the detection by summing the number of rectangles candidates in that region this value must be higher than the MNN to decide whether there is an object or not. So, MNN is a parameter that can enhance algorithm accuracy in case of using high values, thus reduce detection rate. Also, decreasing MNN value increase of detection rate wich means increasing the false-positives (FPs) rate as well See Figure \ref{fig:MNNINITVALUES}.
+As object detection works within the image pyramid combination (multi-scale) , the detector can find multiple True response for a single region of an object. These responses are object candidates in a given region, here the detector use the Minimum Neighbors (MNN) parameter to confirm the detection by summing the number of rectangles candidates in that region this value must be higher than the MNN to decide whether there is an object or not. So, MNN is a parameter that can enhance algorithm accuracy in case of using high values, thus reduce detection rate. Also, decreasing MNN value increase of detection rate which means increasing the false-positives (FPs) rate as well See Figure \ref{fig:MNNINITVALUES}.
 
 
 \begin{figure}[!h]
@@ -273,14 +272,14 @@ As object detection works within the image pyramid combination (multi-scale) , t
 \end{figure}
 
 
-There are also two additional parameters which are Minsize and Maxsize, thier utility is to control the detection by the size of the detected object ( width , height ) if the size fall outside the range [minsize ... maxsize] the detection are ignored, only objects which have size in that range are accepted. These arguments are very important for decreasing FPs detection rate. In this point we supposed that the driver will be sitting about 1m far from the camera, and we recorded the width and height of the detected face and eyes, in general the distance between the driver's face and the camera is constant this what insure that we dont need a dynamic values for MinSize and MaxSize only in a specifique cases like changing the vheicle in this case we can simply adjust camera's position.
+There are also two additional parameters which are Minsize and Maxsize, their utility is to control the detection by the size of the detected object ( width , height ) if the size falls outside the range [minsize ... maxsize] the detection is ignored, only objects which have a size in that range is accepted. These arguments are very important for decreasing FPs detection rate. At this point, we supposed that the driver will be sitting about 1m far from the camera, and we recorded the width and height of the detected face and eyes, in general, the distance between the driver's face and the camera is constant this is what insure that we don't need a dynamic values for MinSize and MaxSize only in specific cases like changing the vehicle in this case we can simply adjust the camera's position.
 
 \begin{figure}[!h]
 \centering
   \subcaptionbox{distance = 20cm}{\includegraphics[width = .3\textwidth]{20cm}}\quad
   \subcaptionbox{distance = 60cm}{\includegraphics[width = .3\textwidth]{60cm}}\quad
   \subcaptionbox{distance = 100cm}{\includegraphics[width = .3\textwidth]{100cm}}
-  \caption{Face/Eyes sizes for diffrent distances of the driver and the camera}
+  \caption{Face/Eyes sizes for different distances of the driver and the camera}
 \label{fig:Sizes}
 \end{figure}
 
@@ -288,9 +287,9 @@ There are also two additional parameters which are Minsize and Maxsize, thier ut
 
 After finding the good values for ( MaxSize, MinSize ) relative to the distance between the driver and the camera, these values help us to reduce FPs rate by ignoring False detections based on the face/eye size.
 
-Now we need to find optimum parameters for ScaleFactor and Minimum Neighbors, in this step we recorded SF and MNN values under diffrent conditions and we realized that these parameters have a relation with luminosity level and the distance so they can not be constants. Instead we need to record the best values for diffrent situations esspecially lighting conditions because in general the distance do not change, then make these parameters dynamique with the help of a criterian that will estimate the luminosity level and decide which couple of values for SF and MNN are optimum based on the estimated luminosity level.
+Now we need to find optimum parameters for ScaleFactor and Minimum Neighbors, in this step we recorded SF and MNN values under different conditions and we realized that these parameters have a relation with luminosity level and the distance so they can not be constants. Instead, we need to record the best values for different situations especially lighting conditions because in general, the distance does not change, then makes these parameters dynamic with the help of criteria that will estimate the luminosity level and decide which couple of values for SF and MNN are optimum based on the estimated luminosity level.
 
-For the luminosity level estimation, there are many diffrent methods like deep learning model for \emph{Day-Night Classification} \parencite{DayNight}. eventhoug the deep learning approach is the most accurate for this specifique task, it add more computation cost wich will slow down the algorithm. So, we used the image basic statistiques to solve this issue.Figure \ref{fig:Fedwhcudlc} shows face/eyes detection with haarcascades under non-ideal lighting conditions.
+For the luminosity level estimation, there are many different methods like deep learning model for \emph{Day-Night Classification} \parencite{DayNight}. even though the deep learning approach is the most accurate for this specific task, it adds more computation costs which will slow down the algorithm. So, we used the image basic statistics to solve this issue. Figure \ref{fig:Fedwhcudlc} shows face/eyes detection with haar cascades under non-ideal lighting conditions.
 
 
 \begin{figure}[!h]
@@ -321,14 +320,14 @@ Variance & 2615.06 & 428.27 & 86.71 & 54.06 \\
 Energy   & 111.55 & 42.29 & 31.41 & 29.59 \\
 \hline
 \end{tabular}
-\caption{Table shows basic statistics for gray scale images of Figure \ref{fig:Fedwhcudlc} under difrent lighting conditions}
+\caption{Table shows basic statistics for grayscale images of Figure \ref{fig:Fedwhcudlc} under different lighting conditions}
 \label{table:BasicStatisticsForGrayScaleImages}
 \end{table}
 
-we need a criteria to classify lighting conditions into (good/bad). According to Table above, the Mean and Energy show a difference between the images, but we cannot use them because the difference between the values of the image (b) (minimum) and the image (c) of the Mean or Energy is too small and can be easily affected by light, however, the Variance shows a large difference between the image (b) and the image (c). So we used the Variance as ctiteria for the classification of lighting conditions.\\
+we need a criterion to classify lighting conditions into (good/bad). According to the table above, the Mean and Energy show a difference between the images, but we cannot use them because the difference between the values of the image (b) (minimum) and the image (c) of the Mean or Energy is too small and can be easily affected by light, however, the Variance shows a large difference between the image (b) and the image (c). So we used the Variance as a criterion for the classification of lighting conditions.\\
 
 
-To find the optimum values in diffrent conditions which was done in terms of TP and FP rates with the help of python programming language wich allows us to see algorithm results with the possibility of changing parameters values in real-time.
+To find the optimum values in different conditions which were done in terms of TP and FP rates with the help of python programming language which allows us to see algorithm results with the possibility of changing parameters values in real-time.
 
 \begin{table}[!h]
 \centering
@@ -345,11 +344,11 @@ Eye & 2.2 & 3 & None & None & (44,44) &(44,44) \\
  \hline
 \end{tabular}
 
-\caption{Table shows optimum values for detector parameters under difrent lighting conditions}
+\caption{Table shows optimum values for detector parameters under different lighting conditions}
 \label{table:OptimumValuesParameters}
 \end{table}
 
-Due to the fail of eyes detection under bad lighting conditions, we propose a night vision system based on image processing technique called "Power Law Transformation" (Gamma Correction) with the help of the Variance. Gamma correction is a nonlinear adaptation applied to each and every pixel value. Generally linear methods like addition, subtraction, and multiplication are applied on all the pixels. Gamma correction is responsible for performing nonlinear methods on the pixels of the input image and thereby remodeling the saturation of the image \parencite{THARSANEE2021117}. To inhance the quality of the image we must loop over all pixels of the image applying the power transformation equation:
+Due to the failure of eyes detection under bad lighting conditions, we propose a night vision system based on image processing technique called "Power Law Transformation" (Gamma Correction) with the help of the Variance. Gamma correction is a nonlinear adaptation applied to each and every pixel value. Generally, linear methods like addition, subtraction, and multiplication are applied to all the pixels. Gamma correction is responsible for performing nonlinear methods on the pixels of the input image and thereby remodeling the saturation of the image \parencite{THARSANEE2021117}. To enhance the quality of the image we must loop over all pixels of the image by applying the power transformation equation:
 
  $$I'(i,j) = C \quad * \quad I(i,j)^{\quad \lambda}$$
 
@@ -359,7 +358,7 @@ pixel in the input image at (i, j), and I' is the output intensity value. In mos
 \begin{figure}[!h]
 \centering
 \includegraphics[width=.5\textwidth]{lambda}
-\caption{the effect of diffrent values of $\lambda$ for C = 1.}
+\caption{the effect of different values of $\lambda$ for C = 1.}
 \label{fig:lambdaeffect}
 \end{figure}
 
@@ -380,7 +379,7 @@ Another approach \parencite{GPC} of the gamma correction is used in the applicat
 
 
 \newpage
-  So based on the variance of a given frame in grayscale system we can check if it presents a good lighting conditions for face/eyes detection or we need to correct the luminance of the frame with the Power Law Transformation.
+  So based on the variance of a given frame in gray scale system we can check if it presents a good lighting conditions for face/eyes detection or we need to correct the luminance of the frame with the Power Law Transformation.
  
 \begin{figure}[!h]
 \centering
@@ -411,18 +410,18 @@ $$ Variance  =  \frac{1}{XY}  \sum_{i=1}^{X}  \sum_{j}^{Y}  | I(i,j) - Mean(I)|^
   \end{itemize}
 \end{algorithm}
 
-Using Variance threshold = 350 and a $\lambda$ value = 0.22, and the optimum detector parameters under a bad lighting conditions we got the following result:
+Using Variance threshold = 350 and a $\lambda$ value = 0.22, and the optimum detector parameters under bad lighting conditions we got the following result:
 
 \begin{figure}[!h]
 \centering
   \subcaptionbox{}{\includegraphics[width = .4\textwidth]{dnvbefor}}\quad
   \subcaptionbox{}{\includegraphics[width = .4\textwidth]{dnvafter}}\quad
-  \caption{Face / eye detection under diffrent lighting conditions}
+  \caption{Face / eye detection under different lighting conditions}
 \label{fig:nvbeforafter}
 \end{figure}
 
 
-For improoving the algorithm in terms of speed and calculations complexity, we decide to run the eye detector only if we find a face. And make it search in the ROI which is in this case the face region.
+To improve the algorithm in terms of speed and calculations complexity, we decide to run the eye detector only if we find a face. And make it search in the ROI which is in this case the face region.
 
 Finally, to invoke alarms we devided the driver state into four possible situations and enimurate these states to make the algorithm returns a number and based on that number we can invoke alarms. See Figure \ref{fig:lastflowchart}
 
@@ -447,7 +446,7 @@ Finally, to invoke alarms we devided the driver state into four possible situati
 
 \newpage
 \section{method 2 : Facial key landmarks}
-\emph{Face landmark detection is a computer vision task where we want to detect and track keypoints from a human face. This task applies to many problems.For example, we can use the keypoints for detecting a human’s head pose position and rotation. With that, we can track whether a driver is paying attention or not. In this section we use facial key landmarks to detect eye blink in real-time then decide wether the driver is awake or drowsy.}
+\emph{Face landmark detection is a computer vision task where we want to detect and track key points from a human face. This task applies to many problems. For example, we can use the key points for detecting a human’s head pose position and rotation. With that, we can track whether a driver is paying attention or not. In this section, we use facial key landmarks to detect eye blinks in real-time and then decide whether the driver is awake or drowsy.}
 
 Many approaches for detecting eye blinks in a video series have been proposed. A motion estimate in the ocular area is used in several approaches. Typically, the face and eyes are detected by a Viola-Jones type detector. Next, motion in the eye area is estimated from optical flow, by sparse tracking \parencite{Soukupov2016RealTimeEB}. A major drawback of the previous approaches is that they usually very sensetive for image resolution, illumination, motion dynamics, etc.
 

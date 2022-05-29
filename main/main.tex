@@ -11,8 +11,6 @@
 \renewcommand{\thealgorithm}{\thechapter.\arabic{algorithm}}
 
 
-\fancypagestyle{plain}{}
-\pagestyle{fancy}
 %baselinestretch (lespaces bin les lignes )
 \renewcommand{\baselinestretch}{1.33}
 \renewcommand{\headrulewidth}{0.3pt}
@@ -36,39 +34,85 @@
 \author{Allaoui Mohamed Khalil \\ Aouina Khansa}
 \date{mars 8}
 
-
-
 \begin{document}
+	\thispagestyle{empty}
 
-\maketitle
+	\begin{center}
 
+		\textit{People’s Democratic Republic of Algeria \\}
+		\small{Ministry of Higher Education and Scientific Research \\}
+		\normalsize{UNIVERSITY OF BATNA 2 (MUSTAPHA BEN BOULAÏD)}
+	
+	\end{center}
+	
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[width=0.3\linewidth]{UB2_LOGO} 
+	\end{figure}
+
+	\begin{center}
+		\large{Faculty of Mathematics and Computer Science\\
+						Computer Science Department}
+	\end{center}
+	
+	\begin{center}		
+	\textbf{\Huge{Master 2 thesis}} \\
+
+	\large{\textbf{Option: Artificial Intelligence and Multimedia}}
+	\vspace{3mm}	
+	\end{center}
+	\begin{center}
+		\setlength\fboxrule{1pt}\setlength\fboxsep{10mm}
+		\fbox{
+		\centering{\large{\large\textbf{Ai approach for road Safety  }}} }	
+	\end{center}
+	
+	\vspace{3mm}
+
+
+	\begin{center}
+	 \large{Presented by :}\\
+     \textbf{\large{Allaoui Mohamed Khalil}}\\
+     \textbf{\large{Aouina Khansa}}\\
+     \vspace{10mm}
+     \large{Directed by \textbf{Dr. MELKEMI Kamal Eddine}}
+     \vspace{10mm}
+
+	 \textit{Promotion:} 2021/2022
+	\end{center}
+	
+	
 \begin{abstract}
-	With the rapid improvement of the Advanced Driver Assistant System (ADAS), au-
-tonomous driving has become one of the most common hot topics in recent years. While
-driving, many technologies related to autonomous driving choose to use the sensors installed
-on the vehicle to collect the information of road status and the environment outside. This
-aims to warn the driver to perceive the potential danger in the fastest time, which has
-become the focus of autonomous driving in recent years.
 
+	Despite the rapid improvement of the Advanced Driver Assistant System (ADAS), traffic accidents caused by human errors cause numerous fatalities and injuries worldwide. The purpose of this thesis is to develop an independent Driver warning module that can easily be integrated into road transport vehicles. This module contains a Driver monitoring component based on visual information from camera sensors with the help of computer vision and machine learning techniques such as Face detection, object localization, and Classification. To analyze driver behavior and detect risky situations like driver drowsiness and inattention in real-time. The second component is a simulation of Road monitoring based on Radar sensors used for blind-spot detection. finally, a warning component is responsible for invoking audio alarms to attract the driver's attention in potentially dangerous situations. 
 
 \end{abstract}
 
 
 \chapter*{Dedication}
+\thispagestyle{empty}
+
 To mum and dad
 
 \chapter*{Acknowledgements}
+\thispagestyle{empty}
+
 I want to thank...
 
+
 \tableofcontents
-\addcontentsline{toc}{chapter}{Introduction}
-\addcontentsline{toc}{section}{Background and Problems}
-\addcontentsline{toc}{section}{Motivation}
-\addcontentsline{toc}{section}{Related Work} 
+\thispagestyle{empty}
+
 
 \listoffigures
+\thispagestyle{empty}
+
 \listoftables
+\thispagestyle{empty}
+
 \listofalgorithms
+\thispagestyle{empty}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Nomenclature %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \nomenclature{ADAS}{Advanced Driving assistance Systems}
@@ -90,16 +134,24 @@ I want to thank...
 \nomenclature{MNN}{Minimum Neighbors}
 \nomenclature{SF}{Scale Factor}
 \nomenclature{LC}{Lighting conditions}
-
-
 \printnomenclature
+\thispagestyle{empty}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% CHAPTERS HERE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\newpage
+
+
 %Introduction
 \input{../chapters/chapter01}
+
+
+\fancypagestyle{plain}{}
+\pagestyle{fancy}
+\lhead{}
 
 \input{../chapters/chapter02}
 
